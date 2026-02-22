@@ -255,3 +255,47 @@ body:not(.dark-theme) .search-no-results strong {
     font-size: 0.8rem;
   }
 }
+
+/* Responsive header search: show icon on tablet/mobile and reveal input when expanded */
+@media (max-width: 992px) {
+  .form-doct {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+
+  .form-doct input[type="search"] {
+    width: 0;
+    min-width: 0;
+    opacity: 0;
+    padding: 0;
+    border: 0;
+    visibility: hidden;
+    transition: width 0.2s ease, opacity 0.15s ease, padding 0.15s ease;
+    background: transparent;
+  }
+
+  .form-doct .search-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 8px;
+  }
+
+  /* When expanded, reveal the input */
+  .form-doct.expanded input[type="search"] {
+    width: 160px;
+    opacity: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    visibility: visible;
+    background: var(--container-color);
+  }
+
+  /* Slightly reduce header spacing when collapsed */
+  .form-doct:not(.expanded) .search-btn i {
+    font-size: 1.1rem;
+  }
+}
