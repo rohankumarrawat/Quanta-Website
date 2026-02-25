@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 const forumCategories = [
     { icon: 'bi-code-slash', name: 'Programming', topics: 1250, posts: 8500, color: 'text-primary' },

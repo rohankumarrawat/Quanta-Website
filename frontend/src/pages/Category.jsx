@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const categories = [
     { icon: '01', name: 'Maths & Arithmetics', questions: 2450, followers: 1200 },
     { icon: '02', name: 'Business & Finance', questions: 3100, followers: 2500 },

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const questions = Array.from({ length: 4 }, (_, i) => ({ title: ['How to implement dark mode in React?', 'Best database for real-time apps?', 'React vs Vue vs Angular comparison', 'How to optimize React performance?'][i], votes: [25, 18, 42, 15][i], answers: [8, 12, 5, 18][i], time: ['2 days ago', '5 days ago', '1 week ago', '2 weeks ago'][i] }));
 export default function MyProfileQuestion() {
     return (

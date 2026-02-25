@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function TicketReply() {
     const messages = [
         { user: 'You', avatar: '01.jpg', time: '2 days ago', text: 'I cannot log in with my Google account. It keeps showing an error message saying "Authentication failed".' },

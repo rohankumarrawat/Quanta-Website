@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const blogPosts = Array.from({ length: 6 }, (_, i) => ({
     title: ['The Future of AI in Education', '10 Tips for Better Code Reviews', 'Understanding Microservices Architecture', 'A Beginner\'s Guide to Cloud Computing', 'The Rise of Remote Work Culture', 'Cybersecurity Trends to Watch'][i],
     excerpt: ['Explore how artificial intelligence is transforming the education sector...', 'Learn the best practices for conducting effective code reviews...', 'A comprehensive guide to building scalable microservices...', 'Everything you need to know about cloud computing basics...', 'How remote work is changing the professional landscape...', 'Stay ahead of emerging cybersecurity threats and trends...'][i],

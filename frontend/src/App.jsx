@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router';
 import { ThemeProvider } from './context/ThemeContext';
 import MainLayout from './components/layout/MainLayout';
 import AuthLayout from './components/layout/AuthLayout';
+import ScrollToTop from './components/common/ScrollToTop';
 
 // Pages
 import Home from './pages/Home';
@@ -48,6 +49,7 @@ function App() {
     return (
         <ThemeProvider>
             <BrowserRouter>
+                <ScrollToTop />
                 <Routes>
                     {/* Auth pages (no header/footer) */}
                     <Route path="/signin" element={<AuthLayout><SignIn /></AuthLayout>} />

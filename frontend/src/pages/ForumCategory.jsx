@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function ForumCategory() {
     const topics = Array.from({ length: 8 }, (_, i) => ({
         title: ['Best React state management tools', 'Understanding TypeScript generics', 'CSS Grid vs Flexbox guide', 'Node.js performance tips', 'GraphQL vs REST API comparison', 'Docker containers explained', 'CI/CD pipeline setup guide', 'Microservices architecture patterns'][i],

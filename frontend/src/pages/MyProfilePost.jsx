@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const posts = Array.from({ length: 4 }, (_, i) => ({ title: ['Getting Started with React Hooks', 'Understanding CSS Grid Layout', 'Node.js Best Practices Guide', 'Introduction to TypeScript'][i], date: ['Nov 7, 2024', 'Nov 5, 2024', 'Nov 3, 2024', 'Nov 1, 2024'][i], likes: [45, 32, 28, 22][i], comments: [12, 8, 15, 6][i] }));
 export default function MyProfilePost() {
     return (

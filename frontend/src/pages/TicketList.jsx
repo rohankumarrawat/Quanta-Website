@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const tickets = [
     { id: '#1024', subject: 'Login issues with Google SSO', status: 'Open', priority: 'High', date: '2024-11-07', updated: '2h ago' },
     { id: '#1023', subject: 'Cannot upload profile picture', status: 'In Progress', priority: 'Medium', date: '2024-11-06', updated: '1d ago' },

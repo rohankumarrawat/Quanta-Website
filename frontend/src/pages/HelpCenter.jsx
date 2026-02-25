@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const helpCategories = [
     { icon: 'bi-rocket-takeoff', title: 'Getting Started', desc: 'Learn the basics and get up to speed quickly.', articles: 12 },
     { icon: 'bi-person-circle', title: 'Account & Profile', desc: 'Manage your account settings and profile.', articles: 8 },

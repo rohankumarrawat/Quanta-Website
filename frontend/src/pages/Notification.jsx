@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const notifications = [
     { type: 'follow', user: 'Judy Nguyen', avatar: '01.jpg', text: 'started following you.', time: 'Just now', unread: true },
     { type: 'follow', user: 'Frances Guerrero', avatar: '05.jpg', text: 'who you might know is on Quanta.', time: '1h ago', unread: true },

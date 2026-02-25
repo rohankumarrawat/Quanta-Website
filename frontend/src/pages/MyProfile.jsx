@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation } from 'react-router';
 const tabs = [
     { to: '/profile', label: 'About', icon: 'bi-person' },
     { to: '/profile/posts', label: 'Posts', icon: 'bi-file-earmark-text' },
