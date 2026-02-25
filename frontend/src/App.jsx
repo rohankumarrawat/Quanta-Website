@@ -1,127 +1,165 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import { ThemeProvider } from './context/ThemeContext';
 import MainLayout from './components/layout/MainLayout';
 import AuthLayout from './components/layout/AuthLayout';
 import ScrollToTop from './components/common/ScrollToTop';
 
-// Pages
-import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import ForgotPassword from './pages/ForgotPassword';
-import AnswerDetail from './pages/AnswerDetail';
-import AskQuestion from './pages/AskQuestion';
-import Forum from './pages/Forum';
-import ForumCategory from './pages/ForumCategory';
-import ForumDetail from './pages/ForumDetail';
-import HelpCenter from './pages/HelpCenter';
-import HelpDetail from './pages/HelpDetail';
-import Support from './pages/Support';
-import FAQs from './pages/FAQs';
-import TicketHome from './pages/TicketHome';
-import TicketList from './pages/TicketList';
-import TicketReply from './pages/TicketReply';
-import TicketCreate from './pages/TicketCreate';
-import Discussion from './pages/Discussion';
-import Category from './pages/Category';
-import CategoryDetail from './pages/CategoryDetail';
-import CategoryPost from './pages/CategoryPost';
-import CategoryQuestion from './pages/CategoryQuestion';
-import Group from './pages/Group';
-import GroupDetail from './pages/GroupDetail';
-import Communities from './pages/Communities';
-import Blog from './pages/Blog';
-import BlogDetail from './pages/BlogDetail';
-import MyProfile from './pages/MyProfile';
-import MyProfilePost from './pages/MyProfilePost';
-import MyProfileQuestion from './pages/MyProfileQuestion';
-import MyProfileFollower from './pages/MyProfileFollower';
-import MyProfileAchievement from './pages/MyProfileAchievement';
-import Settings from './pages/Settings';
-import Notification from './pages/Notification';
-import About from './pages/About';
-import ContactUs from './pages/ContactUs';
-import TermsAndCondition from './pages/TermsAndCondition';
-import Error404 from './pages/Error404';
-import ComingSoon from './pages/ComingSoon';
+// Loading Component
+const PageLoader = () => (
+    <div className="min-h-screen flex items-center justify-center">
+        <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+        </div>
+    </div>
+);
+
+// Pages - Auth
+const SignIn = lazy(() => import('./pages/SignIn'));
+const SignUp = lazy(() => import('./pages/SignUp'));
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'));
+const ComingSoon = lazy(() => import('./pages/ComingSoon'));
+
+// Pages - Main
+const Home = lazy(() => import('./pages/Home'));
+const AnswerDetail = lazy(() => import('./pages/AnswerDetail'));
+const AskQuestion = lazy(() => import('./pages/AskQuestion'));
+
+// Forum
+const Forum = lazy(() => import('./pages/Forum'));
+const ForumCategory = lazy(() => import('./pages/ForumCategory'));
+const ForumDetail = lazy(() => import('./pages/ForumDetail'));
+
+// Help Center
+const HelpCenter = lazy(() => import('./pages/HelpCenter'));
+const HelpDetail = lazy(() => import('./pages/HelpDetail'));
+const Support = lazy(() => import('./pages/Support'));
+const FAQs = lazy(() => import('./pages/FAQs'));
+
+// Tickets
+const TicketHome = lazy(() => import('./pages/TicketHome'));
+const TicketList = lazy(() => import('./pages/TicketList'));
+const TicketReply = lazy(() => import('./pages/TicketReply'));
+const TicketCreate = lazy(() => import('./pages/TicketCreate'));
+
+// Discussion
+const Discussion = lazy(() => import('./pages/Discussion'));
+
+// Categories
+const Category = lazy(() => import('./pages/Category'));
+const CategoryDetail = lazy(() => import('./pages/CategoryDetail'));
+const CategoryPost = lazy(() => import('./pages/CategoryPost'));
+const CategoryQuestion = lazy(() => import('./pages/CategoryQuestion'));
+
+// Groups
+const Group = lazy(() => import('./pages/Group'));
+const GroupDetail = lazy(() => import('./pages/GroupDetail'));
+
+// Communities
+const Communities = lazy(() => import('./pages/Communities'));
+
+// Blog
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogDetail = lazy(() => import('./pages/BlogDetail'));
+
+// Profile
+const MyProfile = lazy(() => import('./pages/MyProfile'));
+const MyProfilePost = lazy(() => import('./pages/MyProfilePost'));
+const MyProfileQuestion = lazy(() => import('./pages/MyProfileQuestion'));
+const MyProfileFollower = lazy(() => import('./pages/MyProfileFollower'));
+const MyProfileAchievement = lazy(() => import('./pages/MyProfileAchievement'));
+
+// Account
+const Settings = lazy(() => import('./pages/Settings'));
+const Notification = lazy(() => import('./pages/Notification'));
+
+// Static pages
+const About = lazy(() => import('./pages/About'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
+const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition'));
+
+// Error
+const Error404 = lazy(() => import('./pages/Error404'));
 
 function App() {
     return (
         <ThemeProvider>
             <BrowserRouter>
                 <ScrollToTop />
-                <Routes>
-                    {/* Auth pages (no header/footer) */}
-                    <Route path="/signin" element={<AuthLayout><SignIn /></AuthLayout>} />
-                    <Route path="/signup" element={<AuthLayout><SignUp /></AuthLayout>} />
-                    <Route path="/forgot-password" element={<AuthLayout><ForgotPassword /></AuthLayout>} />
-                    <Route path="/coming-soon" element={<AuthLayout><ComingSoon /></AuthLayout>} />
+                <Suspense fallback={<PageLoader />}>
+                    <Routes>
+                        {/* Auth pages (no header/footer) */}
+                        <Route path="/signin" element={<AuthLayout><SignIn /></AuthLayout>} />
+                        <Route path="/signup" element={<AuthLayout><SignUp /></AuthLayout>} />
+                        <Route path="/forgot-password" element={<AuthLayout><ForgotPassword /></AuthLayout>} />
+                        <Route path="/coming-soon" element={<AuthLayout><ComingSoon /></AuthLayout>} />
 
-                    {/* Main pages (with header/footer) */}
-                    <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+                        {/* Main pages (with header/footer) */}
+                        <Route path="/" element={<MainLayout><Home /></MainLayout>} />
 
-                    {/* Q&A */}
-                    <Route path="/answer-detail" element={<MainLayout><AnswerDetail /></MainLayout>} />
-                    <Route path="/ask-question" element={<MainLayout><AskQuestion /></MainLayout>} />
+                        {/* Q&A */}
+                        <Route path="/answer-detail" element={<MainLayout><AnswerDetail /></MainLayout>} />
+                        <Route path="/ask-question" element={<MainLayout><AskQuestion /></MainLayout>} />
 
-                    {/* Forum */}
-                    <Route path="/forum" element={<MainLayout><Forum /></MainLayout>} />
-                    <Route path="/forum-category" element={<MainLayout><ForumCategory /></MainLayout>} />
-                    <Route path="/forum-detail" element={<MainLayout><ForumDetail /></MainLayout>} />
+                        {/* Forum */}
+                        <Route path="/forum" element={<MainLayout><Forum /></MainLayout>} />
+                        <Route path="/forum-category" element={<MainLayout><ForumCategory /></MainLayout>} />
+                        <Route path="/forum-detail" element={<MainLayout><ForumDetail /></MainLayout>} />
 
-                    {/* Help Center */}
-                    <Route path="/help-center" element={<MainLayout><HelpCenter /></MainLayout>} />
-                    <Route path="/help-detail" element={<MainLayout><HelpDetail /></MainLayout>} />
-                    <Route path="/support" element={<MainLayout><Support /></MainLayout>} />
-                    <Route path="/faqs" element={<MainLayout><FAQs /></MainLayout>} />
+                        {/* Help Center */}
+                        <Route path="/help-center" element={<MainLayout><HelpCenter /></MainLayout>} />
+                        <Route path="/help-detail" element={<MainLayout><HelpDetail /></MainLayout>} />
+                        <Route path="/support" element={<MainLayout><Support /></MainLayout>} />
+                        <Route path="/faqs" element={<MainLayout><FAQs /></MainLayout>} />
 
-                    {/* Tickets */}
-                    <Route path="/tickets" element={<MainLayout><TicketHome /></MainLayout>} />
-                    <Route path="/ticket-list" element={<MainLayout><TicketList /></MainLayout>} />
-                    <Route path="/ticket-reply" element={<MainLayout><TicketReply /></MainLayout>} />
-                    <Route path="/ticket-create" element={<MainLayout><TicketCreate /></MainLayout>} />
+                        {/* Tickets */}
+                        <Route path="/tickets" element={<MainLayout><TicketHome /></MainLayout>} />
+                        <Route path="/ticket-list" element={<MainLayout><TicketList /></MainLayout>} />
+                        <Route path="/ticket-reply" element={<MainLayout><TicketReply /></MainLayout>} />
+                        <Route path="/ticket-create" element={<MainLayout><TicketCreate /></MainLayout>} />
 
-                    {/* Discussion */}
-                    <Route path="/discussion" element={<MainLayout><Discussion /></MainLayout>} />
+                        {/* Discussion */}
+                        <Route path="/discussion" element={<MainLayout><Discussion /></MainLayout>} />
 
-                    {/* Categories */}
-                    <Route path="/category" element={<MainLayout><Category /></MainLayout>} />
-                    <Route path="/category-detail" element={<MainLayout><CategoryDetail /></MainLayout>} />
-                    <Route path="/category-post" element={<MainLayout><CategoryPost /></MainLayout>} />
-                    <Route path="/category-question" element={<MainLayout><CategoryQuestion /></MainLayout>} />
+                        {/* Categories */}
+                        <Route path="/category" element={<MainLayout><Category /></MainLayout>} />
+                        <Route path="/category-detail" element={<MainLayout><CategoryDetail /></MainLayout>} />
+                        <Route path="/category-post" element={<MainLayout><CategoryPost /></MainLayout>} />
+                        <Route path="/category-question" element={<MainLayout><CategoryQuestion /></MainLayout>} />
 
-                    {/* Groups */}
-                    <Route path="/groups" element={<MainLayout><Group /></MainLayout>} />
-                    <Route path="/group-detail" element={<MainLayout><GroupDetail /></MainLayout>} />
+                        {/* Groups */}
+                        <Route path="/groups" element={<MainLayout><Group /></MainLayout>} />
+                        <Route path="/group-detail" element={<MainLayout><GroupDetail /></MainLayout>} />
 
-                    {/* Communities */}
-                    <Route path="/communities" element={<MainLayout><Communities /></MainLayout>} />
+                        {/* Communities */}
+                        <Route path="/communities" element={<MainLayout><Communities /></MainLayout>} />
 
-                    {/* Blog */}
-                    <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />
-                    <Route path="/blog-detail" element={<MainLayout><BlogDetail /></MainLayout>} />
+                        {/* Blog */}
+                        <Route path="/blog" element={<MainLayout><Blog /></MainLayout>} />
+                        <Route path="/blog-detail" element={<MainLayout><BlogDetail /></MainLayout>} />
 
-                    {/* Profile */}
-                    <Route path="/profile" element={<MainLayout><MyProfile /></MainLayout>}>
-                        <Route path="posts" element={<MyProfilePost />} />
-                        <Route path="questions" element={<MyProfileQuestion />} />
-                        <Route path="followers" element={<MyProfileFollower />} />
-                        <Route path="achievements" element={<MyProfileAchievement />} />
-                    </Route>
+                        {/* Profile */}
+                        <Route path="/profile" element={<MainLayout><MyProfile /></MainLayout>}>
+                            <Route path="posts" element={<MyProfilePost />} />
+                            <Route path="questions" element={<MyProfileQuestion />} />
+                            <Route path="followers" element={<MyProfileFollower />} />
+                            <Route path="achievements" element={<MyProfileAchievement />} />
+                        </Route>
 
-                    {/* Account */}
-                    <Route path="/settings" element={<MainLayout><Settings /></MainLayout>} />
-                    <Route path="/notifications" element={<MainLayout><Notification /></MainLayout>} />
+                        {/* Account */}
+                        <Route path="/settings" element={<MainLayout><Settings /></MainLayout>} />
+                        <Route path="/notifications" element={<MainLayout><Notification /></MainLayout>} />
 
-                    {/* Static pages */}
-                    <Route path="/about" element={<MainLayout><About /></MainLayout>} />
-                    <Route path="/contact" element={<MainLayout><ContactUs /></MainLayout>} />
-                    <Route path="/terms" element={<MainLayout><TermsAndCondition /></MainLayout>} />
+                        {/* Static pages */}
+                        <Route path="/about" element={<MainLayout><About /></MainLayout>} />
+                        <Route path="/contact" element={<MainLayout><ContactUs /></MainLayout>} />
+                        <Route path="/terms" element={<MainLayout><TermsAndCondition /></MainLayout>} />
 
-                    {/* Error / 404 */}
-                    <Route path="/error" element={<AuthLayout><Error404 /></AuthLayout>} />
-                    <Route path="*" element={<AuthLayout><Error404 /></AuthLayout>} />
-                </Routes>
+                        {/* Error / 404 */}
+                        <Route path="/error" element={<AuthLayout><Error404 /></AuthLayout>} />
+                        <Route path="*" element={<AuthLayout><Error404 /></AuthLayout>} />
+                    </Routes>
+                </Suspense>
             </BrowserRouter>
         </ThemeProvider>
     );
