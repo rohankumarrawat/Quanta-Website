@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function ForumDetail() {
     const replies = [
         { user: 'Judy Nguyen', avatar: '01.jpg', time: '2 hours ago', text: 'I highly recommend using Zustand for most React projects. It has a minimal API and great performance.' },

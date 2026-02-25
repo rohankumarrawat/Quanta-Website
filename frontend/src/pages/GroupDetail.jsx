@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function GroupDetail() {
     const posts = Array.from({ length: 4 }, (_, i) => ({
         author: ['Dennis Barrett', 'Judy Nguyen', 'Frances Guerrero', 'Billy Vasquez'][i],

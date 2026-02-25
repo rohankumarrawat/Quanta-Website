@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const questions = Array.from({ length: 6 }, (_, i) => ({
     title: ['What is artificial intelligence?', 'How does blockchain work?', 'Best programming language for beginners', 'Cloud computing vs traditional hosting', 'Machine learning applications', 'Cybersecurity best practices'][i],
     author: ['Larry Lawson', 'Dennis Barrett', 'Judy Nguyen', 'Frances Guerrero', 'Billy Vasquez', 'Amanda Reed'][i],

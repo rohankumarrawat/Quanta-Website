@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const posts = Array.from({ length: 6 }, (_, i) => ({
     title: ['Understanding React Server Components', 'Top 10 CSS tricks you should know', 'A guide to Node.js streams', 'Building scalable APIs with GraphQL', 'Docker for beginners: Complete guide', 'Git workflow best practices'][i],
     author: ['Dennis Barrett', 'Judy Nguyen', 'Frances Guerrero', 'Billy Vasquez', 'Larry Lawson', 'Amanda Reed'][i],

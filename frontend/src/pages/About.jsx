@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function About() {
     const team = Array.from({ length: 4 }, (_, i) => ({ name: ['Alice Johnson', 'Bob Smith', 'Carol Davis', 'David Wilson'][i], role: ['CEO & Founder', 'CTO', 'Head of Design', 'Lead Developer'][i], avatar: ['01.jpg', '03.jpg', '05.jpg', '08.jpg'][i] }));
     return (

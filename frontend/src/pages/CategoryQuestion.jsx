@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function CategoryQuestion() {
     const questions = Array.from({ length: 8 }, (_, i) => ({ title: ['How to implement binary search?', 'Explain recursion with examples', 'What is dynamic programming?', 'Difference between stack and queue', 'How does hash table work?', 'Explain Big O notation', 'What is a linked list?', 'Binary tree traversal methods'][i], votes: [25, 18, 42, 15, 32, 28, 12, 36][i], answers: [8, 12, 5, 18, 9, 14, 6, 22][i] }));
     return (

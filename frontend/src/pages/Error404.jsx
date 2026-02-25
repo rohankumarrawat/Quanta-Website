@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function Error404() {
     return (
         <section className="py-0"><div className="container">

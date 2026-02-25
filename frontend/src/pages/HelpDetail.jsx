@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 export default function HelpDetail() {
     const articles = ['How to create an account', 'Setting up your profile', 'Asking your first question', 'Understanding the voting system', 'How to earn badges', 'Community guidelines overview'];
     return (

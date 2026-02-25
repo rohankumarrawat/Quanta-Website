@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const followers = Array.from({ length: 8 }, (_, i) => ({ name: ['Dennis Barrett', 'Judy Nguyen', 'Frances Guerrero', 'Billy Vasquez', 'Larry Lawson', 'Amanda Reed', 'Louis Burns', 'Carolyn Ortiz'][i], avatar: ['03.jpg', '01.jpg', '05.jpg', '08.jpg', '04.jpg', '06.jpg', '07.jpg', '02.jpg'][i], role: ['Developer', 'Designer', 'Data Scientist', 'DevOps Engineer', 'Product Manager', 'Writer', 'Student', 'Freelancer'][i], mutual: [12, 8, 5, 18, 3, 15, 7, 10][i] }));
 export default function MyProfileFollower() {
     return (

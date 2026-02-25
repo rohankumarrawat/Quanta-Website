@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 const answers = [
     { user: 'Dennis Barrett', avatar: '03.jpg', time: '2 hours ago', text: 'A compiler translates the entire source code of a program into machine code before execution, while an interpreter translates and executes the code line by line at runtime.', votes: 36, accepted: true },

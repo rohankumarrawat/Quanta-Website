@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const discussions = Array.from({ length: 6 }, (_, i) => ({
     title: ['Should we switch to TypeScript for all new projects?', 'What are the best remote work tools in 2024?', 'Is college education still worth it?', 'The future of AI in everyday life', 'Best practices for work-life balance', 'How to deal with imposter syndrome'][i],
     author: ['Dennis Barrett', 'Judy Nguyen', 'Frances Guerrero', 'Billy Vasquez', 'Larry Lawson', 'Amanda Reed'][i],

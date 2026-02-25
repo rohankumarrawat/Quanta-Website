@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 const communities = Array.from({ length: 9 }, (_, i) => ({
     name: ['Tech Innovators', 'Creative Writers', 'Startup Founders', 'Data Scientists', 'Open Source Contributors', 'Educators Hub', 'Digital Marketers', 'Freelancers Network', 'Student Community'][i],
     members: [25000, 12000, 8500, 15000, 9200, 7800, 11000, 6500, 18000][i],
