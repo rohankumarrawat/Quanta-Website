@@ -205,7 +205,7 @@ You can contribute by:
 
 Once contributions begin, this section can integrate with:
 
-[![Contributors](https://contrib.rocks/image?repo=rohankumarrawat/Quanta-Website)](https://github.com/rohankumarrawat/Quanta-Website/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Quanta-Progeamming-Language/Quanta-Website)](https://github.com/Quanta-Progeamming-Language/Quanta-Website/graphs/contributors)
 
 ---
 
