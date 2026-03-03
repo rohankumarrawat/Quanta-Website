@@ -1,40 +1,47 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 export default function SignUp() {
+    const { t } = useTranslation();
     return (
         <section className="py-0">
             <div className="container">
                 <div className="flex justify-center items-center min-h-screen py-8">
                     <div className="w-full max-w-md">
                         <div className="card p-6 sm:p-8">
-                            <h1 className="text-2xl font-bold mb-2 text-center">Create new account</h1>
-                            <p className="text-center mb-0">Already a member? <Link to="/signin">Log in</Link></p>
+                            <h1 className="text-2xl font-bold mb-2 text-center">{t('auth.signup.title', 'Create new account')}</h1>
+                            <p className="text-center mb-0">
+                                {t('auth.signup.already_member', 'Already a member?')}{' '}
+                                <Link to="/signin">{t('auth.signup.login', 'Log in')}</Link>
+                            </p>
 
                             <form className="mt-6 text-left">
                                 <div className="mb-4">
-                                    <label className="form-label">Enter email id</label>
+                                    <label className="form-label">{t('auth.email_label', 'Enter email')}</label>
                                     <input type="email" className="form-control" />
                                 </div>
                                 <div className="mb-4 relative">
-                                    <label className="form-label">Enter password</label>
-                                    <input type="password" className="form-control pr-10" placeholder="Enter your password" />
+                                    <label className="form-label">{t('auth.password_label', 'Enter password')}</label>
+                                    <input type="password" className="form-control pr-10" placeholder={t('auth.password_placeholder', 'Enter your password')} />
                                     <span className="absolute top-1/2 right-3 mt-3.5 -translate-y-1/2 cursor-pointer text-body">
                                         <i className="fas fa-eye-slash"></i>
                                     </span>
                                 </div>
                                 <div className="mb-4">
-                                    <label className="form-label">Confirm Password</label>
+                                    <label className="form-label">{t('auth.signup.confirm_password', 'Confirm password')}</label>
                                     <input type="password" className="form-control" />
                                 </div>
                                 <div className="flex items-center gap-2 mb-4">
                                     <input type="checkbox" className="form-check-input" id="keepSignedIn" />
-                                    <label className="form-check-label" htmlFor="keepSignedIn">Keep me signed in</label>
+                                    <label className="form-check-label" htmlFor="keepSignedIn">{t('auth.signup.keep_signed_in', 'Keep me signed in')}</label>
                                 </div>
-                                <button type="submit" className="btn btn-primary w-full">Sign Up</button>
+                                <button type="submit" className="btn btn-primary w-full">{t('auth.signup.submit', 'Sign Up')}</button>
 
                                 <div className="relative my-6">
                                     <hr />
-                                    <p className="text-sm absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-3 text-body">Or sign in with</p>
+                                    <p className="text-sm absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-3 text-body">
+                                        {t('auth.or_sign_in_with', 'Or sign in with')}
+                                    </p>
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-3">
@@ -42,7 +49,9 @@ export default function SignUp() {
                                     <a href="#" className="btn btn-outline-light"><i className="fab fa-facebook-f text-blue-600 mr-2"></i>Facebook</a>
                                 </div>
 
-                                <p className="text-center text-sm text-body mt-4">©2025 <a href="#">Quanta.</a> All rights reserved</p>
+                                <p className="text-center text-sm text-body mt-4">
+                                    ©2025 <a href="#">Quanta.</a> {t('all_rights_reserved')}
+                                </p>
                             </form>
                         </div>
                     </div>

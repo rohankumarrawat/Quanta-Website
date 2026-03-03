@@ -1,0 +1,882 @@
+{
+  "404_title": "404",
+  "404_heading": "Oh no, something went wrong!",
+  "404_text": "The page you're looking for doesn't exist or has been moved. Don't worry, it happens to the best of us.",
+  "go_home": "Go Home",
+  "home": "Home",
+  "follow": "Follow",
+  "ask_questions": "Ask Questions",
+  "notifications": "Notifications",
+  "search": "Search",
+  "search_placeholder": "Search...",
+  "language": "Language",
+  "languages": {
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "german": "Deutsch"
+  },
+  "dark_mode": "Dark Mode",
+  "light_mode": "Light Mode",
+  "joined_duration": "Joined 2 years ago",
+  "profile_description": "Full-stack developer passionate about building web apps. I love working with React, Node.js, and exploring new technologies.",
+  "skills_list": {
+    "react": "React",
+    "node": "Node.js",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "aws": "AWS",
+    "docker": "Docker"
+  },
+  "interests_list": {
+    "ai": "AI",
+    "webdev": "Web Development",
+    "cloud": "Cloud",
+    "opensource": "Open Source"
+  },
+  "location": "San Francisco, CA",
+  "job": "Senior Software Engineer",
+  "joined_on": "Joined Jan 15, 2022",
+  "news_and_blogs": "News and Blogs",
+  "contact_us": "Contact us",
+  "community": "Community",
+  "questions": "Questions",
+  "forum": "Forum",
+  "forum_detail": {
+    "title": "Forum",
+    "category_programming": "Programming",
+    "topic": "Topic",
+    "posted": "Posted",
+    "hours_ago": "hours ago",
+    "like": "Like",
+    "reply": "Reply",
+    "share": "Share",
+    "replies": "Replies",
+    "post_reply": "Post a Reply",
+    "reply_placeholder": "Write your reply...",
+    "post_reply_button": "Post Reply",
+    "original_post": {
+      "author": "Dennis Barrett",
+      "time": "3 hours ago",
+      "title": "Best practices for React state management in 2024",
+      "p1": "I've been working with React for a while and I want to understand the current best practices for state management. With so many options like Redux, Zustand, Jotai, and React's built-in Context API, it's hard to decide which one to use for different scenarios.",
+      "p2": "What are your recommendations and why? I'd love to hear about real-world experience with these tools."
+    },
+
+
+    "replies_list": [
+      { "user": "Judy Nguyen", "avatar": "01.jpg", "time": "2 hours ago", "text": "I highly recommend using Zustand for most React projects. It has a minimal API and great performance." },
+      { "user": "Frances Guerrero", "avatar": "05.jpg", "time": "5 hours ago", "text": "Redux Toolkit has improved a lot. The createSlice and createAsyncThunk APIs make it much less boilerplate-heavy than old Redux." },
+      { "user": "Billy Vasquez", "avatar": "08.jpg", "time": "1 day ago", "text": "For server state, React Query (TanStack Query) is a game changer. It handles caching, refetching, and synchronization beautifully." }
+    ]
+  },
+  "forum": {
+  "post_reply": "Post a Reply",
+    "reply_placeholder": "Write your reply...",
+    "post_reply_button": "Post Reply"
+  },
+
+
+    "forum_category": {
+    "breadcrumb": {
+      "forum": "Forum",
+      "category": "Programming"
+    },
+    "header": {
+      "title": "Programming",
+      "description": "Discuss programming topics, share code, and get help.",
+      "new_topic": "New Topic"
+    },
+    "table": {
+      "topic": "Topic",
+      "replies": "Replies",
+      "views": "Views",
+      "activity": "Activity"
+    },
+    "topics": [
+      {
+        "title": "Best React state management tools",
+        "author": "Dennis Barrett",
+        "avatar": "03.jpg",
+        "replies": 24,
+        "views": 1200,
+        "time": "2 hours ago"
+      },
+      {
+        "title": "Understanding TypeScript generics",
+        "author": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "replies": 18,
+        "views": 950,
+        "time": "5 hours ago"
+      },
+      {
+        "title": "CSS Grid vs Flexbox guide",
+        "author": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "replies": 32,
+        "views": 2100,
+        "time": "1 day ago"
+      },
+      {
+        "title": "Node.js performance tips",
+        "author": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "replies": 15,
+        "views": 780,
+        "time": "2 days ago"
+      },
+      {
+        "title": "GraphQL vs REST API comparison",
+        "author": "Larry Lawson",
+        "avatar": "04.jpg",
+        "replies": 42,
+        "views": 3500,
+        "time": "3 days ago"
+      },
+      {
+        "title": "Docker containers explained",
+        "author": "Amanda Reed",
+        "avatar": "02.jpg",
+        "replies": 8,
+        "views": 420,
+        "time": "5 days ago"
+      },
+      {
+        "title": "CI/CD pipeline setup guide",
+        "author": "Louis Burns",
+        "avatar": "07.jpg",
+        "replies": 21,
+        "views": 1800,
+        "time": "4 days ago"
+      },
+      {
+        "title": "Microservices architecture patterns",
+        "author": "Carolyn Ortiz",
+        "avatar": "06.jpg",
+        "replies": 36,
+        "views": 2900,
+        "time": "1 week ago"
+      }
+    ]
+  },
+  "support_ticket": "Support ticket",
+  "discussion": "Discussion",
+  "sign_up_latest_update": "Sign up For All Latest Update",
+  "receive_notifications": "Receive all notifications on our new releases.",
+  "your_email_address": "Your email address",
+  "subscribe": "Subscribe!",
+  "auth": {
+    "email_label": "Email address",
+    "email_placeholder": "Enter your email",
+    "password_label": "Password",
+    "password_placeholder": "Enter your password",
+    "or_sign_in_with": "Or sign in with",
+    "signin": {
+      "title": "Welcome back",
+      "new_here": "New here?",
+      "create_account": "Create an account",
+      "remember_me": "Remember me?",
+      "forgot_password": "Forgot password?",
+      "submit": "Login",
+      "link_text": "Sign in"
+    },
+    "signup": {
+      "title": "Create new account",
+      "already_member": "Already a member?",
+      "login": "Log in",
+      "confirm_password": "Confirm password",
+      "keep_signed_in": "Keep me signed in",
+      "submit": "Sign Up"
+    },
+    "forgot": {
+      "title": "Forgot password?",
+      "subtitle": "Enter the email address associated with your account and we'll send you a link to reset your password.",
+      "submit": "Reset password",
+      "back_to": "Back to"
+    }
+  },
+  "home_hero": {
+    "title_before": "The Best Way to Get a Good",
+    "title_answer": "Answer",
+    "title_question": "Question",
+    "badge_connect": "Connect around the world",
+    "badge_free": "Free Asking",
+    "badge_trusted": "100% Trusted Answers",
+    "search_placeholder": "What is your Question?"
+  },
+  "copyright": "Copyrights",
+  "all_rights_reserved": "All rights reserved.",
+  "terms_of_use": "Terms of use",
+  "privacy_policy": "Privacy policy",
+  "ask_question": {
+    "page_title": "Ask a Public Question",
+    "page_subtitle": "Get help from the community by asking a well-formed question.",
+    "field_title": "Question Title *",
+    "field_description": "Description *",
+    "field_category": "Category",
+    "field_tags": "Tags",
+    "field_visibility": "Visibility",
+    "placeholder_title": "e.g. What is the difference between compiler and interpreter?",
+    "placeholder_description": "Explain your question in detail...",
+    "placeholder_tags": "e.g. javascript, react, css",
+    "submit": "Post Question",
+    "cancel": "Cancel",
+    "guidelines": {
+      "heading": "Guidelines for Receiving Quality Answers",
+      "list": [
+        "Ensure that your question hasn't been previously posed",
+        "Keep your questions concise and focused for optimal clarity",
+        "Double check grammar and spelling"
+      ]
+    }
+  },
+  "role_programmer": "Programmer",
+  "answered": "Answered",
+  "ansdetail": {
+    "question_title": "What is the difference between a compiler and an interpreter?",
+    "question_body": "I'm trying to understand the fundamental difference between compilers and interpreters. Could someone explain this clearly with examples? I understand that both are language translators, but I'm confused about their working mechanisms.",
+    "answers": [
+      {
+        "time": "2 hours ago",
+        "text": "A compiler translates the entire source code of a program into machine code before execution, while an interpreter translates and executes the code line by line at runtime."
+      },
+      {
+        "time": "5 hours ago",
+        "text": "The key difference lies in execution: compilers produce standalone executable files, while interpreters process code directly. Compiled programs generally run faster, but interpreted languages offer more flexibility during development."
+      },
+      {
+        "time": "8 hours ago",
+        "text": "Compilers check the entire program for errors before generating output, making debugging harder but execution faster. Interpreters stop at the first error encountered, making debugging easier but execution slower."
+      }
+    ]
+  },
+  "tag": {
+    "programming": "programming",
+    "compiler": "compiler",
+    "interpreter": "interpreter",
+    "javascript": "javascript",
+    "python": "python",
+    "react": "react",
+    "node.js": "node.js",
+    "css": "css",
+    "html": "html",
+    "typescript": "typescript",
+    "sql": "sql",
+    "ai": "AI"
+  },
+  "answers_count": "{{count}} Answers",
+  "articles": "{{count}} articles",
+  "sort": {
+    "most_recent": "Most recent",
+    "oldest_first": "Oldest first",
+    "most_voted": "Most voted"
+  },
+  "accepted": "Accepted",
+  "reply": "Reply",
+  "share": "Share",
+  "report": "Report",
+  "your_answer": "Your Answer",
+  "placeholder": {
+    "write_answer": "Write your answer here..."
+  },
+  "post_your_answer": "Post Your Answer",
+  "related_questions": "Related Questions",
+  "trending_tags": "Trending Tags",
+  "join_community": {
+    "heading": "Join the Community",
+    "text": "Get answers to your questions from experts.",
+    "button": "Join Free"
+  },
+  "blogdetail": {
+    "title": "The Future of AI in Education",
+    "read_time": "5 min read",
+    "p1": "Artificial intelligence is rapidly transforming the education sector, bringing personalized learning experiences, automated grading systems, and intelligent tutoring to students worldwide.",
+    "heading1": "Personalized Learning",
+    "p2": "AI algorithms can analyze a student's learning patterns, strengths, and weaknesses to create customized learning paths. This ensures that each student receives the right level of challenge and support.",
+    "heading2": "Automated Assessment",
+    "p3": "AI-powered assessment tools can evaluate student work more efficiently and consistently, providing instant feedback that helps students improve faster.",
+    "heading3": "Intelligent Tutoring Systems",
+    "p4": "Virtual tutors powered by AI can provide one-on-one guidance to students, answering questions and explaining concepts in multiple ways until the student understands.",
+    "heading4": "The Road Ahead",
+    "p5": "While AI in education holds tremendous promise, it also raises important questions about data privacy, the role of teachers, and ensuring equitable access to these technologies.",
+    "author_desc": "Tech writer and AI enthusiast with 10+ years of experience."
+  },
+  "mark_all_as_read": "Mark all as read",
+  "confirm": "Confirm",
+  "delete": "Delete",
+  "notification": {
+    "follow_started": "started following you.",
+    "follow_suggestion": "suggested you follow them.",
+    "mention": "mentioned you in {{place}}.",
+    "accept": "accepted your answer.",
+    "answer": "answered your question: {{question}}.",
+    "vote": "voted on your post.",
+    "badge": "awarded you the {{badge}} badge.",
+    "time": {
+      "just_now": "Just now",
+      "1h": "1h ago",
+      "2h": "2h ago",
+      "5h": "5h ago",
+      "1d": "1d ago",
+      "2d": "2d ago"
+    }
+  },
+  "topics": "Topics",
+  "posts": "Posts",
+  "answers": "Answers",
+  "asked": "Asked:",
+  "latest_answer": "Latest answer was",
+  "join_discussion": "Join the discussion and share your knowledge with the community.",
+  "create_new_topic": "Create New Topic",
+  "recent_topics": "Recent Topics",
+  "topic": "Topic",
+  "replies": "Replies",
+  "views": "{{count}} Views",
+  "activity": "Activity",
+  "select_category": "Select category",
+  "cat_technology": "Technology",
+  "cat_programming": "Programming",
+  "cat_business_finance": "Business & Finance",
+  "cat_health": "Health",
+  "cat_history": "History",
+  "cat_language_literature": "Language & Literature",
+  "profile": {
+    "edit_profile": "Edit Profile",
+    "account_settings": "Account Settings",
+    "sign_out": "Sign Out",
+    "tabs": {
+      "about": "About",
+      "posts": "Posts",
+      "questions": "Questions",
+      "followers": "Followers",
+      "achievements": "Achievements"
+    },
+    "about_heading": "About",
+    "skills": "Skills",
+    "interests": "Interests",
+    "info": "Info",
+    "stats_title": "Stats",
+    "stats": {
+      "questions": "Questions",
+      "answers": "Answers",
+      "followers": "Followers",
+      "badges": "Badges"
+    },
+    "posts": {
+      "title1": "Getting Started with React Hooks",
+      "title2": "Understanding CSS Grid Layout",
+      "title3": "Node.js Best Practices Guide",
+      "title4": "Introduction to TypeScript",
+      "date1": "Nov 7, 2024",
+      "date2": "Nov 5, 2024",
+      "date3": "Nov 3, 2024",
+      "date4": "Nov 1, 2024",
+      "likes": "{{count}} likes",
+      "comments": "{{count}} comments"
+    },
+    "questions": {
+      "votes": "votes",
+      "answers": "answers",
+      "q1": "How to implement dark mode in React?",
+      "q2": "Best database for real-time apps?",
+      "q3": "React vs Vue vs Angular comparison",
+      "q4": "How to optimize React performance?",
+      "time1": "2 days ago",
+      "time2": "5 days ago",
+      "time3": "1 week ago",
+      "time4": "2 weeks ago"
+    },
+    "followers": {
+      "mutual": "{{count}} mutual connections",
+      "role1": "Developer",
+      "role2": "Designer",
+      "role3": "Data Scientist",
+      "role4": "DevOps Engineer",
+      "role5": "Product Manager",
+      "role6": "Writer",
+      "role7": "Student",
+      "role8": "Freelancer"
+    },
+    "achievements": {
+      "points": "Points",
+      "badges_earned": "Badges Earned",
+      "global_rank": "Global Rank",
+      "earned": "Earned"
+    }
+  },
+  "account": {
+    "name": "Lori Ferguson",
+    "email": "example@gmail.com",
+    "editProfile": "Edit Profile",
+    "settings": "Account Settings",
+    "logout": "Sign Out"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest articles, tutorials, and insights from our community.",
+    "read_time": "{{count}} min",
+    "read_label": "read",
+    "cat_ai": "AI",
+    "cat_programming": "Programming",
+    "cat_architecture": "Architecture",
+    "cat_cloud": "Cloud",
+    "cat_culture": "Culture",
+    "cat_security": "Security"
+  },
+  "category_posts_title": "Category Posts",
+  "recently_answered_questions": "Recently Answered Questions",
+  "all_categories": "All Topics",
+  "browse_categories_subtitle": "Browse all topics and find the best place to ask your question.",
+  "category_questions": "{{count}} questions",
+  "category_followers": "{{count}} followers",
+  "follow_category": "Follow topic",
+  "category_tabs": {
+    "latest": "Latest",
+    "popular": "Popular",
+    "unanswered": "Unanswered"
+  },
+  "categories": {
+    "math_arithmetics": "Math & Arithmetics",
+    "business_finance": "Business & Finance",
+    "science": "Science",
+    "health": "Health",
+    "tax_accountants": "Tax & Accountants",
+    "law_legal": "Law & Legal",
+    "tv_news": "TV & News",
+    "mechanics": "Mechanics",
+    "history": "History",
+    "construction": "Construction",
+    "technology": "Technology",
+    "language_literature": "Language & Literature",
+    "all_categories": "All Topics"
+  },
+  "home_stats": {
+    "heading": "We'll help your grades soar",
+    "text": "Start your 48-hour free trial and unlock all the summaries, Q&A, and analyses you need to get better grades now.",
+    "features": [
+      "15,000+ Topics",
+      "State your question clearly",
+      "375,000+ answered",
+      "Ad-free content"
+    ],
+    "additional_features": [
+      "30% study tools discount",
+      "PDF downloads",
+      "5-star customer support"
+    ],
+    "stats_labels": [
+      "Total Followers",
+      "Total Questions",
+      "Total Answers"
+    ]
+  },
+  "home_cta": {
+    "title": "What do you need to know?",
+    "text": "Whether you're stuck on a history question or blocked by a geometry puzzle, there's no question too tricky for Brainy.",
+    "button": "Ask a Question"
+  },
+  "home_questions": {
+    "question7": "How can I improve my study habits?",
+    "question8": "What is the best way to manage business finances?",
+    "question9": "How did World War II change global politics?",
+    "question10": "What are the latest trends in technology?"
+  },
+  "about": {
+    "heading": "About Quanta",
+    "description": "We're building the world's most trusted Q&A platform where knowledge is openly shared and everyone can learn from experts.",
+    "mission_heading": "Our Mission",
+    "mission_text": "To democratize knowledge by creating a community-driven platform where anyone can ask questions and get high-quality answers from experts around the world.",
+    "vision_heading": "Our Vision",
+    "vision_text": "A world where everyone has access to expert knowledge, regardless of their background, location, or financial situation.",
+    "stats": {
+      "active_users": "Active Users",
+      "questions_asked": "Questions Asked",
+      "answers_given": "Answers Given",
+      "categories": "Topics"
+    },
+    "team_heading": "Our Team",
+    "team_sub": "Meet the people behind Quanta."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question or feedback? We'd love to hear from you.",    "address_value": "123 Main Street, San Francisco, CA 94102",
+    "email_value": "hello@quanta.com",
+    "phone_value": "+1 (555) 123-4567",
+    "get_in_touch": "Get in Touch",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "send_message": "Send Message",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "subject": "Subject",
+    "message": "Message"
+  },
+  "terms": {
+    "page_title": "Terms and Conditions",
+    "last_updated": "Last updated: November 7, 2024",
+    "translation_notice": "Your content may be automatically translated into your selected language.",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using this platform, you accept and agree to be bound by the terms and conditions outlined in this agreement. If you do not agree to these terms, please do not use our services."
+      },
+      {
+        "title": "2. User Accounts",
+        "content": "You are responsible for maintaining the confidentiality of your account credentials. You must provide accurate and complete information when creating an account. You are solely responsible for all activities that occur under your account."
+      },
+      {
+        "title": "3. Content Guidelines",
+        "content": "Users must not post content that is illegal, harmful, threatening, abusive, defamatory, or otherwise objectionable. We reserve the right to remove any content that violates these guidelines without prior notice."
+      },
+      {
+        "title": "4. Intellectual Property",
+        "content": "All content submitted by users remains the intellectual property of the respective authors. By posting content, you grant us a non-exclusive, worldwide license to use, display, and distribute your content on our platform."
+      },
+      {
+        "title": "5. Privacy Policy",
+        "content": "We are committed to protecting your privacy. Our Privacy Policy explains how we collect, use, and safeguard your personal information. By using our services, you consent to our data practices."
+      },
+      {
+        "title": "6. Limitation of Liability",
+        "content": "Our platform is provided on an \"as is\" basis. We make no warranties, expressed or implied, regarding the reliability, accuracy, or availability of the service. We shall not be liable for any indirect, incidental, or consequential damages."
+      },
+      {
+        "title": "7. Modifications",
+        "content": "We reserve the right to modify these terms at any time. Users will be notified of significant changes. Continued use of the platform after modifications constitutes acceptance of the new terms."
+      }
+    ]
+  },
+  "helpCenter": {
+    "heading": "How can we help you?",
+    "searchPlaceholder": "Search for help articles...",
+    "still_need_help": "Still need help?",
+    "contact_prompt": "Can't find what you're looking for? Contact our support team.",
+    "contact_support": "Contact Support",
+    "categories": [
+      {
+        "title": "Getting Started",
+        "desc": "Learn the basics and get up to speed quickly."
+      },
+      {
+        "title": "Account & Profile",
+        "desc": "Manage your account settings and profile."
+      },
+      {
+        "title": "Security & Privacy",
+        "desc": "Keep your account safe and manage privacy."
+      },
+      {
+        "title": "Billing & Plans",
+        "desc": "Questions about pricing, billing and plans."
+      },
+      {
+        "title": "Community Guidelines",
+        "desc": "Rules and guidelines for the community."
+      },
+      {
+        "title": "Troubleshooting",
+        "desc": "Fix common issues and technical problems."
+      }
+    ]
+  },
+  "helpDetail": {
+    "breadcrumb": {
+      "helpCenter": "Help Center",
+      "gettingStarted": "Getting Started"
+    },
+    "sidebarHeading": "Getting Started",
+    "articles": [
+      "How to create an account",
+      "Setting up your profile",
+      "Asking your first question",
+      "Understanding the voting system",
+      "How to earn badges",
+      "Community guidelines overview"
+    ],
+    "article": {
+      "title": "How to create an account",
+      "p1": "Creating an account on our platform is quick and easy. Follow these simple steps to get started:",
+      "step1_heading": "Step 1: Visit the Sign Up Page",
+      "step1_text": "Click the \"Sign Up\" button in the top right corner of the page, or navigate directly to the registration page.",
+      "step2_heading": "Step 2: Fill in Your Details",
+      "step2_text": "Enter your email address and create a strong password. You can also sign up using your Google or Facebook account for faster registration.",
+      "step3_heading": "Step 3: Verify Your Email",
+      "step3_text": "Check your inbox for a verification email and click the confirmation link to activate your account.",
+      "step4_heading": "Step 4: Complete Your Profile",
+      "step4_text": "Add your profile picture, bio, and areas of expertise to help the community get to know you.",
+      "helpful": "Was this article helpful?",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "support": {
+    "heading": "Support",
+    "subtext": "We're here to help. Choose the option that works best for you.",
+    "live_chat": "Live Chat",
+    "live_chat_desc": "Chat with our support team in real-time.",
+    "start_chat": "Start Chat",
+    "email_support": "Email Support",
+    "email_support_desc": "Send us an email and we'll reply within 24 hours.",
+    "send_email": "Send Email",
+    "submit_ticket": "Submit a Ticket",
+    "submit_ticket_desc": "Create a support ticket for detailed assistance.",
+    "create_ticket": "Create Ticket"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subtext": "Find answers to the most common questions about our platform.",
+    "questions": [
+      {
+        "q": "How do I create an account?",
+        "a": "Click on the Sign Up button and fill in your details. You can also sign up using Google or Facebook."
+      },
+      {
+        "q": "How do I ask a question?",
+        "a": "Click the \"Ask Question\" button, enter your question title and description, select a category, and submit."
+      },
+      {
+        "q": "How does the voting system work?",
+        "a": "Users can upvote or downvote questions and answers. The best answers are automatically sorted by votes."
+      },
+      {
+        "q": "Can I edit my question after posting?",
+        "a": "Yes, you can edit your questions and answers at any time from your profile page."
+      },
+      {
+        "q": "How do I earn badges?",
+        "a": "Badges are earned through community participation - asking questions, providing answers, and receiving votes."
+      },
+      {
+        "q": "Is my personal information safe?",
+        "a": "We use industry-standard encryption and security practices to protect your personal information."
+      },
+      {
+        "q": "How do I report inappropriate content?",
+        "a": "Click the flag icon on any question or answer to report it to our moderation team."
+      },
+      {
+        "q": "Can I delete my account?",
+        "a": "Yes, you can delete your account from the Settings page. Note that this action is irreversible."
+      }
+    ]
+  },
+  "tickets": {
+    "home_title": "Support Ticket System",
+    "home_desc": "Submit and track your support requests easily.",
+    "create_button": "Create New Ticket",
+    "view_button": "View My Tickets",
+    "open_tickets": "Open Tickets",
+    "resolved_tickets": "Resolved Tickets",
+    "avg_response": "Avg Response Time",
+    "list_title": "My Tickets",
+    "list_desc": "Track and manage your support requests.",
+    "new_ticket": "New Ticket",
+    "table": {
+      "id": "ID",
+      "subject": "Subject",
+      "status": "Status",
+      "priority": "Priority",
+      "date": "Date",
+      "updated": "Updated"
+    },
+    "messages": [
+    {
+      "user": "You",
+      "avatar": "01.jpg",
+      "time": "2 days ago",
+      "text": "I cannot log in with my Google account. It keeps showing an error message saying \"Authentication failed\"."
+    },
+    {
+      "user": "Support Agent",
+      "avatar": "06.jpg",
+      "time": "1 day ago",
+      "text": "Thank you for reaching out. Could you please try clearing your browser cache and cookies, then attempt to log in again? Also, please let us know which browser you are using."
+    },
+    {
+      "user": "You",
+      "avatar": "01.jpg",
+      "time": "12 hours ago",
+      "text": "I tried clearing the cache and using Chrome, Firefox, and Edge. The issue persists in all browsers."
+    }
+  ],
+    
+    "reply_heading": "Reply",
+    "reply_placeholder": "Type your reply...",
+    "send_reply": "Send Reply",
+    "close_ticket": "Close Ticket",
+    "create_heading": "Create Support Ticket",
+    "create_desc": "Fill out the form below and our team will get back to you shortly.",
+    "subject_label": "Subject *",
+    "subject_placeholder": "Brief description of your issue",
+    "category_label": "Category",
+    "cat_general": "General",
+    "cat_technical": "Technical",
+    "cat_billing": "Billing",
+    "cat_account": "Account",
+    "cat_feature": "Feature Request",
+    "priority_label": "Priority",
+    "priority_low": "Low",
+    "priority_medium": "Medium",
+    "priority_high": "High",
+    "priority_critical": "Critical",
+    "description_label": "Description *",
+    "description_placeholder": "Provide details about your issue...",
+    "attachments_label": "Attachments",
+    "submit_ticket": "Submit Ticket",
+    "cancel": "Cancel",
+
+    "tickets": [
+    { "id": "#1024", "subject": "Login issues with Google SSO", "status": "open", "priority": "high", "date": "2024-11-07", "updated": "2h ago" },
+    { "id": "#1023", "subject": "Cannot upload profile picture", "status": "in_progress", "priority": "medium", "date": "2024-11-06", "updated": "1d ago" },
+    { "id": "#1022", "subject": "Email notifications not working", "status": "resolved", "priority": "low", "date": "2024-11-05", "updated": "3d ago" },
+    { "id": "#1021", "subject": "Account verification failed", "status": "open", "priority": "high", "date": "2024-11-04", "updated": "5d ago" },
+    { "id": "#1020", "subject": "Dark mode display issues", "status": "resolved", "priority": "low", "date": "2024-11-03", "updated": "1w ago" }
+  ]
+  },
+  "discussion": {
+    "heading": "Discussions",
+    "subtext": "Start or join conversations on trending topics.",
+    "start_button": "Start Discussion",
+    "replies": "replies",
+    "likes": "likes",
+    "titles": {
+      "1": "Should we switch to TypeScript for all new projects?",
+      "2": "What are the best remote work tools in 2024?",
+      "3": "Is college education still worth it?",
+      "4": "The future of AI in everyday life",
+      "5": "Best practices for work-life balance",
+      "6": "How to deal with imposter syndrome"
+    },
+    "authors": {
+      "1": "Dennis Barrett",
+      "2": "Judy Nguyen",
+      "3": "Frances Guerrero",
+      "4": "Billy Vasquez",
+      "5": "Larry Lawson",
+      "6": "Amanda Reed"
+    },
+    "times": {
+      "1": "2h ago",
+      "2": "5h ago",
+      "3": "1d ago",
+      "4": "2d ago",
+      "5": "3d ago",
+      "6": "1w ago"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "change_photo": "Change Photo",
+    "remove_photo": "Remove",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email_label": "Email",
+    "bio": "Bio",
+    "location": "Location",
+    "tabs": {
+      "account": "Account",
+      "notification": "Notification",
+      "privacy": "Privacy",
+      "password": "Password",
+      "delete": "Delete Account"
+    },
+    "account_heading": "Account Settings",
+    "notification_heading": "Notification Preferences",
+    "privacy_heading": "Privacy Settings",
+    "password_heading": "Change Password",
+    "current_password": "Current Password",
+    "new_password": "New Password",
+    "confirm_new_password": "Confirm New Password",
+    "notification_items": [
+      "Email notifications for new answers",
+      "Email notifications for new followers",
+      "Push notifications for mentions",
+      "Weekly digest email",
+      "Marketing emails"
+    ],
+    "privacy_items": [
+      "Show my profile to public",
+      "Allow others to follow me",
+      "Show my questions in search results",
+      "Allow messages from non-followers"
+    ],
+    "delete_heading": "Delete Account",
+    "delete_warning": "Once you delete your account, there is no going back. This action is permanent.",
+    "type_delete_label": "Type \"DELETE\" to confirm",
+    "save_changes": "Save Changes",
+    "save_preferences": "Save Preferences",
+    "save_settings": "Save Settings",
+    "update_password": "Update Password",
+    "delete_account": "Delete My Account"
+    ,
+    "sample_first_name": "Lori",
+    "sample_last_name": "Ferguson",
+    "sample_email": "lori@example.com",
+    "sample_bio": "Full-stack developer passionate about building web apps.",
+    "sample_location": "San Francisco, CA"
+  },
+  "coming_soon": {
+    "title": "Coming Soon",
+    "subtitle": "We're working hard to bring you something amazing. Stay tuned for updates!",
+    "email_placeholder": "Enter your email",
+    "notify": "Notify Me",
+    "footer": "Get notified when we launch. No spam, we promise!"
+  },
+
+  "group-detail":{
+  "join_group": "Join Group",
+  "share": "Share",
+  "share_placeholder": "Share something with the group...",
+  "group_about": "About",
+  "group_about_desc": "This group is for React developers to share knowledge, discuss best practices, and collaborate on projects.",
+  "group_members_section": "Members",
+  "view_all_members": "View all members",
+
+  "group_info": {
+    "public": "Public group",
+    "created": "Created in 2020"
+  },
+
+  "group_members_one": "member",
+  "group_members_other": "members",
+
+  
+  "group_posts": [
+    {
+      "author": "Dennis Barrett",
+      "avatar": "03.jpg",
+      "time": "2h ago",
+      "text": "Just published a new article about React Server Components. Check it out!",
+      "likes": 24,
+      "comments": 8
+    },
+    {
+      "author": "Judy Nguyen",
+      "avatar": "01.jpg",
+      "time": "5h ago",
+      "text": "What state management library are you using in 2024? I'm curious about the community preferences.",
+      "likes": 18,
+      "comments": 15
+    },
+    {
+      "author": "Frances Guerrero",
+      "avatar": "05.jpg",
+      "time": "1d ago",
+      "text": "Here's a performance tip: always memoize your context providers to prevent unnecessary re-renders!",
+      "likes": 45,
+      "comments": 22
+    },
+    {
+      "author": "Billy Vasquez",
+      "avatar": "08.jpg",
+      "time": "3d ago",
+      "text": "Looking for contributors to an open-source React component library. DM if interested!",
+      "likes": 12,
+      "comments": 5
+    }
+  ]
+  }
+
+}

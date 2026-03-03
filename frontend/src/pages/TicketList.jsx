@@ -1,33 +1,60 @@
+
+
 import { Link } from 'react-router';
-const tickets = [
-    { id: '#1024', subject: 'Login issues with Google SSO', status: 'Open', priority: 'High', date: '2024-11-07', updated: '2h ago' },
-    { id: '#1023', subject: 'Cannot upload profile picture', status: 'In Progress', priority: 'Medium', date: '2024-11-06', updated: '1d ago' },
-    { id: '#1022', subject: 'Email notifications not working', status: 'Resolved', priority: 'Low', date: '2024-11-05', updated: '3d ago' },
-    { id: '#1021', subject: 'Account verification failed', status: 'Open', priority: 'High', date: '2024-11-04', updated: '5d ago' },
-    { id: '#1020', subject: 'Dark mode display issues', status: 'Resolved', priority: 'Low', date: '2024-11-03', updated: '1w ago' },
-];
-const statusColors = { 'Open': 'bg-danger/10 text-danger', 'In Progress': 'bg-warning/10 text-yellow-700', 'Resolved': 'bg-success/10 text-success' };
-const priorityColors = { 'High': 'text-danger', 'Medium': 'text-warning', 'Low': 'text-success' };
+import { useTranslation } from 'react-i18next';
+
+
+
+const statusColors = {
+    'open': 'bg-danger/10 text-danger', 'in_progress': 'bg-warning/10 text-yellow-700', 'resolved': 'bg-success/10 text-success',
+    "ouvert": "bg-danger/10 text-danger",
+    "en_cours": "bg-warning/10 text-yellow-700",
+    "résolu": "bg-success/10 text-success",
+    "abierto": "bg-danger/10 text-danger",
+    "en_progreso": "bg-warning/10 text-yellow-700",
+    "resuelto": "bg-success/10 text-success",
+    "offen": "bg-danger/10 text-danger",
+    "in_bearbeitung": "bg-warning/10 text-yellow-700",
+    "gelöst": "bg-success/10 text-success"
+};
+const priorityColors = {
+    'high': 'text-danger', 'medium': 'text-warning', 'low': 'text-success',
+    "élevée": "text-danger",
+    "moyenne": "text-warning",
+    "faible": "text-success",
+    "alta": "text-danger",
+    "media": "text-warning",
+    "baja": "text-success",
+    "hoch": "text-danger",
+    "mittel": "text-warning",
+    "niedrig": "text-success"
+
+};
+
 export default function TicketList() {
+    const { t } = useTranslation();
+
+    const tickets = t('tickets.tickets', { returnObjects: true });
+
     return (
         <section className="py-8"><div className="container">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                <div><h2 className="mb-1">My Tickets</h2><p className="text-body mb-0">Track and manage your support requests.</p></div>
-                <Link to="/ticket-create" className="btn btn-primary self-start">New Ticket</Link>
+                <div><h2 className="mb-1">{t('tickets.list_title')}</h2><p className="text-body mb-0">{t('tickets.list_desc')}</p></div>
+                <Link to="/ticket-create" className="btn btn-primary self-start">{t('tickets.new_ticket')}</Link>
             </div>
             <div className="card">
                 <div className="overflow-x-auto">
                     <table className="table">
-                        <thead><tr><th>ID</th><th>Subject</th><th>Status</th><th>Priority</th><th>Date</th><th>Updated</th></tr></thead>
+                        <thead><tr><th>{t('tickets.table.id')}</th><th>{t('tickets.table.subject')}</th><th>{t('tickets.table.status')}</th><th>{t('tickets.table.priority')}</th><th>{t('tickets.table.date')}</th><th>{t('tickets.table.updated')}</th></tr></thead>
                         <tbody>
-                            {tickets.map((t, i) => (
+                            {tickets.map((ticket, i) => (
                                 <tr key={i} className="hover:bg-gray-50">
-                                    <td className="text-sm font-medium">{t.id}</td>
-                                    <td><Link to="/ticket-reply" className="text-sm text-heading hover:text-primary">{t.subject}</Link></td>
-                                    <td><span className={`badge ${statusColors[t.status]}`}>{t.status}</span></td>
-                                    <td className={`text-sm font-medium ${priorityColors[t.priority]}`}>{t.priority}</td>
-                                    <td className="text-sm text-body">{t.date}</td>
-                                    <td className="text-sm text-body">{t.updated}</td>
+                                    <td className="text-sm font-medium">{ticket.id}</td>
+                                    <td><Link to="/ticket-reply" className="text-sm text-heading hover:text-primary">{ticket.subject}</Link></td>
+                                    <td><span className={`badge ${statusColors[ticket.status]}`}>{ticket.status}</span></td>
+                                    <td className={`text-sm font-medium ${priorityColors[ticket.priority]}`}>{ticket.priority}</td>
+                                    <td className="text-sm text-body">{ticket.date}</td>
+                                    <td className="text-sm text-body">{ticket.updated}</td>
                                 </tr>
                             ))}
                         </tbody>

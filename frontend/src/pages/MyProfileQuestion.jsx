@@ -1,12 +1,34 @@
 import { Link } from 'react-router';
-const questions = Array.from({ length: 4 }, (_, i) => ({ title: ['How to implement dark mode in React?', 'Best database for real-time apps?', 'React vs Vue vs Angular comparison', 'How to optimize React performance?'][i], votes: [25, 18, 42, 15][i], answers: [8, 12, 5, 18][i], time: ['2 days ago', '5 days ago', '1 week ago', '2 weeks ago'][i] }));
+import { useTranslation } from 'react-i18next';
+
+const questions = Array.from({ length: 4 }, (_, i) => ({
+    titleKey: `profile.questions.q${i + 1}`,
+    votes: [25, 18, 42, 15][i],
+    answers: [8, 12, 5, 18][i],
+    timeKey: `profile.questions.time${i + 1}`
+}));
+
 export default function MyProfileQuestion() {
+    const { t } = useTranslation();
+
     return (
         <div className="space-y-4">
             {questions.map((q, i) => (
                 <div key={i} className="card p-4 flex items-center gap-4">
-                    <div className="text-center w-16 flex-shrink-0"><span className="block font-semibold text-heading">{q.votes}</span><span className="text-xs text-body">votes</span></div>
-                    <div className="flex-1"><h6 className="mb-1"><Link to="/answer-detail" className="text-heading hover:text-primary">{q.title}</Link></h6><div className="text-sm text-body"><span>{q.answers} answers</span> • <span>{q.time}</span></div></div>
+                    <div className="text-center w-16 flex-shrink-0">
+                        <span className="block font-semibold text-heading">{q.votes}</span>
+                        <span className="text-xs text-body">{t('profile.questions.votes', 'votes')}</span>
+                    </div>
+                    <div className="flex-1">
+                        <h6 className="mb-1">
+                            <Link to="/answer-detail" className="text-heading hover:text-primary">
+                                {t(q.titleKey)}
+                            </Link>
+                        </h6>
+                        <div className="text-sm text-body">
+                            <span>{q.answers} {t('profile.questions.answers', 'answers')}</span> • <span>{t(q.timeKey)}</span>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>

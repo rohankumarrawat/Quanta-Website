@@ -1,46 +1,78 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 export default function Settings() {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState('account');
-    const tabs = [
-        { id: 'account', label: 'Account', icon: 'bi-person' },
-        { id: 'notification', label: 'Notification', icon: 'bi-bell' },
-        { id: 'privacy', label: 'Privacy', icon: 'bi-shield-check' },
-        { id: 'password', label: 'Password', icon: 'bi-lock' },
-        { id: 'delete', label: 'Delete Account', icon: 'bi-trash' },
-    ];
+    const tabs = t('settings.tabs', { returnObjects: true });
+    const tabOrder = ['account', 'notification', 'privacy', 'password', 'delete'];
+    const tabIcons = { account: 'bi-person', notification: 'bi-bell', privacy: 'bi-shield-check', password: 'bi-lock', delete: 'bi-trash' };
+
     return (
         <section className="py-8"><div className="container">
-            <h2 className="mb-6">Settings</h2>
+            <h2 className="mb-6">{t('settings.title')}</h2>
             <div className="grid lg:grid-cols-12 gap-6">
                 <div className="lg:col-span-3">
                     <div className="card p-3">
-                        <ul className="space-y-1">{tabs.map((t) => (
-                            <li key={t.id}><button onClick={() => setActiveTab(t.id)} className={`w-full flex items-center gap-2 px-3 py-2 rounded text-sm text-left transition-colors ${activeTab === t.id ? 'bg-primary/10 text-primary font-medium' : 'text-body hover:bg-gray-50'}`}><i className={`bi ${t.icon}`}></i>{t.label}</button></li>
-                        ))}</ul>
+                        <ul className="space-y-1">
+                            {tabOrder.map((tabKey) => (
+                                <li key={tabKey}>
+                                    <button
+                                        onClick={() => setActiveTab(tabKey)}
+                                        className={`w-full flex items-center gap-2 px-3 py-2 rounded text-sm text-left transition-colors ${
+                                            activeTab === tabKey
+                                                ? 'bg-primary/10 text-primary font-medium'
+                                                : 'text-body hover:bg-gray-50'
+                                        }`}
+                                    >
+                                        <i className={`bi ${tabIcons[tabKey]}`}></i>
+                                        {tabs[tabKey]}
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
                 <div className="lg:col-span-9">
                     {activeTab === 'account' && (
                         <div className="card p-4 sm:p-6">
-                            <h5 className="mb-4">Account Settings</h5>
+                            <h5 className="mb-4">{t('settings.account_heading')}</h5>
                             <div className="flex items-center gap-4 mb-6">
                                 <img className="w-16 h-16 rounded-full object-cover" src="/assets/images/avatar/01.jpg" alt="" />
-                                <div><button className="btn btn-sm btn-primary mr-2">Change Photo</button><button className="btn btn-sm btn-light">Remove</button></div>
+                                <div>
+                                    <button className="btn btn-sm btn-primary mr-2">{t('settings.change_photo')}</button>
+                                    <button className="btn btn-sm btn-light">{t('settings.remove_photo')}</button>
+                                </div>
                             </div>
                             <div className="grid sm:grid-cols-2 gap-4 mb-4">
-                                <div><label className="form-label">First Name</label><input type="text" className="form-control" defaultValue="Lori" /></div>
-                                <div><label className="form-label">Last Name</label><input type="text" className="form-control" defaultValue="Ferguson" /></div>
+                                <div>
+                                    <label className="form-label">{t('settings.first_name')}</label>
+                                    <input type="text" className="form-control" defaultValue={t('settings.sample_first_name')} />
+                                </div>
+                                <div>
+                                    <label className="form-label">{t('settings.last_name')}</label>
+                                    <input type="text" className="form-control" defaultValue={t('settings.sample_last_name')} />
+                                </div>
                             </div>
-                            <div className="mb-4"><label className="form-label">Email</label><input type="email" className="form-control" defaultValue="lori@example.com" /></div>
-                            <div className="mb-4"><label className="form-label">Bio</label><textarea className="form-control" rows="3" defaultValue="Full-stack developer passionate about building web apps."></textarea></div>
-                            <div className="mb-4"><label className="form-label">Location</label><input type="text" className="form-control" defaultValue="San Francisco, CA" /></div>
-                            <button className="btn btn-primary">Save Changes</button>
+                            <div className="mb-4">
+                                <label className="form-label">{t('settings.email_label')}</label>
+                                <input type="email" className="form-control" defaultValue={t('settings.sample_email')} />
+                            </div>
+                            <div className="mb-4">
+                                <label className="form-label">{t('settings.bio')}</label>
+                                <textarea className="form-control" rows="3" defaultValue={t('settings.sample_bio')}></textarea>
+                            </div>
+                            <div className="mb-4">
+                                <label className="form-label">{t('settings.location')}</label>
+                                <input type="text" className="form-control" defaultValue={t('settings.sample_location')} />
+                            </div>
+                            <button className="btn btn-primary">{t('settings.save_changes')}</button>
                         </div>
                     )}
                     {activeTab === 'notification' && (
                         <div className="card p-4 sm:p-6">
-                            <h5 className="mb-4">Notification Preferences</h5>
-                            {['Email notifications for new answers', 'Email notifications for new followers', 'Push notifications for mentions', 'Weekly digest email', 'Marketing emails'].map((item, i) => (
+                            <h5 className="mb-4">{t('settings.notification_heading')}</h5>
+                            {t('settings.notification_items', { returnObjects: true }).map((item, i) => (
                                 <div key={i} className="flex items-center justify-between py-3 border-b border-border-color last:border-0">
                                     <span className="text-sm">{item}</span>
                                     <label className="relative inline-flex items-center cursor-pointer">
@@ -49,13 +81,13 @@ export default function Settings() {
                                     </label>
                                 </div>
                             ))}
-                            <button className="btn btn-primary mt-4">Save Preferences</button>
+                            <button className="btn btn-primary mt-4">{t('settings.save_preferences')}</button>
                         </div>
                     )}
                     {activeTab === 'privacy' && (
                         <div className="card p-4 sm:p-6">
-                            <h5 className="mb-4">Privacy Settings</h5>
-                            {['Show my profile to public', 'Allow others to follow me', 'Show my questions in search results', 'Allow messages from non-followers'].map((item, i) => (
+                            <h5 className="mb-4">{t('settings.privacy_heading')}</h5>
+                            {t('settings.privacy_items', { returnObjects: true }).map((item, i) => (
                                 <div key={i} className="flex items-center justify-between py-3 border-b border-border-color last:border-0">
                                     <span className="text-sm">{item}</span>
                                     <label className="relative inline-flex items-center cursor-pointer">
@@ -64,26 +96,38 @@ export default function Settings() {
                                     </label>
                                 </div>
                             ))}
-                            <button className="btn btn-primary mt-4">Save Settings</button>
+                            <button className="btn btn-primary mt-4">{t('settings.save_settings')}</button>
                         </div>
                     )}
                     {activeTab === 'password' && (
                         <div className="card p-4 sm:p-6">
-                            <h5 className="mb-4">Change Password</h5>
+                            <h5 className="mb-4">{t('settings.password_heading')}</h5>
                             <div className="max-w-md">
-                                <div className="mb-4"><label className="form-label">Current Password</label><input type="password" className="form-control" /></div>
-                                <div className="mb-4"><label className="form-label">New Password</label><input type="password" className="form-control" /></div>
-                                <div className="mb-4"><label className="form-label">Confirm New Password</label><input type="password" className="form-control" /></div>
-                                <button className="btn btn-primary">Update Password</button>
+                                <div className="mb-4">
+                                    <label className="form-label">{t('settings.current_password')}</label>
+                                    <input type="password" className="form-control" />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="form-label">{t('settings.new_password')}</label>
+                                    <input type="password" className="form-control" />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="form-label">{t('settings.confirm_new_password')}</label>
+                                    <input type="password" className="form-control" />
+                                </div>
+                                <button className="btn btn-primary">{t('settings.update_password')}</button>
                             </div>
                         </div>
                     )}
                     {activeTab === 'delete' && (
                         <div className="card p-4 sm:p-6">
-                            <h5 className="mb-2 text-danger">Delete Account</h5>
-                            <p className="text-body text-sm mb-4">Once you delete your account, there is no going back. This action is permanent.</p>
-                            <div className="mb-4"><label className="form-label">Type "DELETE" to confirm</label><input type="text" className="form-control max-w-xs" /></div>
-                            <button className="btn bg-danger text-white border-danger hover:bg-red-700">Delete My Account</button>
+                            <h5 className="mb-2 text-danger">{t('settings.delete_heading')}</h5>
+                            <p className="text-body text-sm mb-4">{t('settings.delete_warning')}</p>
+                            <div className="mb-4">
+                                <label className="form-label">{t('settings.type_delete_label')}</label>
+                                <input type="text" className="form-control max-w-xs" />
+                            </div>
+                            <button className="btn bg-danger text-white border-danger hover:bg-red-700">{t('settings.delete_account')}</button>
                         </div>
                     )}
                 </div>

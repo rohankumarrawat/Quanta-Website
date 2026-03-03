@@ -1,67 +1,97 @@
 import { Link } from 'react-router';
 
+import { useTranslation, Trans } from 'react-i18next';
+import { forumCategories } from '../data/forumData';
+
 export default function AskQuestion() {
+    const { t, i18n } = useTranslation();
+    const lang = i18n.language.split('-')[0];
+
     return (
         <section className="py-8">
             <div className="container">
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="mb-2">Ask a Public Question</h2>
-                    <p className="text-body mb-6">Get help from the community by asking a well-formed question.</p>
+                    <h2 className="mb-2">{t('ask_question.page_title')}</h2>
+                    <p className="text-body mb-6">{t('ask_question.page_subtitle')}</p>
 
                     <div className="card p-4 sm:p-6">
                         <form>
                             <div className="mb-4">
-                                <label className="form-label">Question Title *</label>
-                                <input type="text" className="form-control" placeholder="e.g. What is the difference between compiler and interpreter?" />
-                                <p className="text-xs text-body mt-1">Be specific and imagine you're asking a question to another person.</p>
+                                <label className="form-label">{t('ask_question.field_title')}</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder={t('ask_question.placeholder_title')}
+                                />
+                                <p className="text-xs text-body mt-1">
+                                    {t('ask_question.guidelines.list.0')}
+                                </p>
                             </div>
 
                             <div className="mb-4">
-                                <label className="form-label">Description *</label>
-                                <textarea className="form-control" rows="8" placeholder="Explain your question in detail..."></textarea>
-                                <p className="text-xs text-body mt-1">Include all the information someone would need to answer your question.</p>
+                                <label className="form-label">{t('ask_question.field_description')}</label>
+                                <textarea
+                                    className="form-control"
+                                    rows="8"
+                                    placeholder={t('ask_question.placeholder_description')}
+                                ></textarea>
+                                <p className="text-xs text-body mt-1">
+                                    {t('ask_question.guidelines.list.2')}
+                                </p>
                             </div>
 
                             <div className="mb-4">
-                                <label className="form-label">Category</label>
+                                <label className="form-label">{t('ask_question.field_category')}</label>
                                 <select className="form-select">
-                                    <option>Select category</option>
-                                    <option>Technology</option>
-                                    <option>Programming</option>
-                                    <option>Business & Finance</option>
-                                    <option>Health</option>
-                                    <option>History</option>
-                                    <option>Language & Literature</option>
+                                    <option value="">{t('select_category', 'Select category')}</option>
+                                    {forumCategories.map((cat, ix) => {
+                                        const label = typeof cat.name === 'object' ? cat.name[lang] || cat.name.en : cat.name;
+                                        return (
+                                            <option key={ix} value={label.toLowerCase()}>
+                                                {label}
+                                            </option>
+                                        );
+                                    })}
                                 </select>
                             </div>
 
                             <div className="mb-4">
-                                <label className="form-label">Tags</label>
-                                <input type="text" className="form-control" placeholder="e.g. javascript, react, css" />
-                                <p className="text-xs text-body mt-1">Add up to 5 tags to describe what your question is about.</p>
+                                <label className="form-label">{t('ask_question.field_tags')}</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder={t('ask_question.placeholder_tags')}
+                                />
+                                <p className="text-xs text-body mt-1">
+                                    {t('ask_question.guidelines.list.1')}
+                                </p>
                             </div>
 
                             <div className="mb-4">
-                                <label className="form-label">Visibility</label>
+                                <label className="form-label">{t('ask_question.field_visibility')}</label>
                                 <select className="form-select">
-                                    <option>Public</option>
-                                    <option>Friends</option>
-                                    <option>Only me</option>
+                                    <option>{t('ask_question.submit')}</option>
                                 </select>
                             </div>
 
                             <div className="alert alert-success">
-                                <h6 className="font-semibold mb-2">Guidelines for Receiving Quality Answers</h6>
+                                <h6 className="font-semibold mb-2">
+                                    {t('ask_question.guidelines.heading')}
+                                </h6>
                                 <ul className="text-sm space-y-1 list-disc list-inside">
-                                    <li>Ensure that your question hasn't been previously posed</li>
-                                    <li>Keep your questions concise and focused for optimal clarity</li>
-                                    <li>Double check grammar and spelling</li>
+                                    {t('ask_question.guidelines.list', { returnObjects: true }).map((item, idx) => (
+                                        <li key={idx}>{item}</li>
+                                    ))}
                                 </ul>
                             </div>
 
                             <div className="flex gap-3">
-                                <button type="submit" className="btn btn-primary">Post Question</button>
-                                <button type="button" className="btn btn-light">Cancel</button>
+                                <button type="submit" className="btn btn-primary">
+                                    {t('ask_question.submit')}
+                                </button>
+                                <button type="button" className="btn btn-light">
+                                    {t('ask_question.cancel')}
+                                </button>
                             </div>
                         </form>
                     </div>

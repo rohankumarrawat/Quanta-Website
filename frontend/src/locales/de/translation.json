@@ -1,0 +1,918 @@
+{
+  "404_title": "404",
+  "404_heading": "Oh nein, etwas ist schiefgelaufen!",
+  "404_text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+  "go_home": "Zur Startseite",
+  "home": "Startseite",
+  "follow": "Folgen",
+  "ask_questions": "Fragen stellen",
+  "notifications": "Benachrichtigungen",
+  "search": "Suchen",
+  "search_placeholder": "Suchen...",
+  "language": "Sprache",
+  "languages": {
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "german": "Deutsch"
+  },
+  "dark_mode": "Dunkler Modus",
+  "light_mode": "Heller Modus",
+  "joined_duration": "Vor 2 Jahren beigetreten",
+  "profile_description": "Full-Stack-Entwickler mit Leidenschaft für den Aufbau von Web-Apps. Ich liebe die Arbeit mit React, Node.js und erkunde neue Technologien.",
+  "skills_list": {
+    "react": "React",
+    "node": "Node.js",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "aws": "AWS",
+    "docker": "Docker"
+  },
+  "interests_list": {
+    "ai": "KI",
+    "webdev": "Webentwicklung",
+    "cloud": "Cloud",
+    "opensource": "Open Source"
+  },
+  "location": "San Francisco, Kalifornien",
+  "job": "Senior Software Engineer",
+  "joined_on": "Beigetreten am 15. Januar 2022",
+  "news_and_blogs": "Nachrichten und Blogs",
+  "about": "Über",
+  "contact_us": "Kontaktieren Sie uns",
+  "community": "Community",
+  "questions": "Fragen",
+  "forum": "Forum",
+  "forum_detail": {
+    "title": "Forum",
+    "category_programming": "Programmierung",
+    "topic": "Thema",
+    "posted": "Veröffentlicht",
+    "hours_ago": "Stunden her",
+    "like": "Like",
+    "reply": "Antwort",
+    "share": "Teilen",
+    "replies": "Antworten",
+    "post_reply": "Eine Antwort posten",
+    "reply_placeholder": "Schreib deine Antwort...",
+    "post_reply_button": "Antwort posten",
+    "original_post": {
+      "author": "Dennis Barrett",
+      "time": "vor 3 Std.",
+      "title": "Beste Praktiken für React State-Management im Jahr 2024",
+      "p1": "Ich arbeite schon eine Weile mit React und möchte die aktuellen Best Practices für State-Management verstehen. Mit so vielen Optionen wie Redux, Zustand, Jotai und dem eingebauten Context-API von React ist es schwer zu entscheiden, welche man in verschiedenen Szenarien verwenden sollte.",
+      "p2": "Was sind eure Empfehlungen und warum? Ich würde gerne von praktischen Erfahrungen mit diesen Tools hören."
+    },
+    "replies_list": [
+      {
+        "user": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "time": "vor 2 Std.",
+        "text": "Ich empfehle Zustand für die meisten React-Projekte. Es hat eine minimale API und großartige Leistung."
+      },
+      {
+        "user": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "time": "vor 5 Std.",
+        "text": "Redux Toolkit hat sich stark verbessert. Die createSlice- und createAsyncThunk-APIs reduzieren viel Boilerplate im Vergleich zu altem Redux."
+      },
+      {
+        "user": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "time": "vor 1 Tag",
+        "text": "Für Server-State ist React Query (TanStack Query) ein Game-Changer. Es kümmert sich um Caching, Refetching und Synchronisierung."
+      }
+    ]
+  },
+  "forum": {
+    "post_reply": "Antwort posten",
+    "reply_placeholder": "Schreiben Sie Ihre Antwort...",
+    "post_reply_button": "Antwort posten"
+  },
+  "forum_category": {
+    "breadcrumb": {
+      "forum": "Forum",
+      "category": "Programmierung"
+    },
+    "header": {
+      "title": "Programmierung",
+      "description": "Diskutieren Sie über Programmierungsthemen, teilen Sie Code und erhalten Sie Hilfe.",
+      "new_topic": "Neues Thema"
+    },
+    "table": {
+      "topic": "Thema",
+      "replies": "Antworten",
+      "views": "Aufrufe",
+      "activity": "Aktivität"
+    },
+    "topics": [
+      {
+        "title": "Beste React-State-Management-Tools",
+        "author": "Dennis Barrett",
+        "replies": 24,
+        "avatar": "03.jpg",
+        "views": 1200,
+        "time": "vor 2 Stunden"
+      },
+      {
+        "title": "TypeScript-Generics verstehen",
+        "author": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "replies": 18,
+        "views": 950,
+        "time": "vor 5 Stunden"
+      },
+      {
+        "title": "CSS Grid vs. Flexbox Leitfaden",
+        "author": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "replies": 32,
+        "views": 2100,
+        "time": "vor 1 Tag"
+      },
+      {
+        "title": "Node.js Performance-Tipps",
+        "author": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "replies": 15,
+        "views": 780,
+        "time": "vor 2 Tagen"
+      },
+      {
+        "title": "GraphQL vs. REST-API Vergleich",
+        "author": "Larry Lawson",
+        "avatar": "04.jpg",
+        "replies": 42,
+        "views": 3500,
+        "time": "vor 3 Tagen"
+      },
+      {
+        "title": "Docker-Container erklärt",
+        "author": "Amanda Reed",
+        "replies": 8,
+        "views": 420,
+        "time": "vor 5 Tagen"
+      },
+      {
+        "title": "CI/CD-Pipeline Einrichtungsleitfaden",
+        "author": "Louis Burns",
+        "avatar": "07.jpg",
+        "replies": 21,
+        "views": 1800,
+        "time": "vor 4 Tagen"
+      },
+      {
+        "title": "Microservices-Architektur Muster",
+        "author": "Carolyn Ortiz",
+        "avatar": "02.jpg",
+        "replies": 36,
+        "views": 2900,
+        "time": "vor 1 Woche”"
+      }
+    ]
+  },
+  "sign_up_latest_update": "Melden Sie sich für alle neuesten Updates an",
+  "receive_notifications": "Erhalten Sie alle Benachrichtigungen zu unseren neuen Releases.",
+  "your_email_address": "Ihre E-Mail-Adresse",
+  "subscribe": "Abonnieren!",
+  "auth": {
+    "email_label": "E-Mail-Adresse",
+    "email_placeholder": "Gib deine E-Mail ein",
+    "password_label": "Passwort",
+    "password_placeholder": "Gib dein Passwort ein",
+    "or_sign_in_with": "Oder melde dich an mit",
+    "signin": {
+      "title": "Willkommen zurück",
+      "new_here": "Neu hier?",
+      "create_account": "Konto erstellen",
+      "remember_me": "Angemeldet bleiben?",
+      "forgot_password": "Passwort vergessen?",
+      "submit": "Anmelden",
+      "link_text": "Anmelden"
+    },
+    "signup": {
+      "title": "Neues Konto erstellen",
+      "already_member": "Bereits Mitglied?",
+      "login": "Anmelden",
+      "confirm_password": "Passwort bestätigen",
+      "keep_signed_in": "Angemeldet bleiben",
+      "submit": "Registrieren"
+    },
+    "forgot": {
+      "title": "Passwort vergessen?",
+      "subtitle": "Gib die E-Mail-Adresse ein, die mit deinem Konto verknüpft ist, und wir senden dir einen Link zum Zurücksetzen deines Passworts.",
+      "submit": "Passwort zurücksetzen",
+      "back_to": "Zurück zu"
+    }
+  },
+  "home_hero": {
+    "title_before": "Der beste Weg zu einer guten",
+    "title_answer": "Antwort",
+    "title_question": "Frage",
+    "badge_connect": "Vernetze dich weltweit",
+    "badge_free": "Fragen ist kostenlos",
+    "badge_trusted": "100 % verlässliche Antworten",
+    "search_placeholder": "Was ist deine Frage?"
+  },
+  "copyright": "Urheberrechte",
+  "all_rights_reserved": "Alle Rechte vorbehalten.",
+  "terms_of_use": "Nutzungsbedingungen",
+  "privacy_policy": "Datenschutz-Bestimmungen",
+  "ask_question": {
+    "page_title": "Stelle eine öffentliche Frage",
+    "page_subtitle": "Erhalte Hilfe von der Community, indem du eine gut formulierte Frage stellst.",
+    "field_title": "Fragetitel *",
+    "field_description": "Beschreibung *",
+    "field_category": "Kategorie",
+    "field_tags": "Stichwörter",
+    "field_visibility": "Sichtbarkeit",
+    "placeholder_title": "z.B. Was ist der Unterschied zwischen Compiler und Interpreter?",
+    "placeholder_description": "Erkläre deine Frage im Detail...",
+    "placeholder_tags": "z.B. javascript, react, css",
+    "submit": "Frage posten",
+    "cancel": "Abbrechen",
+    "guidelines": {
+      "heading": "Richtlinien für qualitativ hochwertige Antworten",
+      "list": [
+        "Stelle sicher, dass deine Frage nicht bereits gestellt wurde",
+        "Halte deine Fragen präzise und fokussiert für optimale Klarheit",
+        "Überprüfe Grammatik und Rechtschreibung"
+      ]
+    }
+  },
+  "role_programmer": "Programmierer",
+  "answered": "Beantwortet",
+  "ansdetail": {
+    "question_title": "Was ist der Unterschied zwischen einem Compiler und einem Interpreter?",
+    "question_body": "Ich versuche, den grundlegenden Unterschied zwischen Compilern und Interpretern zu verstehen. Könnte das jemand bitte klar mit Beispielen erklären? Ich verstehe, dass beide Sprachübersetzer sind, bin jedoch unsicher bezüglich ihrer Funktionsweise.",
+    "answers": [
+      {
+        "time": "vor 2 Stunden",
+        "text": "Ein Compiler übersetzt den gesamten Quellcode eines Programms vor der Ausführung in Maschinencode, während ein Interpreter den Code zur Laufzeit Zeile für Zeile übersetzt und ausführt."
+      },
+      {
+        "time": "vor 5 Stunden",
+        "text": "Der wichtigste Unterschied liegt in der Ausführung: Compiler erzeugen eigenständige ausführbare Dateien, während Interpreter den Code direkt verarbeiten. Kompilierte Programme laufen in der Regel schneller, aber interpretierte Sprachen bieten während der Entwicklung mehr Flexibilität."
+      },
+      {
+        "time": "vor 8 Stunden",
+        "text": "Compiler prüfen das gesamte Programm auf Fehler, bevor sie eine Ausgabe erzeugen, was das Debuggen erschwert, aber die Ausführung beschleunigt. Interpreter stoppen beim ersten auftretenden Fehler, was das Debuggen erleichtert, aber die Ausführung verlangsamt."
+      }
+    ]
+  },
+  "tag": {
+    "programming": "programmierung",
+    "compiler": "compiler",
+    "interpreter": "interpreter",
+    "javascript": "javascript",
+    "python": "python",
+    "react": "react",
+    "node.js": "node.js",
+    "css": "css",
+    "html": "html",
+    "typescript": "typescript",
+    "sql": "sql",
+    "ai": "KI"
+  },
+  "answers_count": "{{count}} Antworten",
+  "articles": "{{count}} Artikel",
+  "sort": {
+    "most_recent": "Neueste zuerst",
+    "oldest_first": "Älteste zuerst",
+    "most_voted": "Meistgewählt"
+  },
+  "accepted": "Akzeptiert",
+  "reply": "Antworten",
+  "share": "Teilen",
+  "report": "Melden",
+  "your_answer": "Deine Antwort",
+  "placeholder": {
+    "write_answer": "Schreibe hier deine Antwort..."
+  },
+  "post_your_answer": "Antwort posten",
+  "related_questions": "Verwandte Fragen",
+  "trending_tags": "Beliebte Tags",
+  "join_community": {
+    "heading": "Tritt der Community bei",
+    "text": "Erhalte Antworten auf deine Fragen von Experten.",
+    "button": "Kostenlos beitreten"
+  },
+  "blogdetail": {
+    "title": "Die Zukunft der KI in der Bildung",
+    "read_time": "5 Min. Lesezeit",
+    "p1": "Künstliche Intelligenz verändert schnell den Bildungsbereich, indem sie personalisierte Lernerfahrungen, automatisierte Bewertungssysteme und intelligentes Tutoring für Schüler weltweit bereitstellt.",
+    "heading1": "Personalisierte Lernmöglichkeiten",
+    "p2": "KI-Algorithmen können die Lernmuster, Stärken und Schwächen eines Schülers analysieren, um maßgeschneiderte Lernpfade zu erstellen. So erhält jeder Schüler das richtige Maß an Herausforderung und Unterstützung.",
+    "heading2": "Automatisierte Bewertung",
+    "p3": "KI-gestützte Bewertungstools können Schülerarbeiten effizienter und konsistenter bewerten und sofortiges Feedback geben, das den Schülern hilft, sich schneller zu verbessern.",
+    "heading3": "Intelligente Tutorensysteme",
+    "p4": "Von KI betriebene virtuelle Tutoren können Schülern eine persönliche Anleitung geben, Fragen beantworten und Konzepte auf verschiedene Weise erklären, bis der Schüler sie versteht.",
+    "heading4": "Der Weg nach vorne",
+    "p5": "Obwohl KI in der Bildung enormes Potenzial bietet, wirft sie auch wichtige Fragen zur Datensicherheit, zur Rolle der Lehrkräfte und zur Gewährleistung eines fairen Zugangs zu diesen Technologien auf.",
+    "author_desc": "Technikautor und KI-Enthusiast mit über 10 Jahren Erfahrung."
+  },
+  "mark_all_as_read": "Alle als gelesen markieren",
+  "confirm": "Bestätigen",
+  "delete": "Löschen",
+  "notification": {
+    "follow_started": "hat angefangen, dir zu folgen.",
+    "follow_suggestion": "hat dir vorgeschlagen, ihm zu folgen.",
+    "mention": "hat dich in {{place}} erwähnt.",
+    "accept": "hat deine Antwort akzeptiert.",
+    "answer": "hat deine Frage beantwortet: {{question}}.",
+    "vote": "hat für deinen Beitrag gestimmt.",
+    "badge": "hat dir das Abzeichen {{badge}} verliehen.",
+    "time": {
+      "just_now": "Gerade eben",
+      "1h": "vor 1 Std.",
+      "2h": "vor 2 Std.",
+      "5h": "vor 5 Std.",
+      "1d": "vor 1 Tag",
+      "2d": "vor 2 Tagen"
+    }
+  },
+  "topics": "Themen",
+  "posts": "Beiträge",
+  "answers": "Antworten",
+  "asked": "Gefragt:",
+  "latest_answer": "Die letzte Antwort war",
+  "join_discussion": "Nehme an der Diskussion teil und teile dein Wissen mit der Community.",
+  "create_new_topic": "Neues Thema erstellen",
+  "recent_topics": "Aktuelle Themen",
+  "topic": "Thema",
+  "replies": "Antworten",
+  "views": "{{count}} Ansichten",
+  "activity": "Aktivität",
+  "select_category": "Kategorie auswählen",
+  "cat_technology": "Technologie",
+  "cat_programming": "Programmierung",
+  "cat_business_finance": "Geschäft & Finanzen",
+  "cat_health": "Gesundheit",
+  "cat_history": "Geschichte",
+  "cat_language_literature": "Sprache & Literatur",
+  "profile": {
+    "edit_profile": "Edit Profile",
+    "account_settings": "Account Settings",
+    "sign_out": "Sign Out",
+    "tabs": {
+      "about": "Über",
+      "posts": "Beiträge",
+      "questions": "Fragen",
+      "followers": "Follower",
+      "achievements": "Erfolge"
+    },
+    "about_heading": "Über",
+    "skills": "Fähigkeiten",
+    "interests": "Interessen",
+    "info": "Info",
+    "stats_title": "Statistiken",
+    "stats": {
+      "questions": "Fragen",
+      "answers": "Antworten",
+      "followers": "Follower",
+      "badges": "Abzeichen"
+    },
+    "posts": {
+      "title1": "Erste Schritte mit React Hooks",
+      "title2": "CSS Grid Layout verstehen",
+      "title3": "Node.js Best Practices Leitfaden",
+      "title4": "Einführung in TypeScript",
+      "date1": "7. Nov. 2024",
+      "date2": "5. Nov. 2024",
+      "date3": "3. Nov. 2024",
+      "date4": "1. Nov. 2024",
+      "likes": "{{count}} Gefällt mir",
+      "comments": "{{count}} Kommentare"
+    },
+    "questions": {
+      "votes": "Stimmen",
+      "answers": "Antworten",
+      "q1": "Wie implementiert man den Dunkelmodus in React?",
+      "q2": "Beste Datenbank für Echtzeit-Apps?",
+      "q3": "React vs. Vue vs. Angular Vergleich",
+      "q4": "Wie optimiert man die React-Performance?",
+      "time1": "vor 2 Tagen",
+      "time2": "vor 5 Tagen",
+      "time3": "vor 1 Woche",
+      "time4": "vor 2 Wochen"
+    },
+    "followers": {
+      "mutual": "{{count}} gemeinsame Verbindungen",
+      "role1": "Entwickler",
+      "role2": "Designer",
+      "role3": "Datenwissenschaftler",
+      "role4": "DevOps-Ingenieur",
+      "role5": "Produktmanager",
+      "role6": "Autor",
+      "role7": "Student",
+      "role8": "Freiberufler"
+    },
+    "achievements": {
+      "points": "Punkte",
+      "badges_earned": "Verdiente Abzeichen",
+      "global_rank": "Globaler Rang",
+      "earned": "Verdient"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Aktuelle Artikel, Tutorials und Einblicke aus unserer Community.",
+    "read_time": "{{count}} Min.",
+    "read_label": "Lesezeit",
+    "cat_ai": "KI",
+    "cat_programming": "Programmierung",
+    "cat_architecture": "Architektur",
+    "cat_cloud": "Cloud",
+    "cat_culture": "Kultur",
+    "cat_security": "Sicherheit"
+  },
+  "category_posts_title": "Beiträge nach Thema",
+  "recently_answered_questions": "Kürzlich beantwortete Fragen",
+  "all_categories": "Alle Themen",
+  "browse_categories_subtitle": "Durchstöbere alle Themen und finde den besten Ort, um deine Frage zu stellen.",
+  "category_questions": "{{count}} Fragen",
+  "category_followers": "{{count}} Follower",
+  "follow_category": "Thema folgen",
+  "category_tabs": {
+    "latest": "Neueste",
+    "popular": "Beliebt",
+    "unanswered": "Unbeantwortet"
+  },
+  "categories": {
+    "math_arithmetics": "Mathematik und Arithmetik",
+    "business_finance": "Business & Finanzen",
+    "science": "Wissenschaft",
+    "health": "Gesundheit",
+    "tax_accountants": "Steuern & Buchhaltung",
+    "law_legal": "Recht & Justiz",
+    "tv_news": "TV & Nachrichten",
+    "mechanics": "Mechanik",
+    "history": "Geschichte",
+    "construction": "Bau & Konstruktion",
+    "technology": "Technologie",
+    "language_literature": "Sprache & Literatur",
+    "all_categories": "Alle Themen"
+  },
+  "home_stats": {
+    "heading": "Wir helfen dir, bessere Noten zu erreichen",
+    "text": "Starte deine 48-stündige kostenlose Testphase und erhalte Zugriff auf alle Zusammenfassungen, Q&As und Analysen, die du für bessere Noten brauchst.",
+    "features": [
+      "15.000+ Themen",
+      "Formuliere deine Frage klar",
+      "375.000+ beantwortet",
+      "Werbefreie Inhalte"
+    ],
+    "additional_features": [
+      "30 % Rabatt auf Lern-Tools",
+      "PDF-Downloads",
+      "5-Sterne-Kundensupport"
+    ],
+    "stats_labels": [
+      "Follower gesamt",
+      "Fragen gesamt",
+      "Antworten gesamt"
+    ]
+  },
+  "home_cta": {
+    "title": "Was möchtest du wissen?",
+    "text": "Ob du bei einer Geschichtsfrage oder einem Geometrieproblem feststeckst – keine Frage ist für Brainy zu schwierig.",
+    "button": "Frage stellen"
+  },
+  "home_questions": {
+    "question7": "Wie kann ich meine Lerngewohnheiten verbessern?",
+    "question8": "Wie verwaltet man am besten die Finanzen eines Unternehmens?",
+    "question9": "Wie hat der Zweite Weltkrieg die Weltpolitik verändert?",
+    "question10": "Was sind die neuesten Trends in der Technologie?"
+  },
+  "about": {
+    "heading": "Über Quanta",
+    "description": "Wir bauen die weltweit vertrauenswürdigste Q&A-Plattform, auf der Wissen offen geteilt wird und jeder von Experten lernen kann.",
+    "mission_heading": "Unsere Mission",
+    "mission_text": "Wissen zu demokratisieren, indem wir eine gemeinschaftsgetriebene Plattform schaffen, auf der jeder Fragen stellen und hochwertige Antworten von Experten aus der ganzen Welt erhalten kann.",
+    "vision_heading": "Unsere Vision",
+    "vision_text": "Eine Welt, in der jeder Zugang zu Expertenwissen hat, unabhängig von Hintergrund, Standort oder finanzieller Situation.",
+    "stats": {
+      "active_users": "Aktive Nutzer",
+      "questions_asked": "Gestellte Fragen",
+      "answers_given": "Gegebene Antworten",
+      "categories": "Themen"
+    },
+    "team_heading": "Unser Team",
+    "team_sub": "Lerne die Menschen hinter Quanta kennen."
+  },
+  "contact": {
+    "title": "Kontaktiere uns",
+    "subtitle": "Haben Sie Fragen oder Feedback? Wir freuen uns, von Ihnen zu hören.",
+    "address_value": "123 Main Street, San Francisco, CA 94102",
+    "email_value": "hello@quanta.com",
+    "phone_value": "+1 (555) 123-4567",
+    "get_in_touch": "Kontakt aufnehmen",
+    "address": "Adresse",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "send_message": "Nachricht senden",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "subject": "Betreff",
+    "message": "Nachricht"
+  },
+  "terms": {
+    "page_title": "Allgemeine Geschäftsbedingungen",
+    "last_updated": "Zuletzt aktualisiert: 7. November 2024",
+    "translation_notice": "Ihre Inhalte können automatisch in Ihre ausgewählte Sprache übersetzt werden.",
+    "sections": [
+      {
+        "title": "1. Annahme der Bedingungen",
+        "content": "Durch den Zugriff auf und die Nutzung dieser Plattform akzeptieren Sie die in dieser Vereinbarung festgelegten Bedingungen. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie bitte unsere Dienste nicht."
+      },
+      {
+        "title": "2. Benutzerkonten",
+        "content": "Sie sind für die Vertraulichkeit Ihrer Kontodaten verantwortlich. Beim Erstellen eines Kontos müssen Sie genaue und vollständige Informationen angeben. Sie sind allein verantwortlich für alle Aktivitäten, die unter Ihrem Konto stattfinden."
+      },
+      {
+        "title": "3. Inhaltsrichtlinien",
+        "content": "Benutzer dürfen keine illegalen, schädlichen, bedrohlichen, missbräuchlichen, verleumderischen oder anderweitig unangemessenen Inhalte veröffentlichen. Wir behalten uns das Recht vor, Inhalte, die gegen diese Richtlinien verstoßen, ohne vorherige Ankündigung zu entfernen."
+      },
+      {
+        "title": "4. Geistiges Eigentum",
+        "content": "Alle von Benutzern eingereichten Inhalte bleiben geistiges Eigentum der jeweiligen Autoren. Durch das Veröffentlichen von Inhalten gewähren Sie uns eine nicht-exklusive, weltweite Lizenz zur Nutzung, Anzeige und Verbreitung Ihrer Inhalte auf unserer Plattform."
+      },
+      {
+        "title": "5. Datenschutzrichtlinie",
+        "content": "Wir verpflichten uns, Ihre Privatsphäre zu schützen. Unsere Datenschutzrichtlinie erklärt, wie wir Ihre personenbezogenen Daten erfassen, verwenden und schützen. Durch die Nutzung unserer Dienste stimmen Sie unseren Datenpraktiken zu."
+      },
+      {
+        "title": "6. Haftungsbeschränkung",
+        "content": "Unsere Plattform wird im „Ist-Zustand“ bereitgestellt. Wir übernehmen keine ausdrücklichen oder stillschweigenden Garantien hinsichtlich der Zuverlässigkeit, Genauigkeit oder Verfügbarkeit des Dienstes. Wir haften nicht für indirekte, zufällige oder Folgeschäden."
+      },
+      {
+        "title": "7. Änderungen",
+        "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Benutzer werden über wesentliche Änderungen informiert. Die fortgesetzte Nutzung der Plattform nach Änderungen gilt als Zustimmung zu den neuen Bedingungen."
+      }
+    ]
+  },
+  "helpCenter": {
+    "heading": "Wie können wir Ihnen helfen?",
+    "searchPlaceholder": "Nach Hilfeartikeln suchen...",
+    "still_need_help": "Benötigen Sie noch Hilfe?",
+    "contact_prompt": "Sie finden nicht, wonach Sie suchen? Kontaktieren Sie unser Support-Team.",
+    "contact_support": "Support kontaktieren",
+    "categories": [
+      {
+        "title": "Erste Schritte",
+        "desc": "Lernen Sie die Grundlagen und starten Sie schnell durch."
+      },
+      {
+        "title": "Konto & Profil",
+        "desc": "Verwalten Sie Ihre Kontoeinstellungen und Ihr Profil."
+      },
+      {
+        "title": "Sicherheit & Datenschutz",
+        "desc": "Schützen Sie Ihr Konto und verwalten Sie Ihre Privatsphäre."
+      },
+      {
+        "title": "Abrechnung & Pläne",
+        "desc": "Fragen zu Preisen, Abrechnung und Tarifen."
+      },
+      {
+        "title": "Community-Richtlinien",
+        "desc": "Regeln und Richtlinien für die Community."
+      },
+      {
+        "title": "Fehlerbehebung",
+        "desc": "Beheben Sie häufige Probleme und technische Fehler."
+      }
+    ]
+  },
+  "helpDetail": {
+    "breadcrumb": {
+      "helpCenter": "Hilfezentrum",
+      "gettingStarted": "Erste Schritte"
+    },
+    "sidebarHeading": "Erste Schritte",
+    "articles": [
+      "Wie erstelle ich ein Konto?",
+      "Einrichtung Ihres Profils",
+      "Ihre erste Frage stellen",
+      "Das Abstimmungssystem verstehen",
+      "Wie man Abzeichen erhält",
+      "Überblick über die Community-Richtlinien"
+    ],
+    "article": {
+      "title": "Wie erstelle ich ein Konto?",
+      "p1": "Das Erstellen eines Kontos auf unserer Plattform ist schnell und einfach. Folgen Sie diesen einfachen Schritten:",
+      "step1_heading": "Schritt 1: Registrierungsseite besuchen",
+      "step1_text": "Klicken Sie oben rechts auf die Schaltfläche „Registrieren“ oder gehen Sie direkt zur Registrierungsseite.",
+      "step2_heading": "Schritt 2: Daten eingeben",
+      "step2_text": "Geben Sie Ihre E-Mail-Adresse ein und erstellen Sie ein sicheres Passwort. Sie können sich auch mit Ihrem Google- oder Facebook-Konto registrieren.",
+      "step3_heading": "Schritt 3: E-Mail bestätigen",
+      "step3_text": "Überprüfen Sie Ihren Posteingang auf eine Bestätigungs-E-Mail und klicken Sie auf den Link, um Ihr Konto zu aktivieren.",
+      "step4_heading": "Schritt 4: Profil vervollständigen",
+      "step4_text": "Fügen Sie Ihr Profilbild, eine Biografie und Ihre Fachgebiete hinzu, damit die Community Sie besser kennenlernen kann.",
+      "helpful": "War dieser Artikel hilfreich?",
+      "yes": "Ja",
+      "no": "Nein"
+    }
+  },
+  "support": {
+    "heading": "Support",
+    "subtext": "Wir sind für Sie da. Wählen Sie die Option, die am besten zu Ihnen passt.",
+    "live_chat": "Live-Chat",
+    "live_chat_desc": "Chatten Sie in Echtzeit mit unserem Support-Team.",
+    "start_chat": "Chat starten",
+    "email_support": "E-Mail-Support",
+    "email_support_desc": "Senden Sie uns eine E-Mail und wir antworten innerhalb von 24 Stunden.",
+    "send_email": "E-Mail senden",
+    "submit_ticket": "Ticket einreichen",
+    "submit_ticket_desc": "Erstellen Sie ein Support-Ticket für detaillierte Unterstützung.",
+    "create_ticket": "Ticket erstellen"
+  },
+  "faq": {
+    "heading": "Häufig gestellte Fragen",
+    "subtext": "Finden Sie Antworten auf die häufigsten Fragen zu unserer Plattform.",
+    "questions": [
+      {
+        "q": "Wie erstelle ich ein Konto?",
+        "a": "Klicken Sie auf die Schaltfläche „Registrieren“ und geben Sie Ihre Daten ein. Sie können sich auch mit Google oder Facebook anmelden."
+      },
+      {
+        "q": "Wie stelle ich eine Frage?",
+        "a": "Klicken Sie auf „Frage stellen“, geben Sie Titel und Beschreibung ein, wählen Sie eine Kategorie und senden Sie die Frage ab."
+      },
+      {
+        "q": "Wie funktioniert das Abstimmungssystem?",
+        "a": "Benutzer können Fragen und Antworten positiv oder negativ bewerten. Die besten Antworten werden automatisch nach Stimmen sortiert."
+      },
+      {
+        "q": "Kann ich meine Frage nach dem Posten bearbeiten?",
+        "a": "Ja, Sie können Ihre Fragen und Antworten jederzeit über Ihre Profilseite bearbeiten."
+      },
+      {
+        "q": "Wie erhalte ich Abzeichen?",
+        "a": "Abzeichen werden durch aktive Teilnahme an der Community verdient – durch Fragen, Antworten und erhaltene Stimmen."
+      },
+      {
+        "q": "Sind meine persönlichen Daten sicher?",
+        "a": "Wir verwenden branchenübliche Verschlüsselung und Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen Daten."
+      },
+      {
+        "q": "Wie melde ich unangemessene Inhalte?",
+        "a": "Klicken Sie auf das Flaggen-Symbol bei einer Frage oder Antwort, um sie unserem Moderationsteam zu melden."
+      },
+      {
+        "q": "Kann ich mein Konto löschen?",
+        "a": "Ja, Sie können Ihr Konto über die Einstellungsseite löschen. Beachten Sie, dass dieser Vorgang nicht rückgängig gemacht werden kann."
+      }
+    ]
+  },
+  "tickets": {
+    "home_title": "Support-Ticketsystem",
+    "home_desc": "Reichen Sie Ihre Supportanfragen einfach ein und verfolgen Sie diese.",
+    "create_button": "Neues Ticket erstellen",
+    "view_button": "Meine Tickets ansehen",
+    "open_tickets": "Offene Tickets",
+    "resolved_tickets": "Gelöste Tickets",
+    "avg_response": "Durchschnittliche Antwortzeit",
+    "list_title": "Meine Tickets",
+    "list_desc": "Verfolgen und verwalten Sie Ihre Supportanfragen.",
+    "new_ticket": "Neues Ticket",
+    "table": {
+      "id": "ID",
+      "subject": "Betreff",
+      "status": "Status",
+      "priority": "Priorität",
+      "date": "Datum",
+      "updated": "Aktualisiert"
+    },
+    "reply_heading": "Antwort",
+    "reply_placeholder": "Geben Sie Ihre Antwort ein...",
+    "send_reply": "Antwort senden",
+    "close_ticket": "Ticket schließen",
+    "create_heading": "Support-Ticket erstellen",
+    "create_desc": "Füllen Sie das folgende Formular aus und unser Team wird sich bald bei Ihnen melden.",
+    "subject_label": "Betreff *",
+    "subject_placeholder": "Kurze Beschreibung Ihres Problems",
+    "category_label": "Kategorie",
+    "cat_general": "Allgemein",
+    "cat_technical": "Technisch",
+    "cat_billing": "Abrechnung",
+    "cat_account": "Konto",
+    "cat_feature": "Funktionsanfrage",
+    "priority_label": "Priorität",
+    
+    "priority_critical": "Kritisch",
+    "description_label": "Beschreibung *",
+    "description_placeholder": "Geben Sie Details zu Ihrem Problem an...",
+    "attachments_label": "Anhänge",
+    "submit_ticket": "Ticket einreichen",
+    "cancel": "Abbrechen",
+   
+    
+    "tickets": [
+      {
+        "id": "#1024",
+        "subject": "Anmeldeprobleme mit Google SSO",
+        "status": "offen",
+        "priority": "hoch",
+        "date": "2024-11-07",
+        "updated": "vor 2 Stunden"
+      },
+      {
+        "id": "#1023",
+        "subject": "Profilbild kann nicht hochgeladen werden",
+        "status": "in_bearbeitung",
+        "priority": "mittel",
+        "date": "2024-11-06",
+        "updated": "vor 1 Tag"
+      },
+      {
+        "id": "#1022",
+        "subject": "E-Mail-Benachrichtigungen funktionieren nicht",
+        "status": "gelöst",
+        "priority": "niedrig",
+        "date": "2024-11-05",
+        "updated": "vor 3 Tagen"
+      },
+      {
+        "id": "#1021",
+        "subject": "Kontoverifizierung fehlgeschlagen",
+        "status": "offen",
+        "priority": "hoch",
+        "date": "2024-11-04",
+        "updated": "vor 5 Tagen"
+      },
+      {
+        "id": "#1020",
+        "subject": "Darstellungsprobleme im Dunkelmodus",
+        "status": "gelöst",
+        "priority": "niedrig",
+        "date": "2024-11-03",
+        "updated": "vor 1 Woche"
+      }
+    ]
+    ,"messages": [
+    {
+      "user": "Du",
+      "avatar": "01.jpg",
+      "time": "vor 2 Tagen",
+      "text": "Ich kann mich nicht mit meinem Google-Konto anmelden. Es erscheint eine Fehlermeldung mit dem Hinweis \"Authentifizierung fehlgeschlagen\"."
+    },
+    {
+      "user": "Support-Mitarbeiter",
+      "avatar": "06.jpg",
+      "time": "vor 1 Tag",
+      "text": "Vielen Dank für Ihre Nachricht. Könnten Sie bitte den Cache und die Cookies Ihres Browsers löschen und anschließend erneut versuchen, sich anzumelden? Bitte teilen Sie uns außerdem mit, welchen Browser Sie verwenden."
+    },
+    {
+      "user": "Du",
+      "avatar": "01.jpg",
+      "time": "vor 12 Stunden",
+      "text": "Ich habe den Cache gelöscht und Chrome, Firefox sowie Edge verwendet. Das Problem besteht in allen Browsern weiterhin."
+    }
+  ]
+  },
+  "discussion": {
+    "heading": "Diskussionen",
+    "subtext": "Beginnen oder nehmen Sie an Gesprächen zu aktuellen Themen teil.",
+    "start_button": "Diskussion starten",
+    "replies": "Antworten",
+    "likes": "Gefällt mir",
+    "titles": {
+      "1": "Sollten wir für alle neuen Projekte zu TypeScript wechseln?",
+      "2": "Was sind die besten Tools für Remote-Arbeit im Jahr 2024?",
+      "3": "Ist ein Hochschulstudium noch lohnenswert?",
+      "4": "Die Zukunft der KI im Alltag",
+      "5": "Beste Praktiken für Work-Life-Balance",
+      "6": "Wie man mit Impostor-Syndrom umgeht"
+    },
+    "authors": {
+      "1": "Dennis Barrett",
+      "2": "Judy Nguyen",
+      "3": "Frances Guerrero",
+      "4": "Billy Vasquez",
+      "5": "Larry Lawson",
+      "6": "Amanda Reed"
+    },
+    "times": {
+      "1": "vor 2 Std.",
+      "2": "vor 5 Std.",
+      "3": "vor 1 Tag",
+      "4": "vor 2 Tagen",
+      "5": "vor 3 Tagen",
+      "6": "vor 1 Woche"
+    }
+  },
+  "account": {
+    "name": "Lori Ferguson",
+    "email": "example@gmail.com",
+    "editProfile": "Profil bearbeiten",
+    "settings": "Kontoeinstellungen",
+    "logout": "Abmelden"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "change_photo": "Foto ändern",
+    "remove_photo": "Entfernen",
+    "first_name": "Vorname",
+    "last_name": "Nachname",
+    "email_label": "E-Mail",
+    "bio": "Biografie",
+    "location": "Standort",
+    "tabs": {
+      "account": "Konto",
+      "notification": "Benachrichtigungen",
+      "privacy": "Datenschutz",
+      "password": "Passwort",
+      "delete": "Konto löschen"
+    },
+    "account_heading": "Account Settings",
+    "notification_heading": "Notification Preferences",
+    "privacy_heading": "Privacy Settings",
+    "password_heading": "Passwort ändern",
+    "current_password": "Aktuelles Passwort",
+    "new_password": "Neues Passwort",
+    "confirm_new_password": "Neues Passwort bestätigen",
+    "notification_items": [
+      "E-Mail-Benachrichtigungen für neue Antworten",
+      "E-Mail-Benachrichtigungen für neue Follower",
+      "Push-Benachrichtigungen für Erwähnungen",
+      "Wöchentliche Digest-E-Mail",
+      "Marketing-E-Mails"
+    ],
+    "privacy_items": [
+      "Mein Profil öffentlich anzeigen",
+      "Anderen erlauben, mir zu folgen",
+      "Meine Fragen in Suchergebnissen anzeigen",
+      "Nachrichten von Nicht-Followern zulassen"
+    ],
+    "delete_heading": "Konto löschen",
+    "delete_warning": "Once you delete your account, there is no going back. This action is permanent.",
+    "type_delete_label": "Type \"DELETE\" to confirm",
+    "save_changes": "Save Changes",
+    "save_preferences": "Save Preferences",
+    "save_settings": "Save Settings",
+    "update_password": "Update Password",
+    "delete_account": "Delete My Account",
+    "sample_first_name": "Lori",
+    "sample_last_name": "Ferguson",
+    "sample_email": "lori@example.com",
+    "sample_bio": "Full-stack developer passionate about building web apps.",
+    "sample_location": "San Francisco, CA"
+  },
+  "coming_soon": {
+    "title": "Bald verfügbar",
+    "subtitle": "Wir arbeiten hart daran, dir etwas Großartiges zu bringen. Bleib dran für Neuigkeiten!",
+    "email_placeholder": "Gib deine E-Mail ein",
+    "notify": "Benachrichtige mich",
+    "footer": "Lass dich benachrichtigen, wenn wir starten. Kein Spam, versprochen!"
+  },
+  "group-detail": {
+    "join_group": "Gruppe beitreten",
+    "share": "Teilen",
+    "share_placeholder": "Teile etwas mit der Gruppe...",
+    "group_about": "Über die Gruppe",
+    "group_about_desc": "Diese Gruppe ist für React-Entwickler gedacht, um Wissen auszutauschen, Best Practices zu diskutieren und an Projekten zusammenzuarbeiten.",
+    "group_members_section": "Mitglieder",
+    "view_all_members": "Alle Mitglieder anzeigen",
+    "group_info": {
+      "public": "Öffentliche Gruppe",
+      "created": "Erstellt im Jahr 2020"
+    },
+    "group_members_one": "Mitglied",
+    "group_members_other": "Mitglieder",
+    "group_posts": [
+      {
+        "author": "Dennis Barrett",
+        "avatar": "03.jpg",
+        "time": "vor 2 Std.",
+        "text": "Ich habe gerade einen neuen Artikel über React Server Components veröffentlicht. Schau ihn dir an!",
+        "likes": 24,
+        "comments": 8
+      },
+      {
+        "author": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "time": "vor 5 Std.",
+        "text": "Welche State-Management-Bibliothek nutzt ihr im Jahr 2024? Mich interessieren die Community-Präferenzen.",
+        "likes": 18,
+        "comments": 15
+      },
+      {
+        "author": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "time": "vor 1 Tag",
+        "text": "Hier ein Performance-Tipp: Memoisiert immer eure Context-Provider, um unnötige Re-Renders zu vermeiden!",
+        "likes": 45,
+        "comments": 22
+      },
+      {
+        "author": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "time": "vor 3 Tagen",
+        "text": "Ich suche Mitwirkende für eine Open-Source-React-Komponentenbibliothek. DM bei Interesse!",
+        "likes": 12,
+        "comments": 5
+      }
+    ]
+  }
+}

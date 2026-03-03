@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 const groups = Array.from({ length: 8 }, (_, i) => ({
     name: ['React Developers', 'Python Community', 'Data Science Hub', 'UX Designers', 'DevOps Engineers', 'AI Enthusiasts', 'Web3 Builders', 'Mobile Dev'][i],
     members: [12500, 8900, 6700, 4500, 3200, 9800, 2100, 5600][i],
@@ -7,23 +8,24 @@ const groups = Array.from({ length: 8 }, (_, i) => ({
     isPublic: [true, true, false, true, true, false, true, true][i],
 }));
 export default function Group() {
+    const { t } = useTranslation();
     return (
         <section className="py-8"><div className="container">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                <div><h2 className="mb-1">Groups</h2><p className="text-body mb-0">Find and join groups that match your interests.</p></div>
-                <button className="btn btn-primary self-start">Create Group</button>
+                <div><h2 className="mb-1">{t('groups_page')}</h2><p className="text-body mb-0">{t('groups_subtitle')}</p></div>
+                <button className="btn btn-primary self-start">{t('create_group')}</button>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {groups.map((g, i) => (
                     <div key={i} className="card p-4 hover:shadow-md transition-shadow">
                         <div className="flex items-center gap-3 mb-3">
                             <img className="w-12 h-12 rounded-full object-cover" src={`/assets/images/avatar/${g.avatar}`} alt="" />
-                            <div><h6 className="mb-0"><Link to="/group-detail" className="text-heading hover:text-primary">{g.name}</Link></h6><span className="text-xs text-body">{g.isPublic ? 'Public' : 'Private'} Group</span></div>
+                            <div><h6 className="mb-0"><Link to="/group-detail" className="text-heading hover:text-primary">{g.name}</Link></h6><span className="text-xs text-body">{g.isPublic ? t('public_group') : t('private_group')}</span></div>
                         </div>
                         <p className="text-sm text-body mb-3">{g.desc}</p>
                         <div className="flex items-center justify-between">
-                            <span className="text-xs text-body"><i className="bi bi-people mr-1"></i>{g.members.toLocaleString()} members</span>
-                            <button className="btn btn-sm btn-primary-soft">Join</button>
+                            <span className="text-xs text-body"><i className="bi bi-people mr-1"></i>{g.members.toLocaleString()} {t('group_members', {count: g.members})}}</span>
+                            <button className="btn btn-sm btn-primary-soft">{t('follow')}</button>
                         </div>
                     </div>
                 ))}

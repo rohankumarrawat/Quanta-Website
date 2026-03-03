@@ -1,0 +1,891 @@
+{
+  "404_title": "404",
+  "404_heading": "Oh non, quelque chose a mal tourné !",
+  "404_text": "La page que vous recherchez n'existe pas ou a été déplacée. Ne vous inquiétez pas, cela arrive aux meilleurs d'entre nous.",
+  "go_home": "Accueil",
+  "home": "Accueil",
+  "follow": "Suivre",
+  "ask_questions": "Poser des questions",
+  "notifications": "Notifications",
+   "search": "Rechercher",
+  "search_placeholder": "Rechercher...",
+  "language": "Langue",  "languages": {
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "german": "Deutsch"
+  },  "dark_mode": "Mode Sombre",
+  "light_mode": "Mode Clair",
+  "joined_duration": "Inscrit il y a 2 ans",
+  "profile_description": "Développeur Full-Stack passionné par la création d'applications web. J'adore travailler avec React, Node.js et explorer de nouvelles technologies.",
+  "skills_list": {
+    "react": "React",
+    "node": "Node.js",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "aws": "AWS",
+    "docker": "Docker"
+  },
+  "interests_list": {
+    "ai": "IA",
+    "webdev": "Développement Web",
+    "cloud": "Cloud",
+    "opensource": "Code Ouvert"
+  },
+  "location": "San Francisco, CA",
+  "job": "Ingénieur Logiciel Senior",
+  "joined_on": "Inscrit le 15 janvier 2022",
+  "news_and_blogs": "Nouvelles et blogs",
+  "about": "À propos",
+  "contact_us": "Contactez-nous",
+  "community": "Communauté",
+  "questions": "Questions",
+  "forum": "Forum",
+  "forum_detail": {
+    "title": "Forum",
+    "category_programming": "Programmation",
+    "topic": "Sujet",
+    "posted": "Publié",
+    "hours_ago": "il y a des heures",
+    "like": "Aimer",
+    "reply": "Répondre",
+    "share": "Partager",
+    "replies": "Réponses",
+    "post_reply": "Poster une réponse",
+    "reply_placeholder": "Écrivez votre réponse...",
+     "post_reply_button": "Poster la réponse",
+     "original_post": {
+       "author": "Dennis Barrett",
+       "time": "il y a 3h",
+       "title": "Meilleures pratiques pour la gestion d'état React en 2024",
+       "p1": "Je travaille avec React depuis un certain temps et je souhaite comprendre les meilleures pratiques actuelles pour la gestion d'état. Avec tant d'options comme Redux, Zustand, Jotai et l'API Context intégrée de React, il est difficile de décider laquelle utiliser selon les scénarios.",
+       "p2": "Quelles sont vos recommandations et pourquoi ? J'aimerais entendre des retours d'expérience réels avec ces outils."
+     },
+     "replies_list": [
+       { "user": "Judy Nguyen", "avatar": "01.jpg", "time": "il y a 2h", "text": "Je recommande Zustand pour la plupart des projets React. Il a une API minimale et de très bonnes performances." },
+       { "user": "Frances Guerrero", "avatar": "05.jpg", "time": "il y a 5h", "text": "Redux Toolkit s'est beaucoup amélioré. Les APIs createSlice et createAsyncThunk réduisent considérablement le boilerplate par rapport à l'ancien Redux." },
+       { "user": "Billy Vasquez", "avatar": "08.jpg", "time": "il y a 1j", "text": "Pour l'état serveur, React Query (TanStack Query) change la donne. Il gère la mise en cache, le refetch et la synchronisation de manière élégante." }
+     ]
+  },
+  "forum":{
+"post_reply": "Publier une réponse",
+"reply_placeholder": "Écrivez votre réponse...",
+"post_reply_button": "Publier la réponse"
+  },
+  "forum_category": {
+    "breadcrumb": {
+      "forum": "Forum",
+      "category": "Programmation"
+    },
+    "header": {
+      "title": "Programmation",
+      "description": "Discutez de sujets liés à la programmation, partagez du code et obtenez de l'aide.",
+      "new_topic": "Nouveau sujet"
+    },
+    "table": {
+      "topic": "Sujet",
+      "replies": "Réponses",
+      "views": "Vues",
+      "activity": "Activité"
+    },
+    "topics": [
+      {
+        "title": "Meilleurs outils de gestion d'état React",
+        "author": "Dennis Barrett",
+        "replies": 24,
+        "avatar":"03.jpg",
+        "views": 1200,
+        "time": "il y a 2 heures"
+
+
+      },
+      {
+        "title": "Comprendre les génériques TypeScript",
+        "author": "Judy Nguyen",
+        "avatar":"01.jpg",
+        "replies":18,
+        "views": 950,
+        "time": "il y a 5 heurs"
+      },
+      {
+        "title": "Guide CSS Grid vs Flexbox",
+        "author": "Frances Guerrero",
+        "avatar":"05.jpg",
+        "replies":32,
+        "views": 2100,
+        "time": "il y a 1 jours"
+      },
+      {
+        "title": "Conseils de performance Node.js",
+        "author": "Billy Vasquez",
+        "avatar":"08.jpg",
+        "replies":15,
+        "views": 780,
+        "time": "il y a 2 jours"
+
+      },
+      {
+        "title": "Comparaison GraphQL vs API REST",
+        "author": "Larry Lawson",
+        "avatar":"04.jpg",
+        "replies":42,
+        "views": 3500,
+        "time": "il y a 3 jours"
+      },
+      {
+        "title": "Explication des conteneurs Docker",
+        "author": "Amanda Reed",
+        "avatar":"06.jpg",
+        "replies":8,
+        "views": 420,
+        "time": "il y a 5 jours"
+      },
+      {
+        "title": "Guide de configuration d’un pipeline CI/CD",
+        "author": "Louis Burns",
+        "avatar":"07.jpg",
+        "replies":21,
+        "views": 1800,
+        "time": "il y a 4 jours"
+      },
+      {
+        "title": "Modèles d’architecture microservices",
+        "author": "Carolyn Ortiz",
+        "avatar":"02.jpg",
+        "replies":36,
+        "views": 2900,
+        "time": "il y a 1 semaine”"
+      }
+    ]
+  },
+ 
+  "support_ticket": "Ticket de support",
+  "sign_up_latest_update": "Inscrivez-vous pour toutes les dernières mises à jour",
+  "receive_notifications": "Recevez toutes les notifications sur nos nouvelles versions.",
+  "your_email_address": "Votre adresse e-mail",
+  "subscribe": "S'abonner !",
+  "auth": {
+    "email_label": "Adresse e-mail",
+    "email_placeholder": "Entrez votre e-mail",
+    "password_label": "Mot de passe",
+    "password_placeholder": "Entrez votre mot de passe",
+    "or_sign_in_with": "Ou connectez-vous avec",
+    "signin": {
+      "title": "Bon retour",
+      "new_here": "Nouveau ici ?",
+      "create_account": "Créer un compte",
+      "remember_me": "Se souvenir de moi ?",
+      "forgot_password": "Mot de passe oublié ?",
+      "submit": "Se connecter",
+      "link_text": "Se connecter"
+    },
+    "signup": {
+      "title": "Créer un nouveau compte",
+      "already_member": "Déjà membre ?",
+      "login": "Se connecter",
+      "confirm_password": "Confirmer le mot de passe",
+      "keep_signed_in": "Rester connecté",
+      "submit": "S'inscrire"
+    },
+    "forgot": {
+      "title": "Mot de passe oublié ?",
+      "subtitle": "Saisissez l'adresse e-mail associée à votre compte et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "submit": "Réinitialiser le mot de passe",
+      "back_to": "Retour à"
+    }
+  },
+  "home_hero": {
+    "title_before": "La meilleure façon d'obtenir une bonne",
+    "title_answer": "réponse",
+    "title_question": "question",
+    "badge_connect": "Connectez-vous dans le monde entier",
+    "badge_free": "Questions gratuites",
+    "badge_trusted": "Réponses 100 % fiables",
+    "search_placeholder": "Quelle est votre question ?"
+  },
+  "copyright": "Droits d'auteur",
+  "all_rights_reserved": "Tous droits réservés.",
+  "terms_of_use": "Conditions d'utilisation",
+  "privacy_policy": "Politique de confidentialité",
+  "ask_question": {
+    "page_title": "Poser une question publique",
+    "page_subtitle": "Obtenez de l'aide de la communauté en posant une question bien formulée.",
+    "field_title": "Titre de la question *",
+    "field_description": "Description *",
+    "field_category": "Catégorie",
+    "field_tags": "Tags",
+    "field_visibility": "Visibilité",
+    "placeholder_title": "ex. Quelle est la différence entre un compilateur et un interpréteur ?",
+    "placeholder_description": "Expliquez votre question en détail...",
+    "placeholder_tags": "ex. javascript, react, css",
+    "submit": "Publier la question",
+    "cancel": "Annuler",
+    "guidelines": {
+      "heading": "Directives pour obtenir des réponses de qualité",
+      "list": [
+        "Assurez-vous que votre question n'a pas déjà été posée",
+        "Restez concis et ciblé pour une clarté optimale",
+        "Vérifiez la grammaire et l'orthographe"
+      ]
+    }
+  },
+  "role_programmer": "Programmeur",
+  "answered": "Répondu",
+  "ansdetail": {
+    "question_title": "Quelle est la différence entre un compilateur et un interpréteur ?",
+    "question_body": "J'essaie de comprendre la différence fondamentale entre les compilateurs et les interprètes. Quelqu'un pourrait-il expliquer cela clairement avec des exemples ? Je comprends que les deux sont des traducteurs de langage, mais je suis confus quant à leurs mécanismes de fonctionnement.",
+    "answers": [
+      {
+        "time": "il y a 2 heures",
+        "text": "Un compilateur traduit l'intégralité du code source d'un programme en code machine avant l'exécution, tandis qu'un interpréteur traduit et exécute le code ligne par ligne au moment de l'exécution."
+      },
+      {
+        "time": "il y a 5 heures",
+        "text": "La principale différence réside dans l'exécution : les compilateurs produisent des exécutables autonomes, tandis que les interprètes traitent le code directement. Les programmes compilés sont généralement plus rapides, mais les langages interprétés offrent plus de flexibilité pendant le développement."
+      },
+      {
+        "time": "il y a 8 heures",
+        "text": "Les compilateurs vérifient tout le programme pour détecter les erreurs avant de générer la sortie, ce qui rend le débogage plus difficile mais l'exécution plus rapide. Les interpréteurs s'arrêtent à la première erreur rencontrée, ce qui facilite le débogage mais ralentit l'exécution."
+      }
+    ]
+  },
+  "tag": {
+    "programming": "programmation",
+    "compiler": "compilateur",
+    "interpreter": "interprète",
+    "javascript": "javascript",
+    "python": "python",
+    "react": "react",
+    "node.js": "node.js",
+    "css": "css",
+    "html": "html",
+    "typescript": "typescript",
+    "sql": "sql",
+    "ai": "IA"
+  },
+  "answers_count": "{{count}} réponses",
+  "articles": "{{count}} articles",
+  "sort": {
+    "most_recent": "Les plus récents",
+    "oldest_first": "Les plus anciens",
+    "most_voted": "Les plus votés"
+  },
+  "accepted": "Accepté",
+  "reply": "Répondre",
+  "share": "Partager",
+  "report": "Signaler",
+  "your_answer": "Votre réponse",
+  "placeholder": {
+    "write_answer": "Écrivez votre réponse ici..."
+  },
+  "post_your_answer": "Publier votre réponse",
+  "related_questions": "Questions liées",
+  "trending_tags": "Tags tendance",
+  "join_community": {
+    "heading": "Rejoignez la communauté",
+    "text": "Obtenez des réponses à vos questions d'experts.",
+    "button": "Rejoindre gratuitement"
+  },
+  "blogdetail": {
+    "title": "L'avenir de l'IA dans l'éducation",
+    "read_time": "5 min de lecture",
+    "p1": "L'intelligence artificielle transforme rapidement le secteur de l'éducation, apportant des expériences d'apprentissage personnalisées, des systèmes de notation automatisés et un tutorat intelligent aux étudiants du monde entier.",
+    "heading1": "Apprentissage personnalisé",
+    "p2": "Les algorithmes d'IA peuvent analyser les modèles d'apprentissage, les forces et les faiblesses d'un étudiant pour créer des parcours d'apprentissage personnalisés. Cela garantit que chaque étudiant reçoit le bon niveau de défi et de soutien.",
+    "heading2": "Évaluation automatisée",
+    "p3": "Les outils d'évaluation alimentés par l'IA peuvent évaluer le travail des étudiants plus efficacement et de manière cohérente, fournissant des retours instantanés qui aident les étudiants à s'améliorer plus rapidement.",
+    "heading3": "Systèmes de tutorat intelligent",
+    "p4": "Les tuteurs virtuels alimentés par l'IA peuvent fournir une orientation individuelle aux étudiants, répondant aux questions et expliquant les concepts de plusieurs manières jusqu'à ce que l'étudiant comprenne.",
+    "heading4": "La route à venir",
+    "p5": "Bien que l'IA dans l'éducation présente un énorme potentiel, elle soulève également d'importantes questions sur la confidentialité des données, le rôle des enseignants et la garantie d'un accès équitable à ces technologies.",
+    "author_desc": "Rédacteur technologique et passionné d'IA avec plus de 10 ans d'expérience."
+  },
+  "mark_all_as_read": "Tout marquer comme lu",
+  "confirm": "Confirmer",
+  "delete": "Supprimer",
+  "notification": {
+    "follow_started": "a commencé à vous suivre.",
+    "follow_suggestion": "vous a suggéré de le suivre.",
+    "mention": "vous a mentionné dans {{place}}.",
+    "accept": "a accepté votre réponse.",
+    "answer": "a répondu à votre question : {{question}}.",
+    "vote": "a voté sur votre publication.",
+    "badge": "vous a attribué le badge {{badge}}.",
+    "time": {
+      "just_now": "À l'instant",
+      "1h": "il y a 1h",
+      "2h": "il y a 2h",
+      "5h": "il y a 5h",
+      "1d": "il y a 1j",
+      "2d": "il y a 2j"
+    }
+  },
+  "topics": "Sujets",
+  "posts": "Messages",
+  "answers": "Réponses",
+  "asked": "Posé :",
+  "latest_answer": "La dernière réponse était",
+  "join_discussion": "Rejoignez la discussion et partagez vos connaissances avec la communauté.",
+  "create_new_topic": "Créer un nouveau sujet",
+  "recent_topics": "Sujets récents",
+  "topic": "Sujet",
+  "replies": "Réponses",
+  "views": "{{count}} vues",
+  "activity": "Activité",
+  "select_category": "Sélectionnez une catégorie",
+  "cat_technology": "Technologie",
+  "cat_programming": "Programmation",
+  "cat_business_finance": "Affaires et finance",
+  "cat_health": "Santé",
+  "cat_history": "Histoire",
+  "cat_language_literature": "Langue et littérature",
+  "profile": {
+    "edit_profile": "Edit Profile",
+    "account_settings": "Account Settings",
+    "sign_out": "Sign Out",
+    "tabs": {
+      "about": "À propos",
+      "posts": "Publications",
+      "questions": "Questions",
+      "followers": "Abonnés",
+      "achievements": "Réalisations"
+    },
+    "about_heading": "À propos",
+    "skills": "Compétences",
+    "interests": "Centres d'intérêt",
+    "info": "Info",
+    "stats_title": "Statistiques",
+    "stats": {
+      "questions": "Questions",
+      "answers": "Réponses",
+      "followers": "Abonnés",
+      "badges": "Badges"
+    },
+    "posts": {
+      "title1": "Premiers pas avec les Hooks React",
+      "title2": "Comprendre la mise en page CSS Grid",
+      "title3": "Guide des meilleures pratiques Node.js",
+      "title4": "Introduction à TypeScript",
+      "date1": "7 nov. 2024",
+      "date2": "5 nov. 2024",
+      "date3": "3 nov. 2024",
+      "date4": "1 nov. 2024",
+      "likes": "{{count}} j'aime",
+      "comments": "{{count}} commentaires"
+    },
+    "questions": {
+      "votes": "votes",
+      "answers": "réponses",
+      "q1": "Comment implémenter le mode sombre dans React ?",
+      "q2": "Meilleure base de données pour les applications en temps réel ?",
+      "q3": "Comparaison React vs Vue vs Angular",
+      "q4": "Comment optimiser les performances de React ?",
+      "time1": "il y a 2 jours",
+      "time2": "il y a 5 jours",
+      "time3": "il y a 1 semaine",
+      "time4": "il y a 2 semaines"
+    },
+    "followers": {
+      "mutual": "{{count}} connexions mutuelles",
+      "role1": "Développeur",
+      "role2": "Designer",
+      "role3": "Data Scientist",
+      "role4": "Ingénieur DevOps",
+      "role5": "Chef de produit",
+      "role6": "Rédacteur",
+      "role7": "Étudiant",
+      "role8": "Indépendant"
+    },
+    "achievements": {
+      "points": "Points",
+      "badges_earned": "Badges gagnés",
+      "global_rank": "Rang mondial",
+      "earned": "Gagné"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Derniers articles, tutoriels et perspectives de notre communauté.",
+    "read_time": "{{count}} min",
+    "read_label": "lecture",
+    "cat_ai": "IA",
+    "cat_programming": "Programmation",
+    "cat_architecture": "Architecture",
+    "cat_cloud": "Cloud",
+    "cat_culture": "Culture",
+    "cat_security": "Sécurité"
+  },
+  "category_posts_title": "Publications par catégorie",
+  "recently_answered_questions": "Questions récemment répondues",
+  "all_categories": "Tous les sujets",
+  "browse_categories_subtitle": "Parcourez tous les sujets et trouvez le meilleur endroit pour poser votre question.",
+  "category_questions": "{{count}} questions",
+  "category_followers": "{{count}} abonnés",
+  "follow_category": "Suivre le sujet",
+  "category_tabs": {
+    "latest": "Les plus récentes",
+    "popular": "Populaires",
+    "unanswered": "Sans réponse"
+  },
+  "categories": {
+    "math_arithmetics": "Maths et arithmétique",
+    "business_finance": "Affaires et finance",
+    "science": "Sciences",
+    "health": "Santé",
+    "tax_accountants": "Impôts et comptables",
+    "law_legal": "Droit et juridique",
+    "tv_news": "Télévision et actualités",
+    "mechanics": "Mécanique",
+    "history": "Histoire",
+    "construction": "Construction",
+    "technology": "Technologie",
+    "language_literature": "Langue et littérature",
+    "all_categories": "Tous les sujets"
+  },
+  "home_stats": {
+    "heading": "Nous vous aidons à améliorer vos notes",
+    "text": "Commencez votre essai gratuit de 48 heures et accédez à tous les résumés, questions-réponses et analyses dont vous avez besoin pour progresser.",
+    "features": [
+      "15 000+ sujets",
+      "Formulez clairement votre question",
+      "375 000+ réponses",
+      "Contenu sans publicité"
+    ],
+    "additional_features": [
+      "30 % de réduction sur les outils d'étude",
+      "Téléchargements PDF",
+      "Support client 5 étoiles"
+    ],
+    "stats_labels": [
+      "Abonnés au total",
+      "Questions au total",
+      "Réponses au total"
+    ]
+  },
+  "home_cta": {
+    "title": "Que devez-vous savoir ?",
+    "text": "Que vous soyez bloqué sur une question d'histoire ou un problème de géométrie, aucune question n'est trop difficile pour Brainy.",
+    "button": "Poser une question"
+  },
+  "home_questions": {
+    "question7": "Comment puis-je améliorer mes habitudes d'étude ?",
+    "question8": "Quelle est la meilleure façon de gérer les finances d'une entreprise ?",
+    "question9": "Comment la Seconde Guerre mondiale a-t-elle changé la politique mondiale ?",
+    "question10": "Quelles sont les dernières tendances technologiques ?"
+  },
+  "about": {
+    "heading": "À propos de Quanta",
+    "description": "Nous construisons la plateforme de questions-réponses la plus fiable au monde, où les connaissances sont partagées ouvertement et où chacun peut apprendre des experts.",
+    "mission_heading": "Notre mission",
+    "mission_text": "Démocratiser le savoir en créant une plateforme communautaire où chacun peut poser des questions et obtenir des réponses de haute qualité d'experts du monde entier.",
+    "vision_heading": "Notre vision",
+    "vision_text": "Un monde où chacun a accès aux connaissances d'experts, quel que soit son parcours, sa localisation ou sa situation financière.",
+    "stats": {
+      "active_users": "Utilisateurs actifs",
+      "questions_asked": "Questions posées",
+      "answers_given": "Réponses fournies",
+      "categories": "Sujets"
+    },
+    "team_heading": "Notre équipe",
+    "team_sub": "Rencontrez les personnes derrière Quanta."
+  },
+"contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez une question ou un commentaire ? Nous serions ravis d’avoir de vos nouvelles.",
+    "address_value": "123 Main Street, San Francisco, CA 94102",
+    "email_value": "hello@quanta.com",
+    "phone_value": "+1 (555) 123-4567",
+    "get_in_touch": "Entrer en contact",
+    "address": "Adresse",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "send_message": "Envoyer le message",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "subject": "Sujet",
+    "message": "Message"
+  },
+  "terms": {
+    "page_title": "Conditions générales",
+    "last_updated": "Dernière mise à jour : 7 novembre 2024",
+    "translation_notice": "Votre contenu peut être automatiquement traduit dans la langue sélectionnée.",
+    "sections": [
+      {
+        "title": "1. Acceptation des conditions",
+        "content": "En accédant et en utilisant cette plateforme, vous acceptez d’être lié par les conditions énoncées dans cet accord. Si vous n’acceptez pas ces conditions, veuillez ne pas utiliser nos services."
+      },
+      {
+        "title": "2. Comptes utilisateurs",
+        "content": "Vous êtes responsable de la confidentialité de vos identifiants de compte. Vous devez fournir des informations exactes et complètes lors de la création d’un compte. Vous êtes seul responsable de toutes les activités effectuées sous votre compte."
+      },
+      {
+        "title": "3. Règles relatives au contenu",
+        "content": "Les utilisateurs ne doivent pas publier de contenu illégal, nuisible, menaçant, abusif, diffamatoire ou autrement inapproprié. Nous nous réservons le droit de supprimer tout contenu violant ces règles sans préavis."
+      },
+      {
+        "title": "4. Propriété intellectuelle",
+        "content": "Tout contenu soumis par les utilisateurs reste la propriété intellectuelle de leurs auteurs respectifs. En publiant du contenu, vous nous accordez une licence non exclusive et mondiale pour utiliser, afficher et distribuer votre contenu sur notre plateforme."
+      },
+      {
+        "title": "5. Politique de confidentialité",
+        "content": "Nous nous engageons à protéger votre vie privée. Notre politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles. En utilisant nos services, vous acceptez nos pratiques en matière de données."
+      },
+      {
+        "title": "6. Limitation de responsabilité",
+        "content": "Notre plateforme est fournie \"telle quelle\". Nous ne donnons aucune garantie, expresse ou implicite, concernant la fiabilité, l’exactitude ou la disponibilité du service. Nous ne saurions être tenus responsables des dommages indirects, accessoires ou consécutifs."
+      },
+      {
+        "title": "7. Modifications",
+        "content": "Nous nous réservons le droit de modifier ces conditions à tout moment. Les utilisateurs seront informés des changements importants. L’utilisation continue de la plateforme après modification constitue une acceptation des nouvelles conditions."
+      }
+    ]
+  },
+  "helpCenter": {
+    "heading": "Comment pouvons-nous vous aider ?",
+    "searchPlaceholder": "Rechercher des articles d’aide...",
+    "still_need_help": "Besoin d’aide supplémentaire ?",
+    "contact_prompt": "Vous ne trouvez pas ce que vous cherchez ? Contactez notre équipe d’assistance.",
+    "contact_support": "Contacter le support",
+    "categories": [
+      {
+        "title": "Premiers pas",
+        "desc": "Apprenez les bases et démarrez rapidement."
+      },
+      {
+        "title": "Compte & Profil",
+        "desc": "Gérez les paramètres de votre compte et votre profil."
+      },
+      {
+        "title": "Sécurité & Confidentialité",
+        "desc": "Protégez votre compte et gérez votre confidentialité."
+      },
+      {
+        "title": "Facturation & Abonnements",
+        "desc": "Questions concernant les prix, la facturation et les abonnements."
+      },
+      {
+        "title": "Règles de la communauté",
+        "desc": "Règles et directives pour la communauté."
+      },
+      {
+        "title": "Dépannage",
+        "desc": "Résolvez les problèmes courants et techniques."
+      }
+    ]
+  },
+  "helpDetail": {
+    "breadcrumb": {
+      "helpCenter": "Centre d’aide",
+      "gettingStarted": "Premiers pas"
+    },
+    "sidebarHeading": "Premiers pas",
+    "articles": [
+      "Comment créer un compte",
+      "Configurer votre profil",
+      "Poser votre première question",
+      "Comprendre le système de vote",
+      "Comment obtenir des badges",
+      "Aperçu des règles de la communauté"
+    ],
+    "article": {
+      "title": "Comment créer un compte",
+      "p1": "Créer un compte sur notre plateforme est rapide et simple. Suivez ces étapes faciles pour commencer :",
+      "step1_heading": "Étape 1 : Accéder à la page d’inscription",
+      "step1_text": "Cliquez sur le bouton \"S’inscrire\" en haut à droite de la page ou accédez directement à la page d’inscription.",
+      "step2_heading": "Étape 2 : Remplir vos informations",
+      "step2_text": "Entrez votre adresse e-mail et créez un mot de passe sécurisé. Vous pouvez également vous inscrire avec votre compte Google ou Facebook pour une inscription plus rapide.",
+      "step3_heading": "Étape 3 : Vérifier votre e-mail",
+      "step3_text": "Consultez votre boîte de réception pour trouver l’e-mail de vérification et cliquez sur le lien de confirmation pour activer votre compte.",
+      "step4_heading": "Étape 4 : Compléter votre profil",
+      "step4_text": "Ajoutez votre photo de profil, votre biographie et vos domaines d’expertise pour aider la communauté à mieux vous connaître.",
+      "helpful": "Cet article vous a-t-il été utile ?",
+      "yes": "Oui",
+      "no": "Non"
+    }
+  },
+  "support": {
+    "heading": "Assistance",
+    "subtext": "Nous sommes là pour vous aider. Choisissez l’option qui vous convient le mieux.",
+    "live_chat": "Chat en direct",
+    "live_chat_desc": "Discutez en temps réel avec notre équipe d’assistance.",
+    "start_chat": "Démarrer le chat",
+    "email_support": "Support par e-mail",
+    "email_support_desc": "Envoyez-nous un e-mail et nous vous répondrons sous 24 heures.",
+    "send_email": "Envoyer un e-mail",
+    "submit_ticket": "Soumettre un ticket",
+    "submit_ticket_desc": "Créez un ticket d’assistance pour une aide détaillée.",
+    "create_ticket": "Créer un ticket"
+  },
+  "faq": {
+    "heading": "Questions fréquemment posées",
+    "subtext": "Trouvez des réponses aux questions les plus courantes concernant notre plateforme.",
+    "questions": [
+      {
+        "q": "Comment créer un compte ?",
+        "a": "Cliquez sur le bouton S'inscrire et remplissez vos informations. Vous pouvez également vous inscrire via Google ou Facebook."
+      },
+      {
+        "q": "Comment poser une question ?",
+        "a": "Cliquez sur le bouton \"Poser une question\", saisissez le titre et la description, sélectionnez une catégorie et soumettez."
+      },
+      {
+        "q": "Comment fonctionne le système de votes ?",
+        "a": "Les utilisateurs peuvent voter pour ou contre les questions et réponses. Les meilleures réponses sont automatiquement triées par nombre de votes."
+      },
+      {
+        "q": "Puis-je modifier ma question après la publication ?",
+        "a": "Oui, vous pouvez modifier vos questions et réponses à tout moment depuis votre page de profil."
+      },
+      {
+        "q": "Comment obtenir des badges ?",
+        "a": "Les badges sont obtenus en participant à la communauté : poser des questions, fournir des réponses et recevoir des votes."
+      },
+      {
+        "q": "Mes informations personnelles sont-elles en sécurité ?",
+        "a": "Nous utilisons des pratiques et des chiffrement conformes aux standards de l'industrie pour protéger vos informations personnelles."
+      },
+      {
+        "q": "Comment signaler un contenu inapproprié ?",
+        "a": "Cliquez sur l'icône de drapeau sur toute question ou réponse pour le signaler à notre équipe de modération."
+      },
+      {
+        "q": "Puis-je supprimer mon compte ?",
+        "a": "Oui, vous pouvez supprimer votre compte depuis la page Paramètres. Notez que cette action est irréversible."
+      }
+    ]
+  },
+
+  
+  "tickets": {
+
+    "messages": [
+    {
+      "user": "Vous",
+      "avatar": "01.jpg",
+      "time": "il y a 2 jours",
+      "text": "Je ne peux pas me connecter avec mon compte Google. Un message d'erreur indiquant \"Échec de l'authentification\" s'affiche."
+    },
+    {
+      "user": "Agent d'assistance",
+      "avatar": "06.jpg",
+      "time": "il y a 1 jour",
+      "text": "Merci de nous avoir contactés. Pourriez-vous essayer de vider le cache et les cookies de votre navigateur, puis tenter de vous reconnecter ? Merci également de nous indiquer quel navigateur vous utilisez."
+    },
+    {
+      "user": "Vous",
+      "avatar": "01.jpg",
+      "time": "il y a 12 heures",
+      "text": "J'ai vidé le cache et essayé avec Chrome, Firefox et Edge. Le problème persiste sur tous les navigateurs."
+    }
+  ],
+
+    
+    "home_title": "Système de Tickets d'Assistance",
+    "home_desc": "Soumettez et suivez facilement vos demandes d'assistance.",
+    "create_button": "Créer un Nouveau Ticket",
+    "view_button": "Voir Mes Tickets",
+    "open_tickets": "Tickets Ouverts",
+    "resolved_tickets": "Tickets Résolus",
+    "avg_response": "Temps de Réponse Moyen",
+    "list_title": "Mes Tickets",
+    "list_desc": "Suivez et gérez vos demandes d'assistance.",
+    "new_ticket": "Nouveau Ticket",
+    "table": {
+      "id": "ID",
+      "subject": "Sujet",
+      "status": "Statut",
+      "priority": "Priorité",
+      "date": "Date",
+      "updated": "Mise à jour"
+    },
+   
+    
+    "reply_heading": "Réponse",
+    "reply_placeholder": "Tapez votre réponse...",
+    "send_reply": "Envoyer la Réponse",
+    "close_ticket": "Fermer le Ticket",
+    "create_heading": "Créer un Ticket d'Assistance",
+    "create_desc": "Remplissez le formulaire ci-dessous et notre équipe vous recontactera bientôt.",
+    "subject_label": "Sujet *",
+    "subject_placeholder": "Brève description de votre problème",
+    "category_label": "Catégorie",
+    "cat_general": "Général",
+    "cat_technical": "Technique",
+    "cat_billing": "Facturation",
+    "cat_account": "Compte",
+    "cat_feature": "Demande de Fonctionnalité",
+    "priority_label": "Priorité",
+    "priority_critical": "Critique",
+    "description_label": "Description *",
+    "description_placeholder": "Fournissez des détails sur votre problème...",
+    "attachments_label": "Pièces Jointes",
+    "submit_ticket": "Envoyer le Ticket",
+    "cancel": "Annuler"
+
+  ,
+
+ 
+
+  "tickets": [
+    { "id": "#1024", "subject": "Problèmes de connexion avec Google SSO", "status": "ouvert", "priority": "élevée", "date": "2024-11-07", "updated": "il y a 2 heures" },
+    { "id": "#1023", "subject": "Impossible de télécharger la photo de profil", "status": "en_cours", "priority": "moyenne", "date": "2024-11-06", "updated": "il y a 1 jour" },
+    { "id": "#1022", "subject": "Les notifications par e-mail ne fonctionnent pas", "status": "résolu", "priority": "faible", "date": "2024-11-05", "updated": "il y a 3 jours" },
+    { "id": "#1021", "subject": "Échec de la vérification du compte", "status": "ouvert", "priority": "élevée", "date": "2024-11-04", "updated": "il y a 5 jours" },
+    { "id": "#1020", "subject": "Problèmes d'affichage du mode sombre", "status": "résolu", "priority": "faible", "date": "2024-11-03", "updated": "il y a 1 semaine" }
+  ]
+
+ 
+
+  },
+  "discussion": {
+    "heading": "Discussions",
+    "subtext": "Commencez ou rejoignez des conversations sur des sujets tendance.",
+    "start_button": "Démarrer une discussion",
+    "replies": "réponses",
+    "likes": "j'aime",
+    "titles": {
+      "1": "Devons-nous passer à TypeScript pour tous les nouveaux projets ?",
+      "2": "Quels sont les meilleurs outils de travail à distance en 2024 ?",
+      "3": "L'éducation universitaire vaut-elle encore la peine ?",
+      "4": "L'avenir de l'IA dans la vie quotidienne",
+      "5": "Meilleures pratiques pour l'équilibre travail-vie",
+      "6": "Comment gérer le syndrome de l'imposteur"
+    },
+    "authors": {
+      "1": "Dennis Barrett",
+      "2": "Judy Nguyen",
+      "3": "Frances Guerrero",
+      "4": "Billy Vasquez",
+      "5": "Larry Lawson",
+      "6": "Amanda Reed"
+    },
+    "times": {
+      "1": "il y a 2h",
+      "2": "il y a 5h",
+      "3": "il y a 1j",
+      "4": "il y a 2j",
+      "5": "il y a 3j",
+      "6": "il y a 1s"
+    }
+  },
+    "account": {
+      "name": "Lori Ferguson",
+      "email": "example@gmail.com",
+      "editProfile": "Modifier le profil",
+      "settings": "Paramètres du compte",
+      "logout": "Se déconnecter"
+    },
+  "settings": {
+    "title": "Paramètres",
+  "change_photo": "Changer la photo",
+  "remove_photo": "Supprimer",
+  "first_name": "Prénom",
+  "last_name": "Nom",
+  "email_label": "E-mail",
+  "bio": "Biographie",
+  "location": "Localisation",
+  "tabs": {
+    "account": "Compte",
+    "notification": "Notifications",
+    "privacy": "Confidentialité",
+    "password": "Mot de passe",
+    "delete": "Supprimer le compte"
+  },
+    "account_heading": "Account Settings",
+    "notification_heading": "Notification Preferences",
+    "privacy_heading": "Privacy Settings",
+    "password_heading": "Modifier le mot de passe",
+    "current_password": "Mot de passe actuel",
+    "new_password": "Nouveau mot de passe",
+    "confirm_new_password": "Confirmer le nouveau mot de passe",
+    "notification_items": [
+      "Notifications par email pour les nouvelles réponses",
+      "Notifications par email pour les nouveaux abonnés",
+      "Notifications push pour les mentions",
+      "Email de résumé hebdomadaire",
+      "Emails marketing"
+    ],
+    "privacy_items": [
+      "Afficher mon profil au public",
+      "Permettre à d'autres de me suivre",
+      "Afficher mes questions dans les résultats de recherche",
+      "Autoriser les messages des non-abonnés"
+    ],
+    "delete_heading": "Supprimer le compte",
+    "delete_warning": "Once you delete your account, there is no going back. This action is permanent.",
+    "type_delete_label": "Type \"DELETE\" to confirm",
+    "save_changes": "Save Changes",
+    "save_preferences": "Save Preferences",
+    "save_settings": "Save Settings",
+    "update_password": "Update Password",
+    "delete_account": "Delete My Account"
+    ,
+    "sample_first_name": "Lori",
+    "sample_last_name": "Ferguson",
+    "sample_email": "lori@example.com",
+    "sample_bio": "Développeur full-stack passionné par la création d'applications web.",
+    "sample_location": "San Francisco, CA"
+  },
+  "coming_soon": {
+    "title": "Bientôt disponible",
+    "subtitle": "Nous travaillons dur pour vous proposer quelque chose d'exceptionnel. Restez à l'écoute !",
+    "email_placeholder": "Entrez votre e-mail",
+    "notify": "Prévenez-moi",
+    "footer": "Soyez averti lorsque nous lançons. Aucun spam, promis !"
+  },
+  "group-detail":{
+  "join_group": "Rejoindre le groupe",
+  "share": "Partager",
+  "share_placeholder": "Partagez quelque chose avec le groupe...",
+  "group_about": "À propos",
+  "group_about_desc": "Ce groupe est destiné aux développeurs React pour partager des connaissances, discuter des meilleures pratiques et collaborer sur des projets.",
+  "group_members_section": "Membres",
+  "view_all_members": "Voir tous les membres",
+
+  "group_info": {
+    "public": "Groupe public",
+    "created": "Créé en 2020"
+  },
+
+  "group_members_one": "membre",
+  "group_members_other": "membres",
+
+  
+  "group_posts": [
+    {
+      "author": "Dennis Barrett",
+      "avatar": "03.jpg",
+      "time": "il y a 2 h",
+      "text": "Je viens de publier un nouvel article sur les React Server Components. Jetez-y un œil !",
+      "likes": 24,
+      "comments": 8
+    },
+    {
+      "author": "Judy Nguyen",
+      "avatar": "01.jpg",
+      "time": "il y a 5 h",
+      "text": "Quelle bibliothèque de gestion d'état utilisez-vous en 2024 ? Je suis curieux des préférences de la communauté.",
+      "likes": 18,
+      "comments": 15
+    },
+    {
+      "author": "Frances Guerrero",
+      "avatar": "05.jpg",
+      "time": "il y a 1 j",
+      "text": "Voici un conseil de performance : mémorisez toujours vos fournisseurs de contexte pour éviter les re-rendus inutiles !",
+      "likes": 45,
+      "comments": 22
+    },
+    {
+      "author": "Billy Vasquez",
+      "avatar": "08.jpg",
+      "time": "il y a 3 j",
+      "text": "Je cherche des contributeurs pour une bibliothèque de composants React open source. MP si intéressé !",
+      "likes": 12,
+      "comments": 5
+    }
+  ]
+}
+
+
+}

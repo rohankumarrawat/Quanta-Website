@@ -1,0 +1,918 @@
+{
+  "404_title": "404",
+  "404_heading": "¡Oh no, algo salió mal!",
+  "404_text": "La página que buscas no existe o ha sido movida.",
+  "go_home": "Ir al inicio",
+  "home": "Inicio",
+  "follow": "Seguir",
+  "ask_questions": "Hacer preguntas",
+  "notifications": "Notificaciones",
+  "search": "Buscar",
+  "search_placeholder": "Buscar...",
+  "language": "Idioma",
+  "languages": {
+    "english": "English",
+    "french": "Français",
+    "spanish": "Español",
+    "german": "Deutsch"
+  },
+  "dark_mode": "Modo Oscuro",
+  "light_mode": "Modo Claro",
+  "joined_duration": "Se unió hace 2 años",
+  "profile_description": "Desarrollador Full-Stack apasionado por construir aplicaciones web. Me encanta trabajar con React, Node.js y explorar nuevas tecnologías.",
+  "skills_list": {
+    "react": "React",
+    "node": "Node.js",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "aws": "AWS",
+    "docker": "Docker"
+  },
+  "interests_list": {
+    "ai": "IA",
+    "webdev": "Desarrollo Web",
+    "cloud": "Cloud",
+    "opensource": "Código Abierto"
+  },
+  "location": "San Francisco, CA",
+  "job": "Ingeniero de Software Senior",
+  "joined_on": "Se unió el 15 de enero de 2022",
+  "news_and_blogs": "Noticias y blogs",
+  "about": "Acerca de",
+  "contact_us": "Contáctanos",
+  "community": "Comunidad",
+  "questions": "Preguntas",
+  "forum": "Foro",
+  "forum_detail": {
+    "title": "Foro",
+    "category_programming": "Programación",
+    "topic": "Tema",
+    "posted": "Publicado",
+    "hours_ago": "hace horas",
+    "like": "Me gusta",
+    "reply": "Responder",
+    "share": "Compartir",
+    "replies": "Respuestas",
+    "post_reply": "Publicar una respuesta",
+    "reply_placeholder": "Escribe tu respuesta...",
+    "post_reply_button": "Publicar Respuesta",
+    "original_post": {
+      "author": "Dennis Barrett",
+      "time": "hace 3h",
+      "title": "Mejores prácticas para la gestión de estado en React en 2024",
+      "p1": "He estado trabajando con React durante un tiempo y quiero entender las mejores prácticas actuales para la gestión del estado. Con tantas opciones como Redux, Zustand, Jotai y la API Context incorporada de React, es difícil decidir cuál usar en diferentes escenarios.",
+      "p2": "¿Cuáles son sus recomendaciones y por qué? Me encantaría conocer experiencias del mundo real con estas herramientas."
+    },
+    "replies_list": [
+      {
+        "user": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "time": "hace 2h",
+        "text": "Recomiendo Zustand para la mayoría de los proyectos React. Tiene una API mínima y un gran rendimiento."
+      },
+      {
+        "user": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "time": "hace 5h",
+        "text": "Redux Toolkit ha mejorado mucho. Las APIs createSlice y createAsyncThunk reducen mucho el boilerplate en comparación con el antiguo Redux."
+      },
+      {
+        "user": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "time": "hace 1d",
+        "text": "Para el estado del servidor, React Query (TanStack Query) es un cambio de juego. Maneja el caché, las reconsultas y la sincronización de manera excelente."
+      }
+    ]
+  },
+  "forum": {
+    "post_reply": "Publicar una respuesta",
+    "reply_placeholder": "Escribe tu respuesta...",
+    "post_reply_button": "Publicar respuesta"
+  },
+  "forum_category": {
+    "breadcrumb": {
+      "forum": "Foro",
+      "category": "Programación"
+    },
+    "header": {
+      "title": "Programación",
+      "description": "Discute temas de programación, comparte código y obtén ayuda.",
+      "new_topic": "Nuevo tema"
+    },
+    "table": {
+      "topic": "Tema",
+      "replies": "Respuestas",
+      "views": "Vistas",
+      "activity": "Actividad"
+    },
+    "topics": [
+      {
+        "title": "Mejores herramientas de gestión de estado en React",
+        "author": "Dennis Barrett",
+        "replies": 24,
+        "avatar": "03.jpg",
+        "views": 1200,
+        "time": "hace 2 horas"
+      },
+      {
+        "title": "Comprender los genéricos de TypeScript",
+        "author": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "replies": 18,
+        "views": 950,
+        "time": "hace 5 horas"
+      },
+      {
+        "title": "Guía CSS Grid vs Flexbox",
+        "author": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "replies": 32,
+        "views": 2100,
+        "time": "hace 1 días"
+      },
+      {
+        "title": "Consejos de rendimiento en Node.js",
+        "author": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "replies": 15,
+        "views": 780,
+        "time": "hace 2 días"
+      },
+      {
+        "title": "Comparación GraphQL vs API REST",
+        "author": "Larry Lawson",
+        "avatar": "04.jpg",
+        "replies": 42,
+        "views": 3500,
+        "time": "hace 3 días"
+      },
+      {
+        "title": "Explicación de los contenedores Docker",
+        "author": "Amanda Reed",
+        "avatar": "04.jpg",
+        "replies": 42,
+        "views": 3500,
+        "time": "hace 3 días"
+      },
+      {
+        "title": "Guía de configuración de pipeline CI/CD",
+        "author": "Louis Burns",
+        "avatar": "07.jpg",
+        "replies": 21,
+        "views": 1800,
+        "time": "hace 4 días"
+      },
+      {
+        "title": "Patrones de arquitectura de microservicios",
+        "author": "Carolyn Ortiz",
+        "avatar": "02.jpg",
+        "replies": 36,
+        "views": 2900,
+        "time": "hace 1 semanas"
+      }
+    ]
+  },
+  "support_ticket": "Ticket de soporte",
+  "sign_up_latest_update": "Regístrate para recibir las últimas actualizaciones",
+  "receive_notifications": "Recibe todas las notificaciones de nuestras nuevas versiones.",
+  "your_email_address": "Tu dirección de correo",
+  "subscribe": "¡Suscribirse!",
+  "auth": {
+    "email_label": "Correo electrónico",
+    "email_placeholder": "Ingresa tu correo electrónico",
+    "password_label": "Contraseña",
+    "password_placeholder": "Ingresa tu contraseña",
+    "or_sign_in_with": "O inicia sesión con",
+    "signin": {
+      "title": "Bienvenido de nuevo",
+      "new_here": "¿Eres nuevo?",
+      "create_account": "Crea una cuenta",
+      "remember_me": "¿Recordarme?",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar sesión",
+      "link_text": "Iniciar sesión"
+    },
+    "signup": {
+      "title": "Crear nueva cuenta",
+      "already_member": "¿Ya eres miembro?",
+      "login": "Inicia sesión",
+      "confirm_password": "Confirmar contraseña",
+      "keep_signed_in": "Mantener sesión iniciada",
+      "submit": "Registrarse"
+    },
+    "forgot": {
+      "title": "¿Olvidaste tu contraseña?",
+      "subtitle": "Ingresa la dirección de correo asociada a tu cuenta y te enviaremos un enlace para restablecer tu contraseña.",
+      "submit": "Restablecer contraseña",
+      "back_to": "Volver a"
+    }
+  },
+  "home_hero": {
+    "title_before": "La mejor forma de obtener una buena",
+    "title_answer": "respuesta",
+    "title_question": "pregunta",
+    "badge_connect": "Conéctate en todo el mundo",
+    "badge_free": "Preguntar es gratis",
+    "badge_trusted": "Respuestas 100 % fiables",
+    "search_placeholder": "¿Cuál es tu pregunta?"
+  },
+  "copyright": "Derechos de autor",
+  "all_rights_reserved": "Todos los derechos reservados.",
+  "terms_of_use": "Términos de uso",
+  "privacy_policy": "Política de privacidad",
+  "ask_question": {
+    "page_title": "Haz una pregunta pública",
+    "page_subtitle": "Obtén ayuda de la comunidad haciendo una pregunta bien formulada.",
+    "field_title": "Título de la pregunta *",
+    "field_description": "Descripción *",
+    "field_category": "Categoría",
+    "field_tags": "Etiquetas",
+    "field_visibility": "Visibilidad",
+    "placeholder_title": "ej. ¿Cuál es la diferencia entre compilador e intérprete?",
+    "placeholder_description": "Explica tu pregunta en detalle...",
+    "placeholder_tags": "ej. javascript, react, css",
+    "submit": "Publicar pregunta",
+    "cancel": "Cancelar",
+    "guidelines": {
+      "heading": "Guías para recibir respuestas de calidad",
+      "list": [
+        "Asegúrate de que tu pregunta no se haya planteado previamente",
+        "Mantén tus preguntas concisas y enfocadas para una claridad óptima",
+        "Verifica la gramática y la ortografía"
+      ]
+    }
+  },
+  "role_programmer": "Programador",
+  "answered": "Respondido",
+  "ansdetail": {
+    "question_title": "¿Cuál es la diferencia entre un compilador y un intérprete?",
+    "question_body": "Estoy tratando de entender la diferencia fundamental entre compiladores e intérpretes. ¿Alguien podría explicar esto claramente con ejemplos? Entiendo que ambos son traductores de lenguaje, pero estoy confundido acerca de sus mecanismos de trabajo.",
+    "answers": [
+      {
+        "time": "hace 2 horas",
+        "text": "Un compilador traduce todo el código fuente de un programa a código máquina antes de la ejecución, mientras que un intérprete traduce y ejecuta el código línea por línea en tiempo de ejecución."
+      },
+      {
+        "time": "hace 5 horas",
+        "text": "La diferencia clave está en la ejecución: los compiladores producen archivos ejecutables independientes, mientras que los intérpretes procesan el código directamente. Los programas compilados suelen ser más rápidos, pero los lenguajes interpretados ofrecen más flexibilidad durante el desarrollo."
+      },
+      {
+        "time": "hace 8 horas",
+        "text": "Los compiladores revisan todo el programa para encontrar errores antes de generar la salida, lo que hace que el depurado sea más difícil pero la ejecución más rápida. Los intérpretes se detienen en el primer error encontrado, lo que facilita el depurado pero hace la ejecución más lenta."
+      }
+    ]
+  },
+  "tag": {
+    "programming": "programación",
+    "compiler": "compilador",
+    "interpreter": "intérprete",
+    "javascript": "javascript",
+    "python": "python",
+    "react": "react",
+    "node.js": "node.js",
+    "css": "css",
+    "html": "html",
+    "typescript": "typescript",
+    "sql": "sql",
+    "ai": "IA"
+  },
+  "answers_count": "{{count}} respuestas",
+  "articles": "{{count}} artículos",
+  "sort": {
+    "most_recent": "Más recientes",
+    "oldest_first": "Más antiguas",
+    "most_voted": "Más votadas"
+  },
+  "accepted": "Aceptado",
+  "reply": "Responder",
+  "share": "Compartir",
+  "report": "Reportar",
+  "your_answer": "Tu respuesta",
+  "placeholder": {
+    "write_answer": "Escribe tu respuesta aquí..."
+  },
+  "post_your_answer": "Publicar tu respuesta",
+  "related_questions": "Preguntas relacionadas",
+  "trending_tags": "Etiquetas populares",
+  "join_community": {
+    "heading": "Únete a la comunidad",
+    "text": "Obtén respuestas a tus preguntas de expertos.",
+    "button": "Unirse gratis"
+  },
+  "blogdetail": {
+    "title": "El futuro de la IA en la educación",
+    "read_time": "5 min de lectura",
+    "p1": "La inteligencia artificial está transformando rápidamente el sector educativo, brindando experiencias de aprendizaje personalizadas, sistemas de calificación automatizados y tutoría inteligente a estudiantes en todo el mundo.",
+    "heading1": "Aprendizaje personalizado",
+    "p2": "Los algoritmos de IA pueden analizar los patrones de aprendizaje, fortalezas y debilidades de un estudiante para crear rutas de aprendizaje personalizadas. Esto asegura que cada estudiante reciba el nivel adecuado de desafío y apoyo.",
+    "heading2": "Evaluación automatizada",
+    "p3": "Las herramientas de evaluación impulsadas por IA pueden evaluar el trabajo de los estudiantes de manera más eficiente y consistente, proporcionando retroalimentación instantánea que ayuda a los estudiantes a mejorar más rápido.",
+    "heading3": "Sistemas de tutoría inteligente",
+    "p4": "Los tutores virtuales impulsados por IA pueden brindar orientación individual a los estudiantes, respondiendo preguntas y explicando conceptos de múltiples maneras hasta que el estudiante entienda.",
+    "heading4": "El camino por delante",
+    "p5": "Si bien la IA en la educación tiene un gran potencial, también plantea importantes preguntas sobre la privacidad de los datos, el papel de los profesores y garantizar el acceso equitativo a estas tecnologías.",
+    "author_desc": "Escritor tecnológico y entusiasta de la IA con más de 10 años de experiencia."
+  },
+  "mark_all_as_read": "Marcar todo como leído",
+  "confirm": "Confirmar",
+  "delete": "Eliminar",
+  "notification": {
+    "follow_started": "comenzó a seguirte.",
+    "follow_suggestion": "te sugirió que lo sigas.",
+    "mention": "te mencionó en {{place}}.",
+    "accept": "aceptó tu respuesta.",
+    "answer": "respondió a tu pregunta: {{question}}.",
+    "vote": "votó en tu publicación.",
+    "badge": "te otorgó la insignia {{badge}}.",
+    "time": {
+      "just_now": "Justo ahora",
+      "1h": "hace 1h",
+      "2h": "hace 2h",
+      "5h": "hace 5h",
+      "1d": "hace 1d",
+      "2d": "hace 2d"
+    }
+  },
+  "topics": "Temas",
+  "posts": "Publicaciones",
+  "answers": "Respuestas",
+  "asked": "Preguntado:",
+  "latest_answer": "La última respuesta fue",
+  "join_discussion": "Únete a la discusión y comparte tu conocimiento con la comunidad.",
+  "create_new_topic": "Crear nuevo tema",
+  "recent_topics": "Temas recientes",
+  "topic": "Tema",
+  "replies": "Respuestas",
+  "views": "{{count}} vistas",
+  "activity": "Actividad",
+  "select_category": "Seleccione categoría",
+  "cat_technology": "Tecnología",
+  "cat_programming": "Programación",
+  "cat_business_finance": "Negocios y Finanzas",
+  "cat_health": "Salud",
+  "cat_history": "Historia",
+  "cat_language_literature": "Lenguaje y Literatura",
+  "profile": {
+    "edit_profile": "Edit Profile",
+    "account_settings": "Account Settings",
+    "sign_out": "Sign Out",
+    "tabs": {
+      "about": "Acerca de",
+      "posts": "Publicaciones",
+      "questions": "Preguntas",
+      "followers": "Seguidores",
+      "achievements": "Logros"
+    },
+    "about_heading": "Acerca de",
+    "skills": "Habilidades",
+    "interests": "Intereses",
+    "info": "Info",
+    "stats_title": "Estadísticas",
+    "stats": {
+      "questions": "Preguntas",
+      "answers": "Respuestas",
+      "followers": "Seguidores",
+      "badges": "Insignias"
+    },
+    "posts": {
+      "title1": "Primeros pasos con React Hooks",
+      "title2": "Entendiendo el diseño de cuadrícula CSS",
+      "title3": "Guía de mejores prácticas de Node.js",
+      "title4": "Introducción a TypeScript",
+      "date1": "7 de nov de 2024",
+      "date2": "5 de nov de 2024",
+      "date3": "3 de nov de 2024",
+      "date4": "1 de nov de 2024",
+      "likes": "{{count}} me gusta",
+      "comments": "{{count}} comentarios"
+    },
+    "questions": {
+      "votes": "votos",
+      "answers": "respuestas",
+      "q1": "¿Cómo implementar el modo oscuro en React?",
+      "q2": "¿La mejor base de datos para aplicaciones en tiempo real?",
+      "q3": "Comparación entre React vs Vue vs Angular",
+      "q4": "¿Cómo optimizar el rendimiento de React?",
+      "time1": "hace 2 días",
+      "time2": "hace 5 días",
+      "time3": "hace 1 semana",
+      "time4": "hace 2 semanas"
+    },
+    "followers": {
+      "mutual": "{{count}} conexiones mutuas",
+      "role1": "Desarrollador",
+      "role2": "Diseñador",
+      "role3": "Científico de datos",
+      "role4": "Ingeniero DevOps",
+      "role5": "Gerente de producto",
+      "role6": "Escritor",
+      "role7": "Estudiante",
+      "role8": "Freelancer"
+    },
+    "achievements": {
+      "points": "Puntos",
+      "badges_earned": "Insignias ganadas",
+      "global_rank": "Rango global",
+      "earned": "Ganado"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Últimos artículos, tutoriales y perspectivas de nuestra comunidad.",
+    "read_time": "{{count}} min",
+    "read_label": "lectura",
+    "cat_ai": "IA",
+    "cat_programming": "Programación",
+    "cat_architecture": "Arquitectura",
+    "cat_cloud": "Nube",
+    "cat_culture": "Cultura",
+    "cat_security": "Seguridad"
+  },
+  "category_posts_title": "Publicaciones por tema",
+  "recently_answered_questions": "Preguntas respondidas recientemente",
+  "all_categories": "Todos los temas",
+  "browse_categories_subtitle": "Explora todos los temas y encuentra el mejor lugar para hacer tu pregunta.",
+  "category_questions": "{{count}} preguntas",
+  "category_followers": "{{count}} seguidores",
+  "follow_category": "Seguir tema",
+  "category_tabs": {
+    "latest": "Más recientes",
+    "popular": "Populares",
+    "unanswered": "Sin respuesta"
+  },
+  "categories": {
+    "math_arithmetics": "Matemáticas y aritmética",
+    "business_finance": "Negocios y finanzas",
+    "science": "Ciencia",
+    "health": "Salud",
+    "tax_accountants": "Impuestos y contabilidad",
+    "law_legal": "Derecho y legal",
+    "tv_news": "TV y noticias",
+    "mechanics": "Mecánica",
+    "history": "Historia",
+    "construction": "Construcción",
+    "technology": "Tecnología",
+    "language_literature": "Lengua y literatura",
+    "all_categories": "Todos los temas"
+  },
+  "home_stats": {
+    "heading": "Te ayudamos a mejorar tus notas",
+    "text": "Comienza tu prueba gratuita de 48 horas y desbloquea todos los resúmenes, preguntas y análisis que necesitas para sacar mejores calificaciones.",
+    "features": [
+      "15.000+ temas",
+      "Formula tu pregunta con claridad",
+      "375.000+ respuestas",
+      "Contenido sin anuncios"
+    ],
+    "additional_features": [
+      "30 % de descuento en herramientas de estudio",
+      "Descargas en PDF",
+      "Atención al cliente 5 estrellas"
+    ],
+    "stats_labels": [
+      "Seguidores totales",
+      "Preguntas totales",
+      "Respuestas totales"
+    ]
+  },
+  "home_cta": {
+    "title": "¿Qué necesitas saber?",
+    "text": "Ya sea que estés atascado en una pregunta de historia o en un problema de geometría, no hay pregunta demasiado difícil para Brainy.",
+    "button": "Haz una pregunta"
+  },
+  "home_questions": {
+    "question7": "¿Cómo puedo mejorar mis hábitos de estudio?",
+    "question8": "¿Cuál es la mejor forma de gestionar las finanzas de un negocio?",
+    "question9": "¿Cómo cambió la Segunda Guerra Mundial la política mundial?",
+    "question10": "¿Cuáles son las últimas tendencias en tecnología?"
+  },
+  "about": {
+    "heading": "Acerca de Quanta",
+    "description": "Estamos construyendo la plataforma de preguntas y respuestas más confiable del mundo, donde el conocimiento se comparte abiertamente y todos pueden aprender de expertos.",
+    "mission_heading": "Nuestra misión",
+    "mission_text": "Democratizar el conocimiento creando una plataforma impulsada por la comunidad donde cualquiera puede hacer preguntas y obtener respuestas de alta calidad de expertos de todo el mundo.",
+    "vision_heading": "Nuestra visión",
+    "vision_text": "Un mundo donde todos tengan acceso al conocimiento experto, independientemente de su origen, ubicación o situación económica.",
+    "stats": {
+      "active_users": "Usuarios activos",
+      "questions_asked": "Preguntas realizadas",
+      "answers_given": "Respuestas dadas",
+      "categories": "Temas"
+    },
+    "team_heading": "Nuestro equipo",
+    "team_sub": "Conoce a las personas detrás de Quanta."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes una pregunta o comentario? Nos encantaría saber de ti.",
+    "address_value": "123 Main Street, San Francisco, CA 94102",
+    "email_value": "hello@quanta.com",
+    "phone_value": "+1 (555) 123-4567",
+    "get_in_touch": "Ponte en contacto",
+    "address": "Dirección",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "send_message": "Enviar mensaje",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "subject": "Asunto",
+    "message": "Mensaje"
+  },
+  "terms": {
+    "page_title": "Términos y Condiciones",
+    "last_updated": "Última actualización: 7 de noviembre de 2024",
+    "translation_notice": "Tu contenido puede traducirse automáticamente al idioma que hayas seleccionado.",
+    "sections": [
+      {
+        "title": "1. Aceptación de los Términos",
+        "content": "Al acceder y utilizar esta plataforma, aceptas y estás de acuerdo en cumplir con los términos y condiciones descritos en este acuerdo. Si no estás de acuerdo con estos términos, por favor no utilices nuestros servicios."
+      },
+      {
+        "title": "2. Cuentas de Usuario",
+        "content": "Eres responsable de mantener la confidencialidad de las credenciales de tu cuenta. Debes proporcionar información precisa y completa al crear una cuenta. Eres el único responsable de todas las actividades que ocurran bajo tu cuenta."
+      },
+      {
+        "title": "3. Normas de Contenido",
+        "content": "Los usuarios no deben publicar contenido que sea ilegal, dañino, amenazante, abusivo, difamatorio o de cualquier otra manera objetable. Nos reservamos el derecho de eliminar cualquier contenido que infrinja estas normas sin previo aviso."
+      },
+      {
+        "title": "4. Propiedad Intelectual",
+        "content": "Todo el contenido enviado por los usuarios sigue siendo propiedad intelectual de sus respectivos autores. Al publicar contenido, nos otorgas una licencia no exclusiva y mundial para usar, mostrar y distribuir tu contenido en nuestra plataforma."
+      },
+      {
+        "title": "5. Política de Privacidad",
+        "content": "Nos comprometemos a proteger tu privacidad. Nuestra Política de Privacidad explica cómo recopilamos, utilizamos y protegemos tu información personal. Al utilizar nuestros servicios, aceptas nuestras prácticas de datos."
+      },
+      {
+        "title": "6. Limitación de Responsabilidad",
+        "content": "Nuestra plataforma se proporciona \"tal cual\". No ofrecemos garantías, expresas o implícitas, con respecto a la fiabilidad, exactitud o disponibilidad del servicio. No seremos responsables de ningún daño indirecto, incidental o consecuente."
+      },
+      {
+        "title": "7. Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los usuarios serán notificados de cambios significativos. El uso continuado de la plataforma después de las modificaciones constituye la aceptación de los nuevos términos."
+      }
+    ]
+  },
+  "helpCenter": {
+    "heading": "¿Cómo podemos ayudarte?",
+    "searchPlaceholder": "Buscar artículos de ayuda...",
+    "still_need_help": "¿Aún necesitas ayuda?",
+    "contact_prompt": "¿No encuentras lo que buscas? Contacta a nuestro equipo de soporte.",
+    "contact_support": "Contactar soporte",
+    "categories": [
+      {
+        "title": "Primeros pasos",
+        "desc": "Aprende lo básico y ponte al día rápidamente."
+      },
+      {
+        "title": "Cuenta y Perfil",
+        "desc": "Gestiona la configuración de tu cuenta y perfil."
+      },
+      {
+        "title": "Seguridad y Privacidad",
+        "desc": "Mantén tu cuenta segura y gestiona tu privacidad."
+      },
+      {
+        "title": "Facturación y Planes",
+        "desc": "Preguntas sobre precios, facturación y planes."
+      },
+      {
+        "title": "Normas de la Comunidad",
+        "desc": "Reglas y normas para la comunidad."
+      },
+      {
+        "title": "Solución de Problemas",
+        "desc": "Soluciona problemas comunes y técnicos."
+      }
+    ]
+  },
+  "helpDetail": {
+    "breadcrumb": {
+      "helpCenter": "Centro de Ayuda",
+      "gettingStarted": "Primeros pasos"
+    },
+    "sidebarHeading": "Primeros pasos",
+    "articles": [
+      "Cómo crear una cuenta",
+      "Configurar tu perfil",
+      "Hacer tu primera pregunta",
+      "Entender el sistema de votos",
+      "Cómo ganar insignias",
+      "Resumen de las normas de la comunidad"
+    ],
+    "article": {
+      "title": "Cómo crear una cuenta",
+      "p1": "Crear una cuenta en nuestra plataforma es rápido y fácil. Sigue estos sencillos pasos para comenzar:",
+      "step1_heading": "Paso 1: Visita la página de registro",
+      "step1_text": "Haz clic en el botón \"Registrarse\" en la esquina superior derecha de la página o navega directamente a la página de registro.",
+      "step2_heading": "Paso 2: Completa tus datos",
+      "step2_text": "Ingresa tu dirección de correo electrónico y crea una contraseña segura. También puedes registrarte usando tu cuenta de Google o Facebook para un registro más rápido.",
+      "step3_heading": "Paso 3: Verifica tu correo electrónico",
+      "step3_text": "Revisa tu bandeja de entrada para encontrar el correo de verificación y haz clic en el enlace de confirmación para activar tu cuenta.",
+      "step4_heading": "Paso 4: Completa tu perfil",
+      "step4_text": "Agrega tu foto de perfil, biografía y áreas de experiencia para que la comunidad pueda conocerte mejor.",
+      "helpful": "¿Fue útil este artículo?",
+      "yes": "Sí",
+      "no": "No"
+    }
+  },
+  "support": {
+    "heading": "Soporte",
+    "subtext": "Estamos aquí para ayudarte. Elige la opción que mejor funcione para ti.",
+    "live_chat": "Chat en vivo",
+    "live_chat_desc": "Chatea con nuestro equipo de soporte en tiempo real.",
+    "start_chat": "Iniciar chat",
+    "email_support": "Soporte por correo electrónico",
+    "email_support_desc": "Envíanos un correo electrónico y responderemos en un plazo de 24 horas.",
+    "send_email": "Enviar correo",
+    "submit_ticket": "Enviar un ticket",
+    "submit_ticket_desc": "Crea un ticket de soporte para recibir asistencia detallada.",
+    "create_ticket": "Crear ticket"
+  },
+  "faq": {
+    "heading": "Preguntas Frecuentes",
+    "subtext": "Encuentra respuestas a las preguntas más comunes sobre nuestra plataforma.",
+    "questions": [
+      {
+        "q": "¿Cómo creo una cuenta?",
+        "a": "Haz clic en el botón Registrarse y completa tus datos. También puedes registrarte usando Google o Facebook."
+      },
+      {
+        "q": "¿Cómo hago una pregunta?",
+        "a": "Haz clic en el botón \"Hacer pregunta\", escribe el título y la descripción, selecciona una categoría y envíala."
+      },
+      {
+        "q": "¿Cómo funciona el sistema de votos?",
+        "a": "Los usuarios pueden votar a favor o en contra de preguntas y respuestas. Las mejores respuestas se ordenan automáticamente por votos."
+      },
+      {
+        "q": "¿Puedo editar mi pregunta después de publicarla?",
+        "a": "Sí, puedes editar tus preguntas y respuestas en cualquier momento desde tu página de perfil."
+      },
+      {
+        "q": "¿Cómo gano insignias?",
+        "a": "Las insignias se obtienen participando en la comunidad: haciendo preguntas, dando respuestas y recibiendo votos."
+      },
+      {
+        "q": "¿Mi información personal está segura?",
+        "a": "Usamos prácticas y cifrado estándar de la industria para proteger tu información personal."
+      },
+      {
+        "q": "¿Cómo reporto contenido inapropiado?",
+        "a": "Haz clic en el icono de bandera en cualquier pregunta o respuesta para reportarlo a nuestro equipo de moderación."
+      },
+      {
+        "q": "¿Puedo eliminar mi cuenta?",
+        "a": "Sí, puedes eliminar tu cuenta desde la página de Configuración. Ten en cuenta que esta acción es irreversible."
+      }
+    ]
+  },
+  "tickets": {
+    "home_title": "Sistema de Tickets de Soporte",
+    "home_desc": "Envíe y realice un seguimiento de sus solicitudes de soporte fácilmente.",
+    "create_button": "Crear Nuevo Ticket",
+    "view_button": "Ver Mis Tickets",
+    "open_tickets": "Tickets Abiertos",
+    "resolved_tickets": "Tickets Resueltos",
+    "avg_response": "Tiempo Promedio de Respuesta",
+    "list_title": "Mis Tickets",
+    "list_desc": "Realice un seguimiento y administre sus solicitudes de soporte.",
+    "new_ticket": "Nuevo Ticket",
+    "table": {
+      "id": "ID",
+      "subject": "Asunto",
+      "status": "Estado",
+      "priority": "Prioridad",
+      "date": "Fecha",
+      "updated": "Actualizado"
+    }, "messages": [
+    {
+      "user": "Tú",
+      "avatar": "01.jpg",
+      "time": "hace 2 días",
+      "text": "No puedo iniciar sesión con mi cuenta de Google. Aparece un mensaje de error que dice \"Autenticación fallida\"."
+    },
+    {
+      "user": "Agente de soporte",
+      "avatar": "06.jpg",
+      "time": "hace 1 día",
+      "text": "Gracias por contactarnos. ¿Podrías intentar borrar la caché y las cookies de tu navegador y luego intentar iniciar sesión nuevamente? Además, indícanos qué navegador estás utilizando."
+    },
+    {
+      "user": "Tú",
+      "avatar": "01.jpg",
+      "time": "hace 12 horas",
+      "text": "Intenté borrar la caché y usar Chrome, Firefox y Edge. El problema persiste en todos los navegadores."
+    }
+  ],
+  
+    "reply_heading": "Respuesta",
+    "reply_placeholder": "Escriba su respuesta...",
+    "send_reply": "Enviar Respuesta",
+    "close_ticket": "Cerrar Ticket",
+    "create_heading": "Crear Ticket de Soporte",
+    "create_desc": "Complete el formulario a continuación y nuestro equipo se comunicará con usted pronto.",
+    "subject_label": "Asunto *",
+    "subject_placeholder": "Breve descripción de su problema",
+    "category_label": "Categoría",
+    "cat_general": "General",
+    "cat_technical": "Técnico",
+    "cat_billing": "Facturación",
+    "cat_account": "Cuenta",
+    "cat_feature": "Solicitud de Función",
+    "priority_label": "Prioridad",
+    "priority_critical": "Crítica",
+    "description_label": "Descripción *",
+    "description_placeholder": "Proporcione detalles sobre su problema...",
+    "attachments_label": "Archivos",
+    "submit_ticket": "Enviar Ticket",
+    "cancel": "Cancelar",
+  
+    "tickets": [
+      {
+        "id": "#1024",
+        "subject": "Problemas de inicio de sesión con Google SSO",
+        "status": "abierto",
+        "priority": "alta",
+        "date": "2024-11-07",
+        "updated": "hace 2 horas"
+      },
+      {
+        "id": "#1023",
+        "subject": "No se puede subir la foto de perfil",
+        "status": "en_progreso",
+        "priority": "media",
+        "date": "2024-11-06",
+        "updated": "hace 1 día"
+      },
+      {
+        "id": "#1022",
+        "subject": "Las notificaciones por correo no funcionan",
+        "status": "resuelto",
+        "priority": "baja",
+        "date": "2024-11-05",
+        "updated": "hace 3 días"
+      },
+      {
+        "id": "#1021",
+        "subject": "La verificación de la cuenta falló",
+        "status": "abierto",
+        "priority": "alta",
+        "date": "2024-11-04",
+        "updated": "hace 5 días"
+      },
+      {
+        "id": "#1020",
+        "subject": "Problemas de visualización en modo oscuro",
+        "status": "resuelto",
+        "priority": "baja",
+        "date": "2024-11-03",
+        "updated": "hace 1 semana"
+      }
+    ]
+  },
+  "discussion": {
+    "heading": "Discusión",
+    "subtext": "Inicia o únete a conversaciones sobre temas de tendencia.",
+    "start_button": "Iniciar discusión",
+    "replies": "respuestas",
+    "likes": "me gusta",
+    "titles": {
+      "1": "¿Deberíamos cambiar a TypeScript para todos los nuevos proyectos?",
+      "2": "¿Cuáles son las mejores herramientas para trabajo remoto en 2024?",
+      "3": "¿Vale la pena la educación universitaria?",
+      "4": "El futuro de la IA en la vida cotidiana",
+      "5": "Mejores prácticas para el equilibrio trabajo-vida",
+      "6": "Cómo lidiar con el síndrome del impostor"
+    },
+    "authors": {
+      "1": "Dennis Barrett",
+      "2": "Judy Nguyen",
+      "3": "Frances Guerrero",
+      "4": "Billy Vasquez",
+      "5": "Larry Lawson",
+      "6": "Amanda Reed"
+    },
+    "times": {
+      "1": "hace 2h",
+      "2": "hace 5h",
+      "3": "hace 1d",
+      "4": "hace 2d",
+      "5": "hace 3d",
+      "6": "hace 1w"
+    }
+  },
+  "account": {
+    "name": "Lori Ferguson",
+    "email": "example@gmail.com",
+    "editProfile": "Editar perfil",
+    "settings": "Configuración de la cuenta",
+    "logout": "Cerrar sesión"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "change_photo": "Changer la photo",
+    "remove_photo": "Supprimer",
+    "first_name": "Prénom",
+    "last_name": "Nom de famille",
+    "email_label": "E-mail",
+    "bio": "Biographie",
+    "location": "Localisation",
+    "tabs": {
+      "account": "Compte",
+      "notification": "Notifications",
+      "privacy": "Confidentialité",
+      "password": "Mot de passe",
+      "delete": "Supprimer le compte"
+    },
+    "account_heading": "Account Settings",
+    "notification_heading": "Notification Preferences",
+    "privacy_heading": "Privacy Settings",
+    "password_heading": "Cambiar contraseña",
+    "current_password": "Contraseña actual",
+    "new_password": "Nueva contraseña",
+    "confirm_new_password": "Confirmar nueva contraseña",
+    "notification_items": [
+      "Notificaciones por correo para nuevas respuestas",
+      "Notificaciones por correo para nuevos seguidores",
+      "Notificaciones push cuando se te menciona",
+      "Correo de resumen semanal",
+      "Correos de marketing"
+    ],
+    "privacy_items": [
+      "Mostrar mi perfil al público",
+      "Permitir que otros me sigan",
+      "Mostrar mis preguntas en los resultados de búsqueda",
+      "Permitir mensajes de no seguidores"
+    ],
+    "delete_heading": "Eliminar cuenta",
+    "delete_warning": "Once you delete your account, there is no going back. This action is permanent.",
+    "type_delete_label": "Type \"DELETE\" to confirm",
+    "save_changes": "Save Changes",
+    "save_preferences": "Save Preferences",
+    "save_settings": "Save Settings",
+    "update_password": "Update Password",
+    "delete_account": "Delete My Account",
+    "sample_first_name": "Lori",
+    "sample_last_name": "Ferguson",
+    "sample_email": "lori@example.com",
+    "sample_bio": "Desarrollador Full-Stack apasionado por construir aplicaciones web.",
+    "sample_location": "San Francisco, CA"
+  },
+  "coming_soon": {
+    "title": "Próximamente",
+    "subtitle": "Estamos trabajando duro para ofrecerte algo increíble. ¡Mantente atento a las novedades!",
+    "email_placeholder": "Ingresa tu correo electrónico",
+    "notify": "Avísame",
+    "footer": "Recibe un aviso cuando lancemos. Sin spam, lo prometemos."
+  },
+  "group-detail": {
+    "join_group": "Unirse al grupo",
+    "share": "Compartir",
+    "share_placeholder": "Comparte algo con el grupo...",
+    "group_about": "Acerca del grupo",
+    "group_about_desc": "Este grupo es para desarrolladores de React para compartir conocimientos, discutir buenas prácticas y colaborar en proyectos.",
+    "group_members_section": "Miembros",
+    "view_all_members": "Ver todos los miembros",
+    "group_info": {
+      "public": "Grupo público",
+      "created": "Creado en 2020"
+    },
+    "group_members_one": "miembro",
+    "group_members_other": "miembros",
+    "group_posts": [
+      {
+        "author": "Dennis Barrett",
+        "avatar": "03.jpg",
+        "time": "hace 2 h",
+        "text": "Acabo de publicar un nuevo artículo sobre React Server Components. ¡Échale un vistazo!",
+        "likes": 24,
+        "comments": 8
+      },
+      {
+        "author": "Judy Nguyen",
+        "avatar": "01.jpg",
+        "time": "hace 5 h",
+        "text": "¿Qué biblioteca de gestión de estado estás usando en 2024? Tengo curiosidad por las preferencias de la comunidad.",
+        "likes": 18,
+        "comments": 15
+      },
+      {
+        "author": "Frances Guerrero",
+        "avatar": "05.jpg",
+        "time": "hace 1 d",
+        "text": "Aquí tienes un consejo de rendimiento: siempre memoriza tus proveedores de contexto para evitar renderizados innecesarios.",
+        "likes": 45,
+        "comments": 22
+      },
+      {
+        "author": "Billy Vasquez",
+        "avatar": "08.jpg",
+        "time": "hace 3 d",
+        "text": "Busco colaboradores para una biblioteca de componentes React de código abierto. ¡Envíame un mensaje si estás interesado!",
+        "likes": 12,
+        "comments": 5
+      }
+    ]
+  }
+}

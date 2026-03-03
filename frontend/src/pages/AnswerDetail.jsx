@@ -1,12 +1,16 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 const answers = [
-    { user: 'Dennis Barrett', avatar: '03.jpg', time: '2 hours ago', text: 'A compiler translates the entire source code of a program into machine code before execution, while an interpreter translates and executes the code line by line at runtime.', votes: 36, accepted: true },
-    { user: 'Judy Nguyen', avatar: '01.jpg', time: '5 hours ago', text: 'The key difference lies in execution: compilers produce standalone executable files, while interpreters process code directly. Compiled programs generally run faster, but interpreted languages offer more flexibility during development.', votes: 12, accepted: false },
-    { user: 'Frances Guerrero', avatar: '05.jpg', time: '8 hours ago', text: 'Compilers check the entire program for errors before generating output, making debugging harder but execution faster. Interpreters stop at the first error encountered, making debugging easier but execution slower.', votes: 8, accepted: false },
+    { user: 'Dennis Barrett', avatar: '03.jpg', index: 0, votes: 36, accepted: true },
+    { user: 'Judy Nguyen', avatar: '01.jpg', index: 1, votes: 12, accepted: false },
+    { user: 'Frances Guerrero', avatar: '05.jpg', index: 2, votes: 8, accepted: false },
 ];
 
 export default function AnswerDetail() {
+    const { t } = useTranslation();
+    const tags = ['programming', 'compiler', 'interpreter'];
+
     return (
         <section className="py-8">
             <div className="container">
@@ -25,24 +29,24 @@ export default function AnswerDetail() {
                                 {/* Content */}
                                 <div className="flex-1">
                                     <div className="flex flex-wrap gap-2 mb-2">
-                                        <span className="badge badge-dark">Programmer</span>
-                                        <span className="badge bg-success/10 text-success">Answered</span>
+                                        <span className="badge badge-dark">{t('role_programmer','Programmer')}</span>
+                                        <span className="badge bg-success/10 text-success">{t('answered','Answered')}</span>
                                     </div>
-                                    <h4 className="mb-2">What is the difference between a compiler and an interpreter?</h4>
+                                    <h4 className="mb-2">{t('ansdetail.question_title', 'What is the difference between a compiler and an interpreter?')}</h4>
                                     <div className="flex items-center gap-2 text-sm text-body mb-4">
                                         <Link to="/profile" className="text-primary">Larry Lawson</Link>
                                         <span>•</span>
-                                        <span>Asked: 07 Nov 2024</span>
+                                        <span>{t('asked','Asked:')} 07 Nov 2024</span>
                                     </div>
-                                    <p className="text-body leading-relaxed">I'm trying to understand the fundamental difference between compilers and interpreters. Could someone explain this clearly with examples? I understand that both are language translators, but I'm confused about their working mechanisms.</p>
+                                    <p className="text-body leading-relaxed">{t('ansdetail.question_body', "I'm trying to understand the fundamental difference between compilers and interpreters. Could someone explain this clearly with examples? I understand that both are language translators, but I'm confused about their working mechanisms.")}</p>
                                     <div className="flex flex-wrap gap-2 mt-4">
-                                        <span className="bg-gray-100 text-body text-xs px-3 py-1 rounded-full">programming</span>
-                                        <span className="bg-gray-100 text-body text-xs px-3 py-1 rounded-full">compiler</span>
-                                        <span className="bg-gray-100 text-body text-xs px-3 py-1 rounded-full">interpreter</span>
+                                        {tags.map((tag) => (
+                                            <span key={tag} className="bg-gray-100 text-body text-xs px-3 py-1 rounded-full">{t(`tag.${tag}`, tag)}</span>
+                                        ))}
                                     </div>
                                     <div className="flex items-center gap-4 mt-4 pt-4 border-t border-border-color text-sm">
-                                        <Link to="#" className="text-body hover:text-primary"><i className="fa-regular fa-message mr-1"></i>15 Answers</Link>
-                                        <span className="text-body"><i className="fa-regular fa-eye mr-1"></i>102 Views</span>
+                                        <Link to="#" className="text-body hover:text-primary"><i className="fa-regular fa-message mr-1"></i>{t('answers_count',{count:15})}</Link>
+                                        <span className="text-body"><i className="fa-regular fa-eye mr-1"></i>{t('views',{count:102})}</span>
                                         <button className="text-body hover:text-primary ml-auto"><i className="bi bi-share"></i></button>
                                         <button className="text-body hover:text-primary"><i className="fa-regular fa-bookmark"></i></button>
                                         <button className="text-body hover:text-primary"><i className="fa-regular fa-flag"></i></button>
@@ -53,17 +57,17 @@ export default function AnswerDetail() {
 
                         {/* Answers */}
                         <div className="flex items-center justify-between mb-4">
-                            <h5 className="mb-0">{answers.length} Answers</h5>
+                            <h5 className="mb-0">{t('answers_count',{count:answers.length})}</h5>
                             <select className="form-select w-auto text-sm">
-                                <option>Most recent</option>
-                                <option>Oldest first</option>
-                                <option>Most voted</option>
+                                <option>{t('sort.most_recent','Most recent')}</option>
+                                <option>{t('sort.oldest_first','Oldest first')}</option>
+                                <option>{t('sort.most_voted','Most voted')}</option>
                             </select>
                         </div>
 
                         <div className="space-y-4">
-                            {answers.map((a, i) => (
-                                <div key={i} className={`card p-4 sm:p-6 ${a.accepted ? 'border-success border-2' : ''}`}>
+                            {answers.map((a) => (
+                                <div key={a.index} className={`card p-4 sm:p-6 ${a.accepted ? 'border-success border-2' : ''}`}>
                                     <div className="flex gap-4">
                                         {/* Vote */}
                                         <div className="flex flex-col items-center gap-1">
@@ -77,19 +81,19 @@ export default function AnswerDetail() {
                                                 <img className="w-9 h-9 rounded-full object-cover" src={`/assets/images/avatar/${a.avatar}`} alt="" />
                                                 <div>
                                                     <Link to="/profile" className="font-semibold text-heading text-sm">{a.user}</Link>
-                                                    <p className="text-xs text-body mb-0">{a.time}</p>
+                                                    <p className="text-xs text-body mb-0">{t(`ansdetail.answers.${a.index}.time`)}</p>
                                                 </div>
                                                 {a.accepted && (
                                                     <span className="badge bg-success text-white ml-auto">
-                                                        <i className="bi bi-check-circle mr-1"></i>Accepted
+                                                        <i className="bi bi-check-circle mr-1"></i>{t('accepted')}
                                                     </span>
                                                 )}
                                             </div>
-                                            <p className="text-body leading-relaxed mb-0">{a.text}</p>
+                                            <p className="text-body leading-relaxed mb-0">{t(`ansdetail.answers.${a.index}.text`)}</p>
                                             <div className="flex items-center gap-3 mt-3 text-sm">
-                                                <button className="text-body hover:text-primary"><i className="bi bi-reply mr-1"></i>Reply</button>
-                                                <button className="text-body hover:text-primary"><i className="bi bi-share mr-1"></i>Share</button>
-                                                <button className="text-body hover:text-primary"><i className="bi bi-flag mr-1"></i>Report</button>
+                                                <button className="text-body hover:text-primary"><i className="bi bi-reply mr-1"></i>{t('reply')}</button>
+                                                <button className="text-body hover:text-primary"><i className="bi bi-share mr-1"></i>{t('share')}</button>
+                                                <button className="text-body hover:text-primary"><i className="bi bi-flag mr-1"></i>{t('report')}</button>
                                             </div>
                                         </div>
                                     </div>
@@ -99,9 +103,9 @@ export default function AnswerDetail() {
 
                         {/* Add Answer */}
                         <div className="card p-4 sm:p-6 mt-6">
-                            <h5 className="mb-4">Your Answer</h5>
-                            <textarea className="form-control mb-3" rows="5" placeholder="Write your answer here..."></textarea>
-                            <button className="btn btn-primary">Post your Answer</button>
+                            <h5 className="mb-4">{t('your_answer')}</h5>
+                            <textarea className="form-control mb-3" rows="5" placeholder={t('placeholder.write_answer','Write your answer here...')}></textarea>
+                            <button className="btn btn-primary">{t('post_your_answer')}</button>
                         </div>
                     </div>
 
@@ -109,7 +113,7 @@ export default function AnswerDetail() {
                     <div className="lg:col-span-4">
                         {/* Related Questions */}
                         <div className="card p-4 mb-4">
-                            <h6 className="mb-3">Related Questions</h6>
+                            <h6 className="mb-3">{t('related_questions','Related Questions')}</h6>
                             <ul className="space-y-3">
                                 {['What is the difference between JVM, JRE, and JDK?', 'How does garbage collection work in Java?', 'Explain polymorphism in object-oriented programming', 'What are the SOLID principles?'].map((q, i) => (
                                     <li key={i}><Link to="/answer-detail" className="text-sm text-body hover:text-primary">{q}</Link></li>
@@ -119,10 +123,10 @@ export default function AnswerDetail() {
 
                         {/* Trending Tags */}
                         <div className="card p-4 mb-4">
-                            <h6 className="mb-3">Trending Tags</h6>
+                            <h6 className="mb-3">{t('trending_tags','Trending Tags')}</h6>
                             <div className="flex flex-wrap gap-2">
                                 {['javascript', 'python', 'react', 'node.js', 'css', 'html', 'typescript', 'sql'].map((tag, i) => (
-                                    <Link key={i} to="/category" className="bg-gray-100 hover:bg-primary hover:text-white text-body text-xs px-3 py-1.5 rounded-full transition-colors">{tag}</Link>
+                                    <Link key={i} to="/category" className="bg-gray-100 hover:bg-primary hover:text-white text-body text-xs px-3 py-1.5 rounded-full transition-colors">{t(`tag.${tag}`, tag)}</Link>
                                 ))}
                             </div>
                         </div>
@@ -130,9 +134,9 @@ export default function AnswerDetail() {
                         {/* Join Community */}
                         <div className="card p-4 text-center">
                             <img src="/assets/images/elements/18.svg" className="w-24 mx-auto mb-3" alt="" />
-                            <h6>Join the Community</h6>
-                            <p className="text-sm text-body mb-3">Get answers to your questions from experts.</p>
-                            <Link to="/signup" className="btn btn-primary btn-sm w-full">Join Free</Link>
+                            <h6>{t('join_community.heading','Join the Community')}</h6>
+                            <p className="text-sm text-body mb-3">{t('join_community.text','Get answers to your questions from experts.')}</p>
+                            <Link to="/signup" className="btn btn-primary btn-sm w-full">{t('join_community.button','Join Free')}</Link>
                         </div>
                     </div>
                 </div>

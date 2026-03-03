@@ -1,6 +1,11 @@
-import { features, additionalFeatures, stats } from '../../data/homeData';
+import { stats } from '../../data/homeData';
+import { useTranslation } from 'react-i18next';
 
 export default function HomeStats() {
+    const { t } = useTranslation();
+    const features = t('home_stats.features', { returnObjects: true });
+    const additionalFeatures = t('home_stats.additional_features', { returnObjects: true });
+    const statLabels = t('home_stats.stats_labels', { returnObjects: true });
     return (
         <section className="py-12">
             <div className="container">
@@ -9,8 +14,8 @@ export default function HomeStats() {
                         <img src="/assets/images/elements/18.svg" alt="" className="w-full max-w-md mx-auto" />
                     </div>
                     <div>
-                        <h3 className="mb-3">We'll help your grades soar</h3>
-                        <p className="text-body mb-0">Start your 48-hour free trial and unlock all the summaries, Q&A, and analyses you need to get better grades now.</p>
+                        <h3 className="mb-3">{t('home_stats.heading')}</h3>
+                        <p className="text-body mb-0">{t('home_stats.text')}</p>
 
                         <div className="grid sm:grid-cols-2 gap-2 my-6">
                             <ul className="space-y-2">
@@ -34,7 +39,7 @@ export default function HomeStats() {
                             {stats.map((s, i) => (
                                 <div key={i}>
                                     <h4 className="text-2xl font-bold mb-0">{s.value}</h4>
-                                    <h6 className="text-sm font-normal text-body">{s.label}</h6>
+                                    <h6 className="text-sm font-normal text-body">{statLabels[i]}</h6>
                                 </div>
                             ))}
                         </div>

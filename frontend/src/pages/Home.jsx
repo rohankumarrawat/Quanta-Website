@@ -4,8 +4,10 @@ import QuestionCard from '../components/cards/QuestionCard';
 import HomeHero from '../components/home/HomeHero';
 import HomeStats from '../components/home/HomeStats';
 import HomeCTA from '../components/home/HomeCTA';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+    const { t } = useTranslation();
     return (
         <>
             <HomeHero />
@@ -25,7 +27,7 @@ export default function Home() {
             <section className="py-0 lg:py-12">
                 <div className="container">
                     <div className="max-w-3xl mx-auto text-center mb-8">
-                        <h2>Recently answered questions</h2>
+                        <h2>{t('recently_answered_questions')}</h2>
                     </div>
 
                     <div className="max-w-5xl mx-auto">
